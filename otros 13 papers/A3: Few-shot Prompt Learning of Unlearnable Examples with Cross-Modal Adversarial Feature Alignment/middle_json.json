@@ -1,0 +1,5431 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.9"
+    },
+    "document": {
+      "title": "A<sup>3</sup>: Few-shot Prompt Learning of Unlearnable Examples with Cross-Modal Adversarial Feature Alignment",
+      "authors": [
+        "Xuan Wang",
+        "Xitong Gao",
+        "Dongping Liao",
+        "Tianrui Qin",
+        "Yu-liang Lu",
+        "Cheng-zhong Xu"
+      ],
+      "subject": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR);2025; ; ;10.1109/CVPR52734.2025.00888",
+      "description": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR);2025; ; ;10.1109/CVPR52734.2025.00888",
+      "created_at": "2025-07-01T05:57:23Z",
+      "modified_at": "2025-08-05T14:29:07-04:00",
+      "producer_application": "OpenPDF 1.0.0-SNAPSHOT; modified using iText® Core 7.2.4 (AGPL version) ©2000-2022 iText Group NV",
+      "page_count": 10,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 0,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.223,
+            0.025,
+            0.775,
+            0.041
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+            }
+          ]
+        },
+        {
+          "type": "doc_title",
+          "index": 1,
+          "bbox": [
+            0.214,
+            0.13,
+            0.784,
+            0.176
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": "3",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": Few-shot Prompt Learning of Unlearnable Examples with Cross-Modal Adversarial Feature Alignment"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.182,
+            0.205,
+            0.284,
+            0.221
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Xuan Wang*"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.114,
+            0.221,
+            0.346,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Anhui Key Lab of CSSAE, National University of Defense Technology wangxuan21d@nudt.edu.cn"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.197,
+            0.26,
+            0.292,
+            0.276
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Tianrui Qin"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.153,
+            0.277,
+            0.336,
+            0.299
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "OPPO Research Institute qintianrui123@gmail.com"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.469,
+            0.204,
+            0.578,
+            0.221
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Xitong Gao*†"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.383,
+            0.221,
+            0.658,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Shenzhen Institutes of Advanced Technology, CAS; Shenzhen University of Advanced Technology xt.gao@siat.ac.cn"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.442,
+            0.259,
+            0.546,
+            0.276
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Yu-liang Lu†"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.379,
+            0.277,
+            0.61,
+            0.309
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Anhui Key Lab of CSSAE, National University of Defense Technology publicLuYL@126.com"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.728,
+            0.205,
+            0.85,
+            0.221
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Dongping Liao"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.695,
+            0.221,
+            0.883,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "State Key Lab of IoTSC, CIS Dept, University of Macau yb97428@um.edu.mo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.681,
+            0.26,
+            0.819,
+            0.276
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Cheng-zhong Xu"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.654,
+            0.276,
+            0.842,
+            0.309
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "State Key Lab of IoTSC, CIS Dept, University of Macau czxu@um.edu.mo"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 14,
+          "bbox": [
+            0.249,
+            0.342,
+            0.327,
+            0.357
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Abstract"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.09,
+            0.374,
+            0.486,
+            0.766
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the age of pervasive machine learning applications, protecting digital content from unauthorized use has become a pressing concern. Unlearnable examples (UEs)—data modified with imperceptible perturbations to inhibit model training while preserving human usability—have emerged as a promising approach. However, existing UE methods assume unauthorized trainers have extensive exposure to UEs or that models are trained from scratch, which may not hold in practical scenarios, This paper investigates the effectiveness of UEs under the few-shot learning paradigm, pitching it against prompt learning (PL) models that leverage pre-trained vision-language models (VLMs), like CLIP, capable of generalizing to new classes with minimal data. To address this, we introduce an adaptive UE framework to generate unlearnable examples that specifically target the PL process. In addition, we propose a novel UE countermeasure, A , with cross-modal adversarial feature alignment, specifically designed to circumvent UEs under few-shot PL. Experimental evaluations on 7 datasets show that A"
+            },
+            {
+              "type": "text",
+              "content": "3",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " outperforms existing PL methods, achieving up to 33% higher performance in learning from UEs. For example, in the scenario involving ω -bounded EM perturbations, A has an average harmonic mean accuracy across 7 datasets of 82.43%, compared to CoCoOp’s baseline of 65.47%. Our findings highlight the limitations of existing UEs against PL and lay the foundation for future data protection mechanisms."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 16,
+          "bbox": [
+            0.092,
+            0.795,
+            0.222,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. Introduction"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.09,
+            0.82,
+            0.486,
+            0.867
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the era of pervasive machine learning applications, protecting digital content from unauthorized use is an escalating concern. An emerging solution involves unlearnable ex-"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.512,
+            0.343,
+            0.909,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "amples (UEs) [9, 11, 29, 36, 40]. — data modified with imperceptible perturbations that prevent machine learning models from effectively learning and generalizing from it, while preserving its utility for human observers. Unlike traditional data poisoning attacks intended for malicious use, UEs serve content creators by providing a way to inhibit unauthorized model training. Beyond this, UEs can also be used to shed light on vulnerabilities and learning prefer ences [36] of deep learning models, and prevent unlawful use of personal features [24]. However, existing UE methods are primarily designed for models trained from scratch, and make strong assumptions where all or a large proportion of training data is used unknowingly by unauthorized train ers. These assumptions may not hold in the wilderness, for several reasons: (a) Creators may release limited data. (b) Unauthorized trainers may have limited exposure to the UEs: they may curate their training data from various sources and may only use a small fraction of the creator’s data. (c) Trainers may leverage pretrained models to improve training efficiency, and to generalize well to new classes and contexts."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.512,
+            0.652,
+            0.909,
+            0.834
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this paper, we found that recent advances in prompt learning (PL) with pretrained vision-language models (VLMs) can indeed challenge the robustness of UEs. VLMs use contrastive learning to align images and text features, enabling strong zero-shot and downstream tasks [15, 30, 32, 35]. PL further adapts CLIP by fine-tuning prompts instead of model weights, making it ideal for data-limited scenarios, and novel tasks and classes. This paper thus investigates a central question: Are UEs effective in protecting data against PL-enabled models? This question has profound implica tions from both the content creator’s and the unauthorized trainer’s perspectives."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.512,
+            0.84,
+            0.91,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For "
+            },
+            {
+              "type": "text",
+              "content": "content creators",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", understanding this question is crucial for several reasons: "
+            },
+            {
+              "type": "text",
+              "content": "(a)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " To effectively prevent unauthorized usage, creators need to know the minimum amount of modified data required to maintain protection. "
+            },
+            {
+              "type": "text",
+              "content": "(b)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Content"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 22,
+          "bbox": [
+            0.11,
+            0.875,
+            0.22,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "*Equal contribution."
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 23,
+          "bbox": [
+            0.11,
+            0.888,
+            0.373,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "†Correspondence to Xitong Gao and Yu-liang Lu."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 24,
+          "bbox": [
+            0.013,
+            0.152,
+            0.032,
+            0.847
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | 979-8-3315-4364-8/25/\\$31.00 ©2025 IEEE | DOI: 10.1109/CVPR52734.2025.00888"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 25,
+          "bbox": [
+            0.072,
+            0.942,
+            0.26,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2575-7075/25/$31.00 ©2025 IEEE"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 26,
+          "bbox": [
+            0.072,
+            0.953,
+            0.28,
+            0.963
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "DOI 10.1109/CVPR52734.2025.00888"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 27,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9507"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 28,
+          "bbox": [
+            0.129,
+            0.963,
+            0.864,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 1,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.09,
+            0.092,
+            0.485,
+            0.152
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "creators typically control and release a limited quantity of data, making it impractical to assume access to large datasets. This constraint naturally leads to a few-shot scenario, which is the focus of this study."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.09,
+            0.153,
+            0.484,
+            0.319
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For "
+            },
+            {
+              "type": "text",
+              "content": "unauthorized trainers",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", PL represents an appealing tool to bypass UEs, as PL exploits the generalization strengths of VLMs: "
+            },
+            {
+              "type": "text",
+              "content": "(a)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " The pretrained encoders of VLMs enables it to generalize well to novel classes, potentially circumventing perturbations that would normally deter training from scratch. "
+            },
+            {
+              "type": "text",
+              "content": "(b)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " While existing methods to circumvent UEs typically involve adversarial training [19], or image augmentations [16, 25], which affect only the image seen by the model. PL may be able to enhance its robustness by incorporating text augmentations, offering a broader strategy to bypass unlearnability protections."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.09,
+            0.32,
+            0.484,
+            0.365
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To address these challenges, we propose an adaptive framework that targets UEs in the few-shot PL setting. The contributions of this paper are as follows:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.091,
+            0.367,
+            0.484,
+            0.624
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.091,
+                0.367,
+                0.484,
+                0.472
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• We introduced a scenario designed to examine the effectiveness of UEs against prompt learning, particularly in a few-shot context where data availability is constrained. Beyond existing UE methods, we introduced an adaptive UE framework that incorporates PL-specific considerations for surrogate-based UEs, generating stronger UEs that are more effective against PL."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.091,
+                0.473,
+                0.484,
+                0.547
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• We propose a novel method, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathbf { A } ^ { 3 } ,"
+                },
+                {
+                  "type": "text",
+                  "content": " , which employs cross-modal adversarial augmented feature alignment to enhance PL’s ability to generalize when learned from UEs. This method adversarially aligns diversely-augmented image and text augmentations to make PL robust against UEs."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.091,
+                0.548,
+                0.484,
+                0.624
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Experimental results demonstrate that "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { A } ^ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " achieves significant performance gains over existing methods, proving more effective against other UE methods in few-shot scenarios, even when faced with larger perturbations, and partial poisoning. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { A } ^ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " also generalizes well to novel classes."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.09,
+            0.625,
+            0.484,
+            0.7
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This work offers new insights into the capabilities and limitations of UEs against PL, laying a foundation for more robust data protection strategies in the era of knowledge transfer with large pretrained models and multimodal machine learning."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.091,
+            0.716,
+            0.371,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Related Work & Preliminaries"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.091,
+            0.742,
+            0.303,
+            0.759
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.1. Unlearnable Examples"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.09,
+            0.765,
+            0.485,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The primary goal of unlearnable examples [9, 11, 29, 33, 36, 40] is to safeguard the privacy and copyright of content providers by adding small, human-imperceptible perturbations to data. These perturbations prevent machine learning models from effectively generalizing to the data’s original distribution. Unlike traditional data poisoning attacks [10], which aim to introduce backdoor patterns into a model, unlearnable examples are not intended for malicious purposes but solely to protect data from unauthorized use."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.513,
+            0.092,
+            0.907,
+            0.231
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition of Unlearnable Examples",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Consider a dataset with N clean samples "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } _ { \\mathrm { c l e a n } } = \\{ ( \\mathbf { x } _ { i } , y _ { i } ) \\} _ { i = 1 } ^ { N }"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { x } _ { i } \\in"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { X }   =   [ 0 , 1 ] ^ { C \\times H \\times \\dot { W } }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { i }   \\in   \\mathcal { Y }   =   \\{ 1 , \\ldots , K \\}"
+            },
+            {
+              "type": "text",
+              "content": " represent the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i ^ { \\mathrm { t h } }"
+            },
+            {
+              "type": "text",
+              "content": " input sample with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C"
+            },
+            {
+              "type": "text",
+              "content": " channels and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H \\times W"
+            },
+            {
+              "type": "text",
+              "content": " spatial dimensions, and its corresponding true label. Each sample is drawn from a distribution S. The content provider aims to add small perturbations "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { \\delta } _ { i } \\in \\mathcal { B } _ { p } ( \\mathbf { x } _ { i } , \\epsilon )"
+            },
+            {
+              "type": "text",
+              "content": " to the clean samples in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { x } _ { i } \\in \\mathcal { D } _ { \\mathrm { c l e a n } }"
+            },
+            {
+              "type": "text",
+              "content": " to generate unlearnable examples "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } _ { \\mathrm { u e } } ( \\pmb { \\delta } ) \\triangleq"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ ( \\mathbf { x } _ { i } + \\mathbf { \\delta } _ { i } , y _ { i } ) \\mid ( \\mathbf { x } _ { i } , y _ { i } ) \\in \\mathcal { D } _ { \\mathsf { c l e a n } } \\}"
+            },
+            {
+              "type": "text",
+              "content": " . The set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { B } _ { p } ( \\mathbf { x } _ { i } , \\epsilon )"
+            },
+            {
+              "type": "text",
+              "content": " is:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.568,
+            0.238,
+            0.907,
+            0.256
+          ],
+          "image_path": "images/page_1_equation_12.jpg",
+          "content": "\\mathcal {B} _ {p} \\left(\\mathbf {x} _ {i}, \\epsilon\\right) \\triangleq \\left\\{\\mathbf {d} \\mid \\| \\mathbf {d} \\| _ {p} \\leq \\epsilon , \\mathbf {x} _ {i} + \\mathbf {d} \\in \\mathcal {X} \\right\\}. \\tag {1}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.512,
+            0.263,
+            0.907,
+            0.353
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It bounds the noise "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\delta _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " of each sample "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { x } _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " within the ε-ball of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ell _ { p }"
+            },
+            {
+              "type": "text",
+              "content": " -distance with respect to the sample, and the perturbed sample "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { x } _ { i } + \\mathbf { \\delta } _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " remain within the input domain X . A small ε is crucial to ensure that the perturbations do not significantly alter the original content, thus preserving the data’s utility, and typically "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p \\in \\{ 0 , 2 , \\infty \\}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.512,
+            0.354,
+            0.907,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When this perturbed dataset is used for training, the goal is for the resulting model to generalize poorly to the original distribution S. The optimization for the noise can be formulated as the following bi-level optimization problem to solve for the bounded perturbations "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { \\delta } \\triangleq \\{ \\mathbf { \\delta } _ { i } \\in \\mathcal { B } _ { p } ( \\mathbf { x } _ { i } , \\epsilon ) \\} _ { i = 1 } ^ { N } ;"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.588,
+            0.437,
+            0.907,
+            0.455
+          ],
+          "image_path": "images/page_1_equation_15.jpg",
+          "content": "\\max _ {\\boldsymbol {\\delta}} \\mathbb {E} _ {(\\mathbf {x} _ {i}, y _ {i}) \\sim \\mathcal {S}} \\left[ \\mathcal {L} \\left(\\boldsymbol {f} _ {\\boldsymbol {\\theta} ^ {*} (\\boldsymbol {\\delta})} (\\mathbf {x} _ {i}), y _ {i}\\right) \\right], \\tag {2}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.513,
+            0.46,
+            0.907,
+            0.522
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { \\boldsymbol { \\theta } } : \\mathcal { X } \\to \\mathbb { R } ^ { K }"
+            },
+            {
+              "type": "text",
+              "content": " denotes the model with parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol { \\theta } , \\mathcal { L } \\colon \\mathbb { R } ^ { K } \\times \\mathcal { Y } \\to"
+            },
+            {
+              "type": "text",
+              "content": " R is the loss function (typically cross-entropy), and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta ^ { \\star }"
+            },
+            {
+              "type": "text",
+              "content": " represents the model parameters optimized on the perturbed images:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.526,
+            0.529,
+            0.907,
+            0.547
+          ],
+          "image_path": "images/page_1_equation_17.jpg",
+          "content": "\\boldsymbol {\\theta} ^ {*} (\\boldsymbol {\\delta}) = \\operatorname{argmin} _ {\\boldsymbol {\\theta}} \\mathbb {E} _ {\\left(\\mathbf {x} _ {i}, y _ {i}\\right) \\sim \\mathcal {D} _ {\\text {clean}}} \\left[ \\mathcal {L} \\left(f _ {\\boldsymbol {\\theta}} \\left(\\mathbf {x} _ {i} + \\boldsymbol {\\delta} _ {i}\\right), y _ {i}\\right) \\right]. \\tag {3}"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.512,
+            0.554,
+            0.907,
+            0.599
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As the above problem is intractable, many works have proposed alternative methods to approximate the solution, commonly involving surrogate models:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 19,
+          "bbox": [
+            0.514,
+            0.6,
+            0.907,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 20,
+              "bbox": [
+                0.514,
+                0.6,
+                0.907,
+                0.675
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "text",
+                  "content": "Hypocritical perturbations (HYPO)",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " [33] assumes a surrogate model "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\left[ g _ { \\pmb { \\theta } } : \\mathcal { X } \\rightarrow \\mathbb { R } ^ { K } \\right."
+                },
+                {
+                  "type": "text",
+                  "content": " with pretrained weights ε learned on samples from S, and directly finds the perturbations "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\delta"
+                },
+                {
+                  "type": "text",
+                  "content": " that makes the model easily produce correct predictions for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathcal { D } _ { \\mathrm { c l e a n } }"
+                },
+                {
+                  "type": "text",
+                  "content": " images."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 21,
+              "bbox": [
+                0.514,
+                0.675,
+                0.906,
+                0.719
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "text",
+                  "content": "Error maximization (EM)",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " [11] further considers a randomly-initialized surrogate g"
+                },
+                {
+                  "type": "text",
+                  "content": "ε",
+                  "styles": [
+                    "subscript"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": ", and optimizes the noise ω, and the surrogate model "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g _ { \\theta }"
+                },
+                {
+                  "type": "text",
+                  "content": " simultaneously."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 22,
+              "bbox": [
+                0.514,
+                0.72,
+                0.907,
+                0.81
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "text",
+                  "content": "Robust error maximization (REM)",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " [9] extends EM to optimize the surrogate "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g _ { \\theta }"
+                },
+                {
+                  "type": "text",
+                  "content": " under adversarial training [19], where the adversarial noise is also bounded within the ε-ball of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { p 1 }"
+                },
+                {
+                  "type": "text",
+                  "content": " -norm, and optimized via projected gradient descent (PGD) [19]. This helps to improve the effectiveness of the perturbations even under adversarial training."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 23,
+          "bbox": [
+            0.512,
+            0.811,
+            0.907,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Interestingly, recent works have shown that unlearnable examples can also be curated without the need for optimization, where the perturbations form a linearly-separable subspace that can be learned easily by the model. This bias is so strong that it makes the underlying features less learnable by model training algorithms:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 24,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9508"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 25,
+          "bbox": [
+            0.129,
+            0.963,
+            0.864,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 2,
+      "blocks": [
+        {
+          "type": "list",
+          "index": 0,
+          "bbox": [
+            0.089,
+            0.089,
+            0.487,
+            0.485
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 1,
+              "bbox": [
+                0.091,
+                0.092,
+                0.483,
+                0.197
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "text",
+                  "content": "Linearly-separable perturbations (LSP)",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " [40] generates random color patches as perturbations, and apply them to the images while ensuring the added noise is bounded within a small "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { 2 } \\mathrm { - d i s t a n c e }"
+                },
+                {
+                  "type": "text",
+                  "content": " from the original image. This simple method can enable strong unlearnable examples without the expensive optimization process and the need for surrogate models."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.091,
+                0.198,
+                0.483,
+                0.304
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "text",
+                  "content": "Autoregressive Poisoning (AR)",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " [29] Similar to LSP, AR prescribes a simple perturbation strategy which first fills all channels of the first 2 rows and columns of the image with Gaussian noise, then uses an autoregressive process to fill the remaining pixels with a "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "3 \\times 3"
+                },
+                {
+                  "type": "text",
+                  "content": " sliding window. It then re-scales the perturbations to be within the noise bound "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathcal { B } _ { p } ( \\mathbf { x } _ { i } , \\epsilon )"
+                },
+                {
+                  "type": "text",
+                  "content": " , before adding them to the image "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathbf { x } _ { i }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.091,
+                0.304,
+                0.484,
+                0.485
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• One-pixel Shortcuts (OPS) [36] For each image belonging to a specific class, OPS searches for an optimal pixel and color value for the class, such that it results in the largest change in the pixel’s color value for all perturbed images. This constitutes a simple "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { 0 } ."
+                },
+                {
+                  "type": "text",
+                  "content": " -bounded perturbation where only one pixel is modified for each image. Surprisingly, when training models from scratch, OPS can generate even stronger unlearnable examples than EM with a 8/255 noise budget [25, 36]. It also resists even "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { \\{ 2 , \\infty \\} }"
+                },
+                {
+                  "type": "text",
+                  "content": " -bounded adversarial training, as the noise added by adversarial training cannot effectively perturb the pixel values for the erasure of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { 0 } ."
+                },
+                {
+                  "type": "text",
+                  "content": " -perturbations."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.09,
+            0.486,
+            0.484,
+            0.592
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " considers the problem of learning from unlearnable examples from the perspective of few-shot learning with prompt learning (PL), we provide a framework that adapts the above methods to this setting, by making the surrogate models "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " our prompt learners. It also shows that PL can be in a certain degree effective against unlearnable examples produced by these methods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.091,
+            0.604,
+            0.419,
+            0.621
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.2. Learning from Unlearnable Examples"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.09,
+            0.627,
+            0.485,
+            0.672
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The emergence of unlearnable examples prompts investigation into the mechanisms that unauthorized trainers might exploit to extract useful features."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.09,
+            0.674,
+            0.484,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Adversarial Training (AT)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " [2, 19] involves the generation of adversarial examples [4, 12, 41] specifically tailored to the model under training, which are in turn used to train the model to enhance the model’s robustness. It also has been known to be an effective approach to improve the model generalization when trained on unlearnable examples [11]. However, adversarial training is known to be computationally expensive, and also affects the model’s performance on clean data [38], especially when the sample size is small [5]."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.09,
+            0.811,
+            0.484,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For this reason, "
+            },
+            {
+              "type": "text",
+              "content": "Image Shortcut Squeezing (ISS)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " [16] introduces a suite of simple image processing methods can show surprising effectiveness in mitigating the impact of unlearnable examples, without the costs associated with adversarial training. "
+            },
+            {
+              "type": "text",
+              "content": "Grayscale",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " removes the color information from the training images, and "
+            },
+            {
+              "type": "text",
+              "content": "JPEG Compression",
+              "styles": [
+                "bold"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.512,
+            0.092,
+            0.908,
+            0.304
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(JPEG)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " instead performs a lossy JPEG with high compression rate on the training images. However, it was recently discovered [26] that simple image processing is much less effective against adaptively-optimized unlearnable examples. Building upon this idea, "
+            },
+            {
+              "type": "text",
+              "content": "UEraser",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " [25] further proposes a stochastic augmentation pipeline with a wider range of transformations, and uses a simple adversarial augmentation to optimize models only on augmented images with the maximum loss. This allows the model to learn the underlying features without being affected by the easily learnable shortcuts in unlearnable examples. While all these methods have shown effectiveness against unlearnable examples, they consider the problem of training models from scratch rather than leveraging pretrained models."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.514,
+            0.312,
+            0.686,
+            0.329
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3. Prompt Learning"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.512,
+            0.334,
+            0.909,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Vision-language pretrained models (VLMs), such as CLIP [27] and ALIGN [13], represent a significant advancement in multi-modal learning. Trained on extensive image-text pair datasets, The VLM have two main components: an image encoder "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { \\mathrm { i m } } : \\mathcal { X } \\to \\mathbb { R } ^ { d }"
+            },
+            {
+              "type": "text",
+              "content": " and a text encoder "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { \\mathrm { t x } } : \\mathcal { W } \\rightarrow \\mathbb { R } ^ { d }"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { X }"
+            },
+            {
+              "type": "text",
+              "content": " and W are the input image and text, respectively, and learn a shared embedding space "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } ^ { d }"
+            },
+            {
+              "type": "text",
+              "content": " for images and texts. Image and text pairs that are semantically similar will have similar embeddings in this space, and vice versa. This makes them versatile for a wide range of downstream tasks, including image classification [27], captioning [1], retrieval [18], and providing guidance for image generation [7, 28]. Notably, VLMs show impressive zero-shot performance, where they can perform well on new tasks without task-specific training, showcasing their generalization capabilities."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.512,
+            0.561,
+            0.909,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Prompt Engineering for VLMs",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " seeks to use VLMs for image classification tasks by constructing class-specific text prompts, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { { \\it e . g . , \\mathrm { \\it { \\it ^ { \\it ^ { \\it 2 } } } a } } }"
+            },
+            {
+              "type": "text",
+              "content": " photo of a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c \\bot s ^ { \\prime \\prime }"
+            },
+            {
+              "type": "text",
+              "content": " for the class "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c 1 s ,"
+            },
+            {
+              "type": "text",
+              "content": " and comparing the model’s similarity scores between the features of these prompts and the target image. The class yielding the highest similarity score is selected as the predicted class for the image. Formally, prompt engineering creates M text prompts, embedded as a tensor "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widetilde { \\mathbf { V } = \\{ \\mathbf { v } _ { m } \\} _ { m = 1 } ^ { M } \\in \\mathbb { R } ^ { M \\times T \\times h } }"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { v } _ { m }"
+            },
+            {
+              "type": "text",
+              "content": " denotes an embedded prompt prefix sequence of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " tokens. By appending each prefix "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { v } _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { c } _ { k } \\; \\in \\; \\mathbb { R } ^ { h }"
+            },
+            {
+              "type": "text",
+              "content": " the constant embedding vector of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k ^ { \\mathrm { t h } }"
+            },
+            {
+              "type": "text",
+              "content": " class, the model can thus construct a holistic classifier "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h _ { \\phi }   :   \\mathcal { X }   \\to   \\mathbb { R } ^ { K }"
+            },
+            {
+              "type": "text",
+              "content": " by averaging the similarity scores across all M prompts, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol { \\phi } = \\{ \\boldsymbol { \\theta } , \\mathbf { V } , \\ldots \\}"
+            },
+            {
+              "type": "text",
+              "content": " denotes all parameters in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h _ { \\phi } ,"
+            },
+            {
+              "type": "text",
+              "content": " , consisting of the pretrained CLIP weights "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta ,"
+            },
+            {
+              "type": "text",
+              "content": " a manually-designed prompt embedding V, and other potential parameters used by the prompt learning algorithm. For the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k ^ { \\mathrm { t h } }"
+            },
+            {
+              "type": "text",
+              "content": " class, we can obtain its logit as follows:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.55,
+            0.841,
+            0.907,
+            0.862
+          ],
+          "image_path": "images/page_2_equation_13.jpg",
+          "content": "h _ {\\phi} (\\mathbf {x}) _ {k} = \\frac {1}{M} \\sum_ {m = 1} ^ {M} \\mathrm{sim} (f _ {\\mathrm{im}} (\\mathbf {x}), f _ {\\mathrm{tx}} ([ \\mathbf {v} _ {m}, \\mathbf {c} _ {k} ])). \\tag {4}"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.513,
+            0.871,
+            0.908,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here, sim denotes the similarity function used to compute the closeness between the image and text features, typically"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 15,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9509"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 16,
+          "bbox": [
+            0.129,
+            0.963,
+            0.864,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 3,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.09,
+            0.091,
+            0.486,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the cosine similarity. The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k ^ { \\mathrm { t h } }"
+            },
+            {
+              "type": "text",
+              "content": " class probabilities can thus be computed using the softmax function, where ϑ is the softmax temperature and is usually set to 1:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 1,
+          "bbox": [
+            0.127,
+            0.147,
+            0.484,
+            0.169
+          ],
+          "image_path": "images/page_3_equation_1.jpg",
+          "content": "p (y = k \\mid \\mathbf {x}, \\phi) = e ^ {h _ {\\phi} (\\mathbf {x}) _ {k} / \\tau} / \\sum_ {j = 1} ^ {K} e ^ {h _ {\\phi} (x) _ {j} / \\tau}. \\tag {5}"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.09,
+            0.178,
+            0.485,
+            0.511
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Prompt Learning (PL)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " While the above zero-shot method is effective for many tasks, it is limited by the quality of the manually-designed prompts and may require extensive labor and expert knowledge to construct. In contrast, PL aims to automatically learn the prompt embeddings V, and possibly other parameters in ϑ, by optimizing them during training. To improve downstream task performance, CoOp [43] learns the prompt embeddings "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { V } ,"
+            },
+            {
+              "type": "text",
+              "content": " show that even with few-shot examples, can generate better prompts than manual designs, and generalize well to unseen tasks. CoCoOp [42] builds upon CoOp by introducing a trainable meta-net to learn to generate prompt embeddings from the extracted image features, in order to improve the model’s performance on unseen tasks. KgCoOp [39] further regularizes the prompt embeddings to be close to the initial handcrafted prompts, showing that by retaining proximity to the original prompts, unseen tasks can be generalized better. Finally, ProDA [17] uses Gaussian to model the prompt embedding distribution, and encourages orthogonality among the prompt embeddings. This paper presents the first work to highlight that prompt learning can be effective in learning useful features from unlearnable examples, even under few-shot scenarios."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.091,
+            0.523,
+            0.245,
+            0.54
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A ^ { 3 } }"
+            },
+            {
+              "type": "text",
+              "content": " Method"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.091,
+            0.549,
+            0.34,
+            0.566
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.1. Adaptive UEs Targeting PL"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.09,
+            0.571,
+            0.486,
+            0.814
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Surrogate-based methods",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (EM [11], REM [9], and HYPO [33]) for synthesizing UEs typically train models from scratch, and do not assume low data availability, which makes them an unsuitable choice for affecting the PL process of the pretrained CLIP model (Table 1). To address this limitation, we first introduce an adaptive approach for all methods that uses the PL process as the surrogate model. To make the UEs stronger, we also assume that the UEs are synthesized with the same PL method using the same pre-trained CLIP model. We implemented adaptive-variations of EM, REM, and HYPO. As they are stronger UEs than the original methods, our experiments by default use these adaptive variants. Recall REM [9] in Section 2, we adapt its objective to PL, specifically CoCoOp [42] in this paper, by using the holistic classifier "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h _ { \\phi }"
+            },
+            {
+              "type": "text",
+              "content": " in (4) as the surrogate model. The REM objective to seek ω under PL is thus:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.095,
+            0.825,
+            0.484,
+            0.855
+          ],
+          "image_path": "images/page_3_equation_6.jpg",
+          "content": "\\min _ {(\\boldsymbol {\\delta}, \\mathbf {V}, \\dots)} \\max _ {\\boldsymbol {\\eta}} \\mathbb {E} _ {(\\mathbf {x} _ {i}, y _ {i}) \\sim \\mathcal {D} _ {\\text {clean}}} \\left[ \\mathcal {L} \\left(h _ {\\phi} \\left(\\mathbf {x} _ {i} + \\boldsymbol {\\delta} _ {i} + \\boldsymbol {\\eta}\\right), y _ {i}\\right) \\right], \\tag {6}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.09,
+            0.856,
+            0.442,
+            0.871
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pmb { \\eta } \\in \\mathcal { B } _ { p } ( \\mathbf { x } _ { i } , \\epsilon )"
+            },
+            {
+              "type": "text",
+              "content": " is the ε-bounded "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ell _ { p }"
+            },
+            {
+              "type": "text",
+              "content": " -norm noise."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.091,
+            0.871,
+            0.485,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this adaptive context, EM [11] simplifies the above REM objective by removing the inner maximization over "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\eta ,"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.512,
+            0.092,
+            0.907,
+            0.137
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\eta = \\mathbf { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " . Similarly, HYPO [33] further assumes that V is kept constant to its initial manual design, and searches for the perturbations ω directly."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.512,
+            0.137,
+            0.909,
+            0.244
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Surrogate-free methods",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " such as LSP [40], AR [29] and OPS [36] do not rely on a surrogate model training process and directly prescribe the perturbations for a given set of clean examples. Therefore, they do not have an adaptive counterpart. In our experiments, we examine the performance of these methods by directly applying them to the training data used by the prompt learning process."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.513,
+            0.254,
+            0.693,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.2. An Overview of A"
+            },
+            {
+              "type": "text",
+              "content": "3",
+              "styles": [
+                "superscript"
+              ]
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.512,
+            0.275,
+            0.909,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 1 provides an overview of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A } ^ { 3 } ."
+            },
+            {
+              "type": "text",
+              "content": " The overall algorithm is in Algorithm 1 of Appendix A.3. A"
+            },
+            {
+              "type": "text",
+              "content": "3",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " provides a pool of diverse image and text augmentation strategies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { A } _ { \\mathrm { i m } }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { A } _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " For each image-class training pair, it first samples "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K _ { \\mathrm { i m } }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " different image and text augmentation strategies, and applies them to the image and text sample respectively. This results in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K _ { \\mathrm { i m } } \\times K _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " distinct augmented pairs for each training sample. Following the prompt learning technique of CoCoOp [42], it then optimizes the prompt embeddings V and the meta-net weights ϱ to align the pair of augmented samples with the minimum similarity. Intuitively, training prompts with the most dissimilar augmented pairs of image and text features forces the model to learn from the under lying features rather than fixating on spurious correlations typically exploited by UEs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.513,
+            0.513,
+            0.902,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3. Augmentations for Image and Text Modalities"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.512,
+            0.535,
+            0.909,
+            0.672
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Image Augmentations",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " As noted by Qin et al. [26], the effectiveness of simple augmentation strategies, such as Grayscale and JPEG compression, is greatly diminished in the context of adaptively synthesized UEs. To address this, we follow the approach of UEraser [25], which proposes an extensive set of image augmentation strategies, including not only standard techniques "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( e . g ."
+            },
+            {
+              "type": "text",
+              "content": " , random cropping, rotation, etc.), and more complex strategies including fractal-based transformations [21], and TrivialAugment [20]."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.512,
+            0.672,
+            0.909,
+            0.807
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Text Augmentations",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Since CLIP models can leverage not only image features but also text embeddings, which makes it particularly effective in zero-shot classification tasks, and few-shot learning facilitated by PL algorithms. In our context of using PL as an effective defense against UEs, we also introduce a set of text augmentation strategies, which include techniques such as random token masking and reordering that operates in the discrete token space of the text input, and small random rotations of the text embeddings."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.512,
+            0.807,
+            0.908,
+            0.839
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the details of the augmentation strategies used in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " for both image and text, please refer to Appendix A.2."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 17,
+          "bbox": [
+            0.513,
+            0.849,
+            0.892,
+            0.866
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.4. Cross-modal Adversarial Feature Alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.512,
+            0.871,
+            0.908,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Given an image x and its corresponding label "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y ,"
+            },
+            {
+              "type": "text",
+              "content": " we can use the above augmentation strategies to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K _ { \\mathrm { i m } }"
+            },
+            {
+              "type": "text",
+              "content": " augmented"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 19,
+          "bbox": [
+            0.484,
+            0.942,
+            0.516,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9510"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 20,
+          "bbox": [
+            0.129,
+            0.963,
+            0.864,
+            0.976
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 4,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.095,
+            0.088,
+            0.904,
+            0.315
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.095,
+                0.088,
+                0.904,
+                0.315
+              ],
+              "image_path": "images/page_4_image_0.jpg",
+              "content": "```mermaid\ngraph LR\n  subgraph Text_Augmentations [\"Text Augmentations\"]\n  A[\"Dalmatian (V)\"] --> B[\"a_tx ~ A_tx\\nsampled aug. pipelines\"]\n  B --> C{\"+\"}\n  C --> D[\"K_tx\"]\n  end\n\n  subgraph Image_Augmentations [\"Image Augmentations\"]\n  E[\"犬群 (Dog)\"] --> F[\"a_im ~ A_im\\nsampled aug. pipelines\"]\n  F --> G[\"K_im\"]\n  G --> H[\"Image Encoder f_im\"]\n  end\n\n  D --> I[\"Text Encoder f_tx\"]\n  I --> J[\"Meta-Net m_ψ\"]\n  H --> J\n  J --> K[\"K interim\"]\n  K -.-> L[\"Adversarial Feature Alignment\"]\n  L --> M[\"K interim (min)\"]\n  M --> N[\"sim(·,·)\\n(K interim)\"]\n  N -.-> L\n  N --> O[\"L: loss to minimize (image features)\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 1,
+              "bbox": [
+                0.09,
+                0.318,
+                0.908,
+                0.361
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 1. An overview of A. For each image-class training pair, A respectively sample "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "K _ { \\mathrm { i m } }"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "K _ { \\mathrm { t x } }"
+                },
+                {
+                  "type": "text",
+                  "content": " different image and text augmentation strategies "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( a _ { \\mathrm { i m } } \\sim \\mathcal { A } _ { \\mathrm { i m } }"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "a _ { \\mathrm { t x } } \\sim \\mathcal { A } _ { \\mathrm { t x } } )"
+                },
+                {
+                  "type": "text",
+                  "content": " . It then optimizes the prompt embeddings V and the meta-net "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "m _ { \\psi }"
+                },
+                {
+                  "type": "text",
+                  "content": " for empirical risk minimization by aligning pairs of augmented samples with the minimum similarity (i.e., maximum loss) between the image and text features."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.09,
+            0.387,
+            0.484,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "images and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " text embeddings, by drawing from the sets of image "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { \\mathrm { i m } } \\sim \\mathcal { A } _ { \\mathrm { i m } }"
+            },
+            {
+              "type": "text",
+              "content": " and text "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { \\mathrm { t x } } \\sim \\mathcal { A } _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " augmentation strategies, and applying them to the image and text embeddings respectively, forming a set of augmented images "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde { \\mathbf { x } } \\triangleq \\{ \\tilde { \\mathbf { x } _ { i } } \\} _ { i = 1 } ^ { K _ { \\mathrm { i m } } }"
+            },
+            {
+              "type": "text",
+              "content": " and a set of text embeddings "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde { \\mathbf { t } } \\triangleq \\{ \\tilde { \\mathbf { t } } _ { j } \\} _ { j = 1 } ^ { K _ { \\mathrm { t x } } }"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.09,
+            0.478,
+            0.485,
+            0.527
+          ],
+          "image_path": "images/page_4_equation_3.jpg",
+          "content": "\\begin{array}{l} \\tilde {\\mathbf {x}} _ {i} = a _ {\\mathrm{im}} (\\mathbf {x}), \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad a _ {\\mathrm{im}} \\sim \\mathcal {A} _ {\\mathrm{im}}, \\text {for} i \\in [ 1, \\dots , K _ {\\mathrm{im}} ], \\\\ \\tilde {\\mathbf {t}} _ {j} = a _ {\\mathrm{tx}} \\left(\\left[ \\mathbf {v} _ {j \\bmod M}, \\mathbf {c} _ {y} \\right]\\right), a _ {\\mathrm{tx}} \\sim \\mathcal {A} _ {\\mathrm{tx}}, \\text {for} j \\in [ 1, \\dots , K _ {\\mathrm{tx}} ], \\tag {7} \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.09,
+            0.528,
+            0.484,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here, we note that the text embedding before augmentation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left[ \\mathbf { v } _ { j \\bmod M } , \\mathbf { c } _ { y } \\right]"
+            },
+            {
+              "type": "text",
+              "content": " is a concatenation of the prompt embedding "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { v } _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " mod "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M"
+            },
+            {
+              "type": "text",
+              "content": " and the class embedding "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { c } _ { y }"
+            },
+            {
+              "type": "text",
+              "content": " . Recall that M is the number of prompt embeddings, and the modulus operation j mod M is to ensure that the prompt embedding is selected cyclically, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " exceeds M."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.09,
+            0.619,
+            0.485,
+            0.709
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using the augmented samples, we can compute the similarity between the image and text features for each pair of augmented samples, assuming "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { S } ( \\tilde { \\mathbf { x } } , \\tilde { \\mathbf { t } } ) \\in [ - 1 , 1 ] ^ { \\tilde { K _ { \\mathrm { i m } } \\times K _ { \\mathrm { t x } } } }"
+            },
+            {
+              "type": "text",
+              "content": " is the (cosine) similarity matrix containing the similarity between each image-text pair of augmented samples. Namely, for the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde { \\bf x } _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde { \\mathbf { t } } _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " pair, we have:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.173,
+            0.719,
+            0.484,
+            0.739
+          ],
+          "image_path": "images/page_4_equation_6.jpg",
+          "content": "\\mathcal {S} (\\tilde {\\mathbf {x}}, \\tilde {\\mathbf {t}}) _ {i j} = \\mathrm{sim} (f _ {\\mathrm{im}} (\\tilde {\\mathbf {x}} _ {i}), f _ {\\mathrm{tx}} (\\tilde {\\mathbf {t}} _ {j})), \\tag {8}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.09,
+            0.749,
+            0.484,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and we optimize the trainable weights in ϑ by maximizing the similarity alignment between the least similar image and text augmented features. Putting it all together, we have the following min-max problem, which can be optimized using mini-batch stochastic gradient descent (SGD):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.138,
+            0.835,
+            0.484,
+            0.862
+          ],
+          "image_path": "images/page_4_equation_8.jpg",
+          "content": "\\left. \\min _ {\\boldsymbol {\\phi}} \\mathbb {E} _ {(\\mathbf {x}, y) \\sim \\mathcal {D} _ {\\mathrm{ue}}} \\left[ \\max _ {(i, j)} \\mathcal {L} \\left(\\mathcal {S} \\left(\\tilde {\\mathbf {x}}, \\tilde {\\mathbf {t}}\\right) _ {i j}, y\\right) \\right], \\quad \\right. \\tag {9}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.09,
+            0.871,
+            0.484,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { L }"
+            },
+            {
+              "type": "text",
+              "content": " is the softmax cross-entropy loss, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } _ { \\mathrm { u e } }"
+            },
+            {
+              "type": "text",
+              "content": " is the set of unlearnable training examples."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.513,
+            0.387,
+            0.896,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5. More Augmentation Diversity with Meta-Net"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.512,
+            0.41,
+            0.908,
+            0.592
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To further enhance the diversity of the augmented samples, we introduce a meta-net "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m _ { \\psi }   :   \\mathbb { R } ^ { d }   \\to   \\mathbb { R } ^ { M \\times ( T - 1 ) \\times h }"
+            },
+            {
+              "type": "text",
+              "content": " with trainable weights "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi ,"
+            },
+            {
+              "type": "text",
+              "content": " which is a small neural network that learns to predict prompt embeddings V from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { \\mathrm { i m } } ( \\tilde { \\mathbf { x } } )"
+            },
+            {
+              "type": "text",
+              "content": " , i.e., the feature extracted from an augmented image by the image encoder. This allows us to generate more diverse augmented text embeddings in addition to the text augmentation strategies. While this can yield "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K _ { \\mathrm { i m } } \\times K _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " different augmented prompt features, with the computational cost of CLIP’s feature extraction, we only use the meta-net for a random aug mented image for each augmented text embedding. Using the meta-net, the similarity matrix in (8) thus becomes:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.542,
+            0.605,
+            0.71,
+            0.623
+          ],
+          "image_path": "images/page_4_equation_12.jpg",
+          "content": "\\mathcal {S} (\\tilde {\\mathbf {x}}, \\tilde {\\mathbf {t}}) _ {i j} = \\mathrm{sim} (\\mathbf {p} _ {i}, \\mathbf {q} _ {j}),"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.532,
+            0.626,
+            0.907,
+            0.641
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(10)"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.586,
+            0.644,
+            0.863,
+            0.661
+          ],
+          "image_path": "images/page_4_equation_14.jpg",
+          "content": "\\mathbf {q} _ {j} = f _ {\\mathrm{tx}} \\left(\\tilde {\\mathbf {t}} _ {j} + m _ {\\phi} \\left(\\mathbf {p} _ {k}\\right)\\right), k \\sim \\mathcal {U} \\left\\{1, K _ {\\mathrm{im}} \\right\\}."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 15,
+          "bbox": [
+            0.514,
+            0.676,
+            0.645,
+            0.694
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4. Experiments"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.512,
+            0.703,
+            0.907,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Datasets",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " For the main experiments, We evaluate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " under 7 datasets, including "
+            },
+            {
+              "type": "text",
+              "content": "ImageNet",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " [6] "
+            },
+            {
+              "type": "text",
+              "content": "Caltech",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-101 [8], Oxford "
+            },
+            {
+              "type": "text",
+              "content": "Flowers",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-102 [22], "
+            },
+            {
+              "type": "text",
+              "content": "Food",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-101 [3], Oxford-"
+            },
+            {
+              "type": "text",
+              "content": "Pets",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " [23], and "
+            },
+            {
+              "type": "text",
+              "content": "UCF",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-101 [31]. These datasets cover various recognition tasks, including classification of generic objects, fine-grained classification, and action recognition. We also proportionally resized and cropped all images to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 2 4 \\times 2 2 4"
+            },
+            {
+              "type": "text",
+              "content": " , the input size for the image encoder "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { \\mathrm { i m } }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.512,
+            0.826,
+            0.907,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Models",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " In our experiments, unless otherwise specified, we use either the "
+            },
+            {
+              "type": "text",
+              "content": "ViT-B/16",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "text",
+              "content": "ResNet-50",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " as the backbone for the image encoder "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { \\mathrm { i m } } ,"
+            },
+            {
+              "type": "text",
+              "content": " and the text encoder "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { \\mathrm { t x } }"
+            },
+            {
+              "type": "text",
+              "content": " is a Transformer-based model [34]. All pretrained models are obtained from the official CLIP repository [27]."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 18,
+          "bbox": [
+            0.484,
+            0.942,
+            0.513,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9511"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 19,
+          "bbox": [
+            0.129,
+            0.963,
+            0.864,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 5,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.09,
+            0.092,
+            0.485,
+            0.243
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Evaluation",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " For all experiments in this section, unless otherwise specified, we consider a common few-shot learning setup with S labeled training examples per class, i.e., S-shot learning, where S = 16 by default. We used a context length T of 4, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = 1"
+            },
+            {
+              "type": "text",
+              "content": " number of prompt embeddings. For all surrogate-based attacks we optimized perturbations ω for 15 epochs with the cosine annealing scheduler and a learning rate 0.002. For learning, we adopted the SGD optimizer with a momentum of 0.9 and a weight decay of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "5 \\times 1 0 ^ { - 4 }"
+            },
+            {
+              "type": "text",
+              "content": " . We consider the following dataset split protocols:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 1,
+          "bbox": [
+            0.091,
+            0.244,
+            0.486,
+            0.456
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.091,
+                0.244,
+                0.484,
+                0.304
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "text",
+                  "content": "Standard",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " We used the standard train-test splits from [42, 43] to ensure reproducibility. In this setting, all classes are included in the training phase, where each class contains S labeled examples."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.091,
+                0.304,
+                0.484,
+                0.456
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "text",
+                  "content": "Base-to-Novel",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " To better evaluate the model’s generalization ability in few-shot scenarios, we also followed [42] to divide each datasets into two equal and non-overlapping groups of classes, where the first group (base) is used for training the prompt learning model and validation, and the second group (novel) which contains unseen classes is also used for performance testing. For this protocol, we reported the test accuracies on the base classes "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { b } } ,"
+                },
+                {
+                  "type": "text",
+                  "content": " the novel classes "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { n } } ,"
+                },
+                {
+                  "type": "text",
+                  "content": " and also their harmonic mean "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { h } } = 2 / ( \\alpha _ { \\mathrm { b } } ^ { - 1 } + \\alpha _ { \\mathrm { n } } ^ { - 1 } )"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.09,
+            0.457,
+            0.484,
+            0.486
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Unlearnable Example Methods",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Different methods consider distinct perturbation types and perturbation budgets:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.091,
+            0.487,
+            0.484,
+            0.653
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.091,
+                0.487,
+                0.483,
+                0.563
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Surrogate-based methods such as EM [11], REM [9], and HYPO [33], consider "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { \\infty }"
+                },
+                {
+                  "type": "text",
+                  "content": " -bounded perturbations, with a perturbation budget of 8/255. As these methods require surrogate models, we used Section 3.1 to adapt them to the prompt learning setting."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.091,
+                0.563,
+                0.484,
+                0.622
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• LSP [40] and AR [29] both use the ω"
+                },
+                {
+                  "type": "text",
+                  "content": "2",
+                  "styles": [
+                    "subscript"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "-norm perturbations, but their perturbation budgets are different due to their original setups. LSP assumes a perturbation budget of 1.30, while AR uses 1.00."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.091,
+                0.624,
+                0.484,
+                0.653
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• OPS [36] is model-agnostic, and uses the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { 0 } ."
+                },
+                {
+                  "type": "text",
+                  "content": " -norm perturbations with a perturbation budget of 1 by default."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.09,
+            0.655,
+            0.485,
+            0.73
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For additional details regarding the experimental setup, please refer to Appendix B. We will now present the results and main findings of our experiments below. Appendix C provides additional results including sensitivity analysis of the hyperparameters, and more adaptive variants."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.091,
+            0.742,
+            0.349,
+            0.758
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.1. Prompt Learning under UEs"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.09,
+            0.765,
+            0.486,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Prompt learning generalizes well to existing UEs.",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Table 1 compares EM-0 and EM, where EM-0 synthesizes UEs by training ResNet-18 surrogate models from scratch on the Caltech-101 dataset, and EM adapts the EM method to prompt learning using Section 3.1. Notably, we found that UE methods that can effectively thwart [26] supervised learning of small models (e.g., ResNet-18) on small datasets (e.g., CIFAR-10 [14]) are much less effective when transferred to CLIP-based prompt learning algorithms."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.512,
+            0.092,
+            0.906,
+            0.198
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Prompt learning generalizes better with increasing number of shots",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " S. Table 1 also shows that the performance of all prompt learning algorithms increases with the number of shots S, even when all shots are UEs. This trend can be observed across all UE methods, but the adaptive EM method consistently suppresses the performance gains from increasing S the most."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.512,
+            0.199,
+            0.908,
+            0.456
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CoCoOp and ProDA show increased robustness",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " against UEs, while KgCoOp is the most fragile in Table 1. We speculate that this is because the meta-net used in Co-CoOp may be able to absorb the shortcut present in the UEs, and ProDA models the Gaussian distribution of prompt embeddings, making it more robust to input-side perturbations. While trained on clean data, KgCoOp [42] exhibits the best performance, as shown in the “Clean” row of Table 1. However, it is notably prone to UEs, showing the largest performance drop when UEs are introduced, especially when using the adaptive EM method. This suggests that KgCoOp, guided by the regularization to be in close proximity to the initial manual prompts, cannot effectively evade crafted UEs by EM based on the initial prompts. Because of the robustness of CoCoOp under our default number of shots "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( S = 1 6 )"
+            },
+            {
+              "type": "text",
+              "content": " , we chose it as the baseline algorithm for the subsequent experiments."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.512,
+            0.456,
+            0.908,
+            0.547
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Without proper defenses, it is better off not learning",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " from UEs. It is interesting to note that usually, the performance of CoCoOp when trained with UEs is worse than the zero-shot performance. This suggests that UEs can indeed be harmful to the model’s performance. This behavior can be observed in Tables 1 and 2."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 15,
+          "bbox": [
+            0.513,
+            0.558,
+            0.744,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.2. Prompt Learning with A"
+            },
+            {
+              "type": "text",
+              "content": "3",
+              "styles": [
+                "superscript"
+              ]
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.512,
+            0.581,
+            0.907,
+            0.672
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A ^ { 3 } }"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "text",
+              "content": "is very effective (up to 33% better than CoCoOp)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " in mitigating UEs. In Table 2, we observe that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " consistently outperforms CoCoOp across all datasets, producing 15% to 33% higher "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { h } }"
+            },
+            {
+              "type": "text",
+              "content": " than CoCoOp for surrogate-based methods (EM, REM, HYPO), and 6% to 30% higher for surrogatefree methods (LSP, AR, OPS)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.512,
+            0.673,
+            0.909,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The image and text augmentations in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A ^ { 3 } }"
+            },
+            {
+              "type": "text",
+              "content": " are both cru"
+            },
+            {
+              "type": "text",
+              "content": "cial for its effectiveness.",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Table 3 performs an ablation study on the individual contributions of image and text augmentations. We note that using either image-only or text-only augmentations can improve the model’s performance, but the combination of both is the most effective, giving large accuracy gains over CoCoOp."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.512,
+            0.779,
+            0.909,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Simple augmentation strategies fall short of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A ^ { 3 } } ^ { \\flat } \\mathbf { S }"
+            },
+            {
+              "type": "text",
+              "content": " per"
+            },
+            {
+              "type": "text",
+              "content": "formance.",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " We also highlight in Table 3 that applying simple augmentation strategies such as Grayscale and JPEG compression on CoCoOp can certainly gain improvement over the CoCoOp baseline. However, they are still outperformed by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A } ^ { 3 } ,"
+            },
+            {
+              "type": "text",
+              "content": " , sometimes with a large margin (⇒ 25%)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.512,
+            0.871,
+            0.908,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A large arsenal of image augmentation strategies also fall short",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { 3 } { } ^ { \\prime } \\mathbf { s }"
+            },
+            {
+              "type": "text",
+              "content": " performance. Table 3 also shows that while"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 20,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9512"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 21,
+          "bbox": [
+            0.129,
+            0.963,
+            0.864,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 6,
+      "blocks": [
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.093,
+            0.228,
+            0.487,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 0,
+              "bbox": [
+                0.09,
+                0.089,
+                0.485,
+                0.228
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 1. Test accuracies (%) of prompt learning algorithms on an unlearnablility-poisoned Caltech-101 dataset under varying number of shots S. Note that "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{EM-0}"
+                },
+                {
+                  "type": "text",
+                  "content": " is the original EM [11] method, and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { { } ^ { \\circ } E M ^ { \\circ } }"
+                },
+                {
+                  "type": "text",
+                  "content": " is our adaptive variant (Section 3.1). The image encoder of the CLIP model is ResNet-50, and the zero-shot accuracy is 86.00%. We also report the average accuracy across unlearnablity methods (the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\text{\" } A vg.\""
+                },
+                {
+                  "type": "text",
+                  "content": " rows) and prompt learning algorithms (the “Avg.” column). We highlight the best prompt learning algorithm against each unlearnability method in bold, and underline the strongest unlearnability methods for each prompt learning algorithm."
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.093,
+                0.228,
+                0.487,
+                0.515
+              ],
+              "image_path": "images/page_6_table_1.jpg",
+              "content": "<table><tr><td>S</td><td>Method</td><td>CoOp</td><td>CoCoOp</td><td>ProDA</td><td>KgCoOp</td><td>Avg.</td></tr><tr><td rowspan=\"5\">2</td><td>EM-0</td><td>78.23</td><td>80.45</td><td>81.91</td><td>77.86</td><td>79.61</td></tr><tr><td>EM</td><td>61.78</td><td>64.13</td><td>65.05</td><td>59.26</td><td>62.56</td></tr><tr><td>OPS</td><td>74.40</td><td>76.91</td><td>75.75</td><td>73.10</td><td>75.04</td></tr><tr><td>AR</td><td>80.63</td><td>81.83</td><td>80.74</td><td>79.89</td><td>80.77</td></tr><tr><td>Avg.</td><td>73.76</td><td>75.83</td><td>75.86</td><td>72.53</td><td>74.50</td></tr><tr><td rowspan=\"5\">4</td><td>EM-0</td><td>83.29</td><td>85.19</td><td>86.02</td><td>80.83</td><td>83.83</td></tr><tr><td>EM</td><td>68.41</td><td>70.45</td><td>70.14</td><td>64.91</td><td>68.48</td></tr><tr><td>OPS</td><td>78.80</td><td>80.88</td><td>80.15</td><td>78.07</td><td>79.48</td></tr><tr><td>AR</td><td>82.54</td><td>83.70</td><td>84.41</td><td>82.66</td><td>83.33</td></tr><tr><td>Avg.</td><td>78.26</td><td>80.06</td><td>80.18</td><td>76.62</td><td>78.78</td></tr><tr><td rowspan=\"5\">8</td><td>EM-0</td><td>86.18</td><td>89.44</td><td>90.64</td><td>85.42</td><td>87.92</td></tr><tr><td>EM</td><td>70.50</td><td>72.28</td><td>73.03</td><td>67.07</td><td>70.72</td></tr><tr><td>OPS</td><td>80.74</td><td>83.35</td><td>82.63</td><td>79.31</td><td>81.51</td></tr><tr><td>AR</td><td>85.81</td><td>88.41</td><td>88.50</td><td>83.77</td><td>86.62</td></tr><tr><td>Avg.</td><td>80.81</td><td>83.37</td><td>83.70</td><td>78.89</td><td>81.69</td></tr><tr><td rowspan=\"5\">16</td><td>EM-0</td><td>90.76</td><td>90.85</td><td>90.48</td><td>89.60</td><td>90.42</td></tr><tr><td>EM</td><td>71.42</td><td>72.83</td><td>72.10</td><td>69.34</td><td>71.42</td></tr><tr><td>OPS</td><td>82.40</td><td>84.09</td><td>84.43</td><td>80.02</td><td>82.74</td></tr><tr><td>AR</td><td>88.63</td><td>90.74</td><td>90.08</td><td>86.46</td><td>88.98</td></tr><tr><td>Avg.</td><td>83.30</td><td>84.63</td><td>84.27</td><td>81.36</td><td>83.39</td></tr><tr><td>16</td><td>Clean</td><td>91.20</td><td>91.70</td><td>91.60</td><td>91.80</td><td>91.58</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.09,
+            0.534,
+            0.484,
+            0.685
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "UEraser [25] is the most effective strategy to learn from UEs among all tested existing methods, the performance of UEraser is still inferior to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { \\widetilde { 3 } } ,"
+            },
+            {
+              "type": "text",
+              "content": " particularly on HYPO, LSP and AR, with increased perturbation budgets. To preserve image semantics while maximizing augmentation diversity, such image augmentation strategies are often designed with a balance between the two. This trade-off choice may limit the ability to suppress UE perturbations in images. While this is also true for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " , but the additional text augmentation strategies of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " can help to workaround this limitation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.09,
+            0.687,
+            0.484,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Adversarial training (AT) may not be the most effective defense against UEs. As the settings of AT in Table 3 assume "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ell _ { \\infty }"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "text",
+              "content": "-",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "bounded perturbations with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\epsilon   =   8 / 2 5 5 ,"
+            },
+            {
+              "type": "text",
+              "content": " it notably struggles against large "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ell _ { \\infty }"
+            },
+            {
+              "type": "text",
+              "content": " perturbation budgets "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\epsilon = 1 6 / 2 5 5 )"
+            },
+            {
+              "type": "text",
+              "content": " , and other types of perturbation norm-bounds "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\ell _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ell _ { 0 } )"
+            },
+            {
+              "type": "text",
+              "content": " , as it is not designed to handle them. There may also be an intricate balance between accuracy and robustness [38], which could result in a seesaw effect in the performance as the perturbation budget increases."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.09,
+            0.825,
+            0.486,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Increasing the number of shots",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " S improves "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A ^ { 3 } } ^ { , } \\mathbf { s }"
+            },
+            {
+              "type": "text",
+              "content": " per"
+            },
+            {
+              "type": "text",
+              "content": "formance.",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " In Table 4, we found that while CoCoOp’s performance metrics continue to improve with increasing S, it never surpassed the performance of zero-shot CLIP. This echoes the findings in Table 1. On the other hand, A"
+            },
+            {
+              "type": "text",
+              "content": "3",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " im-"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.516,
+            0.214,
+            0.907,
+            0.898
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 5,
+              "bbox": [
+                0.512,
+                0.089,
+                0.908,
+                0.213
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 2. Base-to-novel prompt learning accuracies (%) for CoCoOp and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { A } ^ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " trained with unlearnable examples under "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\ell _ { \\infty }"
+                },
+                {
+                  "type": "text",
+                  "content": " -bounded attacks. Rows with "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\text{\" }+ \\text{\" }"
+                },
+                {
+                  "type": "text",
+                  "content": " indicate when "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathbf { A } ^ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " is applied. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { b } }"
+                },
+                {
+                  "type": "text",
+                  "content": " refers to the model accuracy on poisoned data, while "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathbf { n } }"
+                },
+                {
+                  "type": "text",
+                  "content": " refers to the model accuracy on novel classes, excluding the poisoned classes. We also report the harmonic mean "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { h } }   =   \\dot { 2 } / ( \\alpha _ { \\mathrm { b } } ^ { - 1 } + \\alpha _ { \\mathrm { n } } ^ { - 1 } )"
+                },
+                {
+                  "type": "text",
+                  "content": " . For the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\text{\" }\\Delta  \\text{\" }"
+                },
+                {
+                  "type": "text",
+                  "content": " column, we report the test accuracy drop for the CoCoOp baseline from the clean training setting, and accuracy gain for A over Co-CoOp. The backbone is VIT-B/16."
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.516,
+                0.214,
+                0.907,
+                0.898
+              ],
+              "image_path": "images/page_6_table_6.jpg",
+              "content": "<table><tr><td></td><td>ImNet</td><td>Caltech</td><td>Pets</td><td>Flowers</td><td>Food</td><td>SUN</td><td>UCF</td><td>Avg.</td><td>Δ</td></tr><tr><td colspan=\"10\">Zero-Shot [27]</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>67.50</td><td>92.60</td><td>87.40</td><td>67.90</td><td>82.90</td><td>64.80</td><td>66.10</td><td>75.60</td><td>—</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>60.20</td><td>87.40</td><td>83.70</td><td>60.80</td><td>75.50</td><td>56.90</td><td>59.50</td><td>69.14</td><td>—</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>63.64</td><td>89.00</td><td>85.52</td><td>64.80</td><td>79.05</td><td>60.60</td><td>62.81</td><td>72.20</td><td>—</td></tr><tr><td colspan=\"10\">Baseline (CoCoOp [42])</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>75.25</td><td>96.30</td><td>94.35</td><td>92.86</td><td>90.18</td><td>78.38</td><td>80.53</td><td>86.84</td><td>—</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>69.43</td><td>93.23</td><td>96.88</td><td>70.17</td><td>90.80</td><td>74.72</td><td>73.28</td><td>81.22</td><td>—</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>72.39</td><td>94.74</td><td>95.58</td><td>79.74</td><td>90.34</td><td>76.28</td><td>76.61</td><td>83.67</td><td>—</td></tr><tr><td>+ <eq>\\alpha_{\\text{b}}</eq></td><td>76.03</td><td>97.95</td><td>94.06</td><td>92.41</td><td>90.68</td><td>77.59</td><td>80.25</td><td>87.00</td><td></td></tr><tr><td>+ <eq>\\alpha_{\\text{n}}</eq></td><td>70.47</td><td>93.80</td><td>93.18</td><td>70.29</td><td>91.29</td><td>74.83</td><td>71.89</td><td>80.82</td><td></td></tr><tr><td>+ <eq>\\alpha_{\\text{h}}</eq></td><td>73.09</td><td>95.73</td><td>93.63</td><td>79.74</td><td>90.98</td><td>76.14</td><td>75.88</td><td>83.60</td><td></td></tr><tr><td colspan=\"10\">EM [11] (<eq>\\ell_{\\infty}</eq>, <eq>\\epsilon = 8/255</eq>)</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>56.47</td><td>80.68</td><td>78.44</td><td>74.40</td><td>79.93</td><td>58.90</td><td>63.71</td><td>70.36</td><td>-16.48</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>43.27</td><td>74.90</td><td>76.38</td><td>51.66</td><td>78.15</td><td>53.33</td><td>52.09</td><td>61.40</td><td>-19.82</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>48.77</td><td>77.54</td><td>77.40</td><td>61.03</td><td>79.04</td><td>56.01</td><td>57.38</td><td>65.31</td><td>-18.36</td></tr><tr><td>+ <eq>\\alpha_{\\text{b}}</eq></td><td>73.48</td><td>95.49</td><td>93.71</td><td>91.84</td><td>89.38</td><td>77.65</td><td>79.34</td><td>85.82</td><td>15.46</td></tr><tr><td>+ <eq>\\alpha_{\\text{n}}</eq></td><td>67.85</td><td>93.07</td><td>93.53</td><td>68.08</td><td>88.00</td><td>73.17</td><td>71.69</td><td>79.30</td><td>17.90</td></tr><tr><td>+ <eq>\\alpha_{\\text{h}}</eq></td><td>70.41</td><td>94.34</td><td>93.74</td><td>78.20</td><td>88.87</td><td>75.18</td><td>75.12</td><td>82.27</td><td>16.96</td></tr><tr><td colspan=\"10\">REM [9] (<eq>\\ell_{\\infty}</eq>, <eq>\\epsilon = 8/255</eq>)</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>43.51</td><td>62.63</td><td>64.60</td><td>61.98</td><td>60.21</td><td>48.29</td><td>50.53</td><td>55.94</td><td>-30.90</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>30.49</td><td>54.77</td><td>60.12</td><td>46.64</td><td>58.08</td><td>44.30</td><td>41.98</td><td>48.05</td><td>-33.16</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>35.74</td><td>58.39</td><td>62.25</td><td>53.17</td><td>59.06</td><td>46.18</td><td>46.02</td><td>51.54</td><td>-32.12</td></tr><tr><td>+ <eq>\\alpha_{\\text{b}}</eq></td><td>72.76</td><td>94.52</td><td>93.28</td><td>91.00</td><td>88.06</td><td>76.94</td><td>78.46</td><td>85.00</td><td>29.06</td></tr><tr><td>+ <eq>\\alpha_{\\text{n}}</eq></td><td>66.42</td><td>92.16</td><td>91.94</td><td>66.74</td><td>87.34</td><td>71.98</td><td>71.22</td><td>78.26</td><td>30.21</td></tr><tr><td>+ <eq>\\alpha_{\\text{h}}</eq></td><td>69.37</td><td>93.69</td><td>92.74</td><td>76.73</td><td>87.54</td><td>74.43</td><td>74.94</td><td>81.35</td><td>29.80</td></tr><tr><td colspan=\"10\">HYPO [33] (<eq>\\ell_{\\infty}</eq>, <eq>\\epsilon = 8/255</eq>)</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>40.08</td><td>58.59</td><td>59.83</td><td>57.33</td><td>56.50</td><td>44.11</td><td>47.66</td><td>52.01</td><td>-34.83</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>30.64</td><td>54.82</td><td>57.11</td><td>44.76</td><td>56.90</td><td>41.25</td><td>43.58</td><td>47.01</td><td>-34.21</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>34.68</td><td>56.57</td><td>58.46</td><td>50.30</td><td>56.55</td><td>42.47</td><td>45.45</td><td>49.21</td><td>-34.46</td></tr><tr><td>+ <eq>\\alpha_{\\text{b}}</eq></td><td>71.80</td><td>94.28</td><td>93.59</td><td>90.75</td><td>88.55</td><td>77.67</td><td>78.92</td><td>85.08</td><td>33.07</td></tr><tr><td>+ <eq>\\alpha_{\\text{n}}</eq></td><td>65.29</td><td>90.37</td><td>92.01</td><td>65.25</td><td>84.93</td><td>70.04</td><td>69.85</td><td>76.82</td><td>29.81</td></tr><tr><td>+ <eq>\\alpha_{\\text{h}}</eq></td><td>68.39</td><td>92.13</td><td>93.05</td><td>76.20</td><td>86.69</td><td>73.73</td><td>74.43</td><td>80.66</td><td>31.45</td></tr><tr><td colspan=\"10\">LSP [40] (<eq>\\ell_{2}</eq>, <eq>\\epsilon = 1.30</eq>)</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>49.72</td><td>68.49</td><td>65.99</td><td>63.33</td><td>61.88</td><td>50.69</td><td>51.47</td><td>58.80</td><td>-28.04</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>36.04</td><td>56.29</td><td>63.35</td><td>50.62</td><td>59.41</td><td>46.20</td><td>48.88</td><td>51.54</td><td>-29.67</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>41.79</td><td>61.84</td><td>64.47</td><td>56.18</td><td>60.53</td><td>48.43</td><td>50.04</td><td>54.75</td><td>-28.91</td></tr><tr><td>+ <eq>\\alpha_{\\text{b}}</eq></td><td>72.53</td><td>94.97</td><td>94.02</td><td>91.29</td><td>88.64</td><td>77.04</td><td>78.17</td><td>85.24</td><td>26.44</td></tr><tr><td>+ <eq>\\alpha_{\\text{n}}</eq></td><td>67.37</td><td>92.44</td><td>93.80</td><td>67.52</td><td>87.40</td><td>72.21</td><td>71.11</td><td>78.84</td><td>27.30</td></tr><tr><td>+ <eq>\\alpha_{\\text{h}}</eq></td><td>69.97</td><td>93.74</td><td>94.27</td><td>77.09</td><td>87.77</td><td>74.47</td><td>74.54</td><td>81.69</td><td>26.94</td></tr><tr><td colspan=\"10\">AR [29] (<eq>\\ell_{2}</eq>, <eq>\\epsilon = 1.00</eq>)</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>42.33</td><td>61.73</td><td>60.58</td><td>59.01</td><td>57.20</td><td>46.23</td><td>49.06</td><td>53.73</td><td>-33.11</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>31.67</td><td>56.42</td><td>58.08</td><td>44.54</td><td>55.96</td><td>43.30</td><td>42.69</td><td>47.52</td><td>-33.69</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>36.29</td><td>59.00</td><td>59.27</td><td>50.63</td><td>56.52</td><td>44.74</td><td>45.67</td><td>50.30</td><td>-33.37</td></tr><tr><td>+ <eq>\\alpha_{\\text{b}}</eq></td><td>71.68</td><td>94.38</td><td>92.55</td><td>90.82</td><td>87.77</td><td>76.67</td><td>77.58</td><td>84.49</td><td>30.76</td></tr><tr><td>+ <eq>\\alpha_{\\text{n}}</eq></td><td>66.09</td><td>91.59</td><td>91.67</td><td>66.06</td><td>86.25</td><td>71.19</td><td>70.86</td><td>77.67</td><td>30.15</td></tr><tr><td>+ <eq>\\alpha_{\\text{h}}</eq></td><td>68.74</td><td>92.98</td><td>92.10</td><td>78.40</td><td>87.00</td><td>73.93</td><td>74.21</td><td>81.05</td><td>30.75</td></tr><tr><td colspan=\"10\">OPS [36] (<eq>\\ell_{0}</eq>, <eq>\\epsilon = 1</eq>)</td></tr><tr><td><eq>\\alpha_{\\text{b}}</eq></td><td>68.28</td><td>88.60</td><td>86.20</td><td>81.59</td><td>85.65</td><td>65.60</td><td>68.98</td><td>77.84</td><td>-9.00</td></tr><tr><td><eq>\\alpha_{\\text{n}}</eq></td><td>54.50</td><td>80.21</td><td>80.83</td><td>58.70</td><td>79.06</td><td>60.49</td><td>60.32</td><td>67.73</td><td>-13.49</td></tr><tr><td><eq>\\alpha_{\\text{h}}</eq></td><td>60.57</td><td>84.05</td><td>83.45</td><td>68.28</td><td>82.24</td><td>62.89</td><td>64.39</td><td>72.37</td><td>-11.40</td></tr><tr><td>+ <eq>\\alpha_{\\text{b}}</eq></td><td>73.08</td><td>95.10</td><td>93.39</td><td>91.50</td><td>89.56</td><td>76.97</td><td>78.13</td><td>83.96</td><td>7.55</td></tr><tr><td>+ <eq>\\alpha_{\\text{n}}</eq></td><td>67.20</td><td>92.63</td><td>93.88</td><td>68.03</td><td>88.01</td><td>72.64</td><td>71.28</td><td>79.10</td><td>11.37</td></tr><tr><td>+ <eq>\\alpha_{\\text{h}}</eq></td><td>70.06</td><td>93.86</td><td>93.63</td><td>78.05</td><td>88.87</td><td>74.69</td><td>74.50</td><td>81.42</td><td>9.68</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9513"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.13,
+            0.963,
+            0.863,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 7,
+      "blocks": [
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.092,
+            0.146,
+            0.56,
+            0.33
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 0,
+              "bbox": [
+                0.09,
+                0.09,
+                0.561,
+                0.145
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 3. Clean test accuracies (%) on Caltech-101 datasets (16-shots, standard protocol). “UEr” means UEraser. Baseline and compared methods are adapted to CoCoOp [42]. Image encoder backbone is ResNet-50. “Text” and “Image” refer to the augmented modalities, “Full” includes both."
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.092,
+                0.146,
+                0.56,
+                0.33
+              ],
+              "image_path": "images/page_7_table_1.jpg",
+              "content": "<table><tr><td colspan=\"2\"></td><td>Baseline</td><td>Gray</td><td>JPEG</td><td>AT</td><td>UEr</td><td>Text</td><td>Image</td><td>Full</td></tr><tr><td rowspan=\"2\">EM</td><td><eq>^{8/255}</eq></td><td>75.53</td><td>74.28</td><td>79.21</td><td>82.84</td><td>90.37</td><td>84.69</td><td>92.51</td><td>94.28</td></tr><tr><td><eq>^{16/255}</eq></td><td>59.36</td><td>60.96</td><td>64.58</td><td>77.03</td><td>88.79</td><td>82.45</td><td>90.40</td><td>91.86</td></tr><tr><td rowspan=\"2\">REM</td><td><eq>^{8/255}</eq></td><td>52.33</td><td>63.71</td><td>70.22</td><td>78.96</td><td>90.73</td><td>86.89</td><td>92.32</td><td>93.88</td></tr><tr><td><eq>^{16/255}</eq></td><td>37.97</td><td>59.54</td><td>66.78</td><td>74.10</td><td>86.96</td><td>83.33</td><td>89.35</td><td>90.25</td></tr><tr><td rowspan=\"2\">HYPO</td><td><eq>^{8/255}</eq></td><td>47.36</td><td>50.02</td><td>64.56</td><td>78.89</td><td>87.74</td><td>84.07</td><td>91.47</td><td>93.21</td></tr><tr><td><eq>^{16/255}</eq></td><td>27.18</td><td>34.67</td><td>59.11</td><td>72.26</td><td>82.48</td><td>79.27</td><td>86.09</td><td>89.33</td></tr><tr><td rowspan=\"2\">LSP</td><td>1.30</td><td>43.23</td><td>64.70</td><td>80.01</td><td>81.58</td><td>90.66</td><td>83.37</td><td>92.83</td><td>94.02</td></tr><tr><td>1.74</td><td>25.41</td><td>42.58</td><td>68.30</td><td>76.29</td><td>83.05</td><td>80.77</td><td>87.24</td><td>91.62</td></tr><tr><td rowspan=\"2\">AR</td><td>1.00</td><td>50.18</td><td>53.24</td><td>81.40</td><td>76.73</td><td>90.12</td><td>84.96</td><td>91.63</td><td>93.41</td></tr><tr><td>1.30</td><td>32.65</td><td>35.57</td><td>69.26</td><td>64.22</td><td>82.89</td><td>81.17</td><td>86.61</td><td>90.06</td></tr><tr><td rowspan=\"2\">OPS</td><td>1</td><td>86.17</td><td>86.52</td><td>89.73</td><td>83.16</td><td>88.61</td><td>89.93</td><td>90.50</td><td>93.86</td></tr><tr><td>4</td><td>73.24</td><td>73.34</td><td>80.23</td><td>69.59</td><td>80.12</td><td>81.37</td><td>84.07</td><td>87.10</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.586,
+            0.133,
+            0.907,
+            0.328
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.584,
+                0.092,
+                0.908,
+                0.132
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 4. Base-to-novel metrics for different number of shots "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "S   \\in   \\{ 0 , 2 , 4 , 8 , 1 6 \\}"
+                },
+                {
+                  "type": "text",
+                  "content": " . The image encoder backbone is ResNet-50."
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.586,
+                0.133,
+                0.907,
+                0.328
+              ],
+              "image_path": "images/page_7_table_3.jpg",
+              "content": "<table><tr><td colspan=\"2\">S</td><td colspan=\"2\">Caltech</td><td colspan=\"2\">Food</td><td colspan=\"2\">ImageNet</td></tr><tr><td colspan=\"2\"><eq>A^3</eq></td><td>-</td><td>+</td><td>-</td><td>+</td><td>-</td><td>+</td></tr><tr><td rowspan=\"3\">0</td><td><eq>α_b</eq></td><td colspan=\"2\">86.7</td><td colspan=\"2\">78.1</td><td colspan=\"2\">62.7</td></tr><tr><td><eq>α_n</eq></td><td colspan=\"2\">78.4</td><td colspan=\"2\">74.9</td><td colspan=\"2\">52.8</td></tr><tr><td><eq>α_h</eq></td><td colspan=\"2\">82.6</td><td colspan=\"2\">76.4</td><td colspan=\"2\">57.2</td></tr><tr><td rowspan=\"3\">2</td><td><eq>α_b</eq></td><td>69.34</td><td>88.51</td><td>66.11</td><td>84.34</td><td>44.04</td><td>66.04</td></tr><tr><td><eq>α_n</eq></td><td>61.78</td><td>83.45</td><td>60.29</td><td>81.77</td><td>30.9</td><td>60.03</td></tr><tr><td><eq>α_h</eq></td><td>65.34</td><td>85.91</td><td>63.07</td><td>83.04</td><td>36.32</td><td>62.89</td></tr><tr><td rowspan=\"3\">4</td><td><eq>α_b</eq></td><td>76.09</td><td>91.23</td><td>75.21</td><td>87.81</td><td>50.43</td><td>68.1</td></tr><tr><td><eq>α_n</eq></td><td>67.51</td><td>87.93</td><td>66.19</td><td>86.15</td><td>36.61</td><td>62.9</td></tr><tr><td><eq>α_h</eq></td><td>71.54</td><td>89.55</td><td>70.41</td><td>86.97</td><td>42.42</td><td>65.4</td></tr><tr><td rowspan=\"3\">8</td><td><eq>α_b</eq></td><td>77.86</td><td>92.89</td><td>75.85</td><td>88.03</td><td>51.65</td><td>69.01</td></tr><tr><td><eq>α_n</eq></td><td>70.19</td><td>89.11</td><td>70.09</td><td>86.44</td><td>39.22</td><td>64.58</td></tr><tr><td><eq>α_h</eq></td><td>73.83</td><td>90.96</td><td>72.86</td><td>87.23</td><td>44.58</td><td>66.72</td></tr><tr><td rowspan=\"3\">16</td><td><eq>α_b</eq></td><td>77.52</td><td>93.36</td><td>76.67</td><td>88.52</td><td>53.72</td><td>71.08</td></tr><tr><td><eq>α_n</eq></td><td>72.43</td><td>91.02</td><td>73.34</td><td>87.76</td><td>40.74</td><td>64.95</td></tr><tr><td><eq>α_h</eq></td><td>74.89</td><td>92.18</td><td>74.97</td><td>88.14</td><td>46.34</td><td>67.88</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.091,
+            0.342,
+            0.49,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.091,
+                0.342,
+                0.49,
+                0.746
+              ],
+              "image_path": "images/page_7_image_4.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 5,
+              "bbox": [
+                0.091,
+                0.749,
+                0.483,
+                0.817
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 2. CoCoOp vs. A"
+                },
+                {
+                  "type": "text",
+                  "content": "3",
+                  "styles": [
+                    "superscript"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " under partial poisoning with rates "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "R \\in"
+                },
+                {
+                  "type": "text",
+                  "content": " "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\{ { \\textstyle { \\frac { 1 } { 8 } } } , { \\textstyle { \\frac { 1 } { 4 } } } , { \\textstyle { \\frac { 1 } { 2 } } } , 1 \\}"
+                },
+                {
+                  "type": "text",
+                  "content": " (x-axis, %). Accuracy metrics (y-axis, %): "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { u n l e a r n } }"
+                },
+                {
+                  "type": "text",
+                  "content": " = UEs in the training set; "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { o r i g i n a l } } = \\mathbf { o r i g }"
+                },
+                {
+                  "type": "text",
+                  "content": " ginal clean images of the UEs; "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { t e s t } } = \\mathrm { c l e a n }"
+                },
+                {
+                  "type": "text",
+                  "content": " images in the test set; "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha _ { \\mathrm { t r a i n } }"
+                },
+                {
+                  "type": "text",
+                  "content": " = clean images in the training set. The image encoder backbone is ResNet-50."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.09,
+            0.826,
+            0.485,
+            0.856
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "proves notably with increasing S, where CoCoOp falls behind while "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " leads by a large margin."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.09,
+            0.856,
+            0.486,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With partially poisoned datasets, A",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "3",
+              "styles": [
+                "bold",
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "text",
+              "content": "learns the underlying features while CoCoOp likely does not",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". In practice, model trainers may curate datasets from a variety of sources,"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.512,
+            0.344,
+            0.909,
+            0.661
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and only a portion of the data may contain UE perturbations. Training on such partially poisoned datasets typically result in minimal performance loss over the clean dataset, and is not indicative of the model’s ability to learn the underlying features of the UEs. In Figure 2, we thus investigate whether CoCoOp and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " can learn such features when trained on partially poisoned datasets. It evaluates the accuracy metrics of the unlearnable part "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\alpha _ { \\mathrm { u n l e a r n } } )"
+            },
+            {
+              "type": "text",
+              "content": " , the original images of the unlearnable part "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\alpha _ { \\mathrm { o r i g i n a l } } , i . e ."
+            },
+            {
+              "type": "text",
+              "content": " , before perturbation), the samples from the test set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\alpha _ { \\mathrm { t e s t } } ) ,"
+            },
+            {
+              "type": "text",
+              "content": " and the clean part of the train set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\alpha _ { \\mathrm { t r a i n } } )"
+            },
+            {
+              "type": "text",
+              "content": " . Importantly, if the model can learn the underlying features, then the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { o r i g i n a l } }"
+            },
+            {
+              "type": "text",
+              "content": " should be close to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { t r a i n } }"
+            },
+            {
+              "type": "text",
+              "content": " , otherwise, it should be close to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { t e s t } }"
+            },
+            {
+              "type": "text",
+              "content": " . It is evident that CoCoOp actually struggles to learn useful features from the UEs, as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { o r i g i n a l } }"
+            },
+            {
+              "type": "text",
+              "content": " closely tracks "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { t e s t } }"
+            },
+            {
+              "type": "text",
+              "content": " , while "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { u n l e a r n } }"
+            },
+            {
+              "type": "text",
+              "content": " is higher than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { t r a i n } } ."
+            },
+            {
+              "type": "text",
+              "content": " This suggests that CoCoOp is likely overfitting to the UE perturbations, even more so than the clean training data. In contrast, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " shows that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { o r i g i n a l } }"
+            },
+            {
+              "type": "text",
+              "content": " follows "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { t r a i n } }"
+            },
+            {
+              "type": "text",
+              "content": " closely, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { u n l e a r n } }"
+            },
+            {
+              "type": "text",
+              "content": " is close to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha _ { \\mathrm { t e s t } }"
+            },
+            {
+              "type": "text",
+              "content": " , hinting that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " is learning the underlying features instead of the UE-crafted perturbations."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.514,
+            0.679,
+            0.634,
+            0.694
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5. Conclusion"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.512,
+            0.704,
+            0.909,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, PLs’ generalization combined with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " make them challenging adversaries for traditional UEs. Second, Augmenting PL with diverse image and text perturbations significantly improves their resilience against UEs, pointing to the need for multimodal considerations in both UEs and countermeasures. Third, compared to simpler augmentations or adversarial training, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { 3 } { } ^ { ; } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " cross-modal feature alignment proved especially effective in mitigating PL’s adaptation to UEs than preexisting learning methods. Finally, we emphasize the need for adaptive, multimodal approaches in UEs and open pathways toward more sophisticated protections against unauthorized training in an era of large multimodal and pretrained models."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9514"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.13,
+            0.963,
+            0.864,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 8,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.092,
+            0.091,
+            0.244,
+            0.108
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Acknowledgment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.09,
+            0.114,
+            0.486,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This work is supported in part by National Natural Science Foundation of China (62376263, 62372443 and 62271496), Guangdong Basic and Applied Basic Research Foundation (2023B1515130002), Natural Science Foundation of Guangdong (2024A1515030209 and 2024A1515011970), Shenzhen Science and Technology Innovation Commission (JCYJ20230807140507015 and JCYJ20220531100804009), and Yu-Liang Lu’s Project Team Development Funding (KY23A102). This work was carried out in part at SICC, which is supported by SKL-IOTSC, University of Macau."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.093,
+            0.279,
+            0.188,
+            0.294
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "References"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.096,
+            0.301,
+            0.49,
+            0.904
+          ],
+          "content": [
+            {
+              "type": "ref_text",
+              "index": 4,
+              "bbox": [
+                0.1,
+                0.304,
+                0.486,
+                0.387
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[1] Manuele Barraco, Marcella Cornia, Silvia Cascianelli, Lorenzo Baraldi, and Rita Cucchiara. The unreasonable effectiveness of clip features for image captioning: An experimental analysis. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, pages 4662–4670, 2022. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 5,
+              "bbox": [
+                0.1,
+                0.388,
+                0.484,
+                0.442
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[2] Battista Biggio and Fabio Roli. Wild patterns: Ten years after the rise of adversarial machine learning. In Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security, pages 2154–2156, 2018. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 6,
+              "bbox": [
+                0.101,
+                0.444,
+                0.485,
+                0.498
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[3] Lukas Bossard, Matthieu Guillaumin, and Luc Van Gool. Food-101 – mining discriminative components with random forests. In Computer Vision – ECCV 2014, pages 446–461. Springer International Publishing, 2014. 5, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 7,
+              "bbox": [
+                0.102,
+                0.5,
+                0.484,
+                0.567
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[4] Xinquan Chen, Xitong Gao, Juanjuan Zhao, Kejiang Ye, and Cheng-Zhong Xu. AdvDiffuser: Natural adversarial example synthesis with diffusion models. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 4562–4572, 2023. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 8,
+              "bbox": [
+                0.102,
+                0.568,
+                0.484,
+                0.621
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[5] Jacob Clarysse, Julia Horrmann, and Fanny Yang. Why ad- ¨ versarial training can hurt robust accuracy. In The Eleventh International Conference on Learning Representations, 2023. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 9,
+              "bbox": [
+                0.102,
+                0.624,
+                0.484,
+                0.679
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[6] Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. ImageNet: A large-scale hierarchical image database. In 2009 IEEE conference on computer vision and pattern recognition, pages 248–255. Ieee, 2009. 5, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 10,
+              "bbox": [
+                0.102,
+                0.68,
+                0.484,
+                0.734
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[7] Prafulla Dhariwal and Alexander Nichol. Diffusion models beat GANs on image synthesis. In Advances in Neural Information Processing Systems, pages 8780–8794. Curran Associates, Inc., 2021. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 11,
+              "bbox": [
+                0.102,
+                0.735,
+                0.484,
+                0.803
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[8] Li Fei-Fei, Rob Fergus, and Pietro Perona. Learning generative visual models from few training examples: An incremental Bayesian approach tested on 101 object categories. In 2004 conference on computer vision and pattern recognition workshop, pages 178–178. IEEE, 2004. 5, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 12,
+              "bbox": [
+                0.102,
+                0.805,
+                0.484,
+                0.858
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[9] Shaopeng Fu, Fengxiang He, Yang Liu, Li Shen, and Dacheng Tao. Robust unlearnable examples: Protecting data against adversarial learning. In International Conference on Learning Representations, 2022. 1, 2, 4, 6, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 13,
+              "bbox": [
+                0.094,
+                0.86,
+                0.484,
+                0.9
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[10] Micah Goldblum, Dimitris Tsipras, Chulin Xie, and et al. Dataset security for machine learning: Data poisoning, backdoor attacks, and defenses. IEEE Transactions on Pattern"
+                }
+              ]
+            }
+          ],
+          "sub_type": "ref_text"
+        },
+        {
+          "type": "list",
+          "index": 14,
+          "bbox": [
+            0.509,
+            0.09,
+            0.912,
+            0.904
+          ],
+          "content": [
+            {
+              "type": "ref_text",
+              "index": 15,
+              "bbox": [
+                0.547,
+                0.093,
+                0.908,
+                0.119
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Analysis and Machine Intelligence, 45(2):1563–1580, 2022. 2"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 16,
+              "bbox": [
+                0.517,
+                0.122,
+                0.906,
+                0.177
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[11] Hanxun Huang, Xingjun Ma, Sarah Monazam Erfani, James Bailey, and Yisen Wang. Unlearnable examples: Making personal data unexploitable. In International Conference on Learning Representations, 2021. 1, 2, 3, 4, 6, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 17,
+              "bbox": [
+                0.517,
+                0.179,
+                0.906,
+                0.234
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[12] Andrew Ilyas, Shibani Santurkar, Dimitris Tsipras, Logan Engstrom, Brandon Tran, and Aleksander Madry. Adversarial examples are not bugs, they are features. Advances in neural information processing systems, 32, 2019. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 18,
+              "bbox": [
+                0.517,
+                0.236,
+                0.908,
+                0.317
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[13] Chao Jia, Yinfei Yang, Ye Xia, Yi-Ting Chen, Zarana Parekh, Hieu Pham, Quoc Le, Yun-Hsuan Sung, Zhen Li, and Tom Duerig. Scaling up visual and vision-language representation learning with noisy text supervision. In International conference on machine learning, pages 4904–4916. PMLR, 2021. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 19,
+              "bbox": [
+                0.517,
+                0.321,
+                0.909,
+                0.375
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[14] Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton. The CIFAR-10 and CIFAR-100 datasets, 2014. Available at: http://www.cs.toronto.edu/˜kriz/cifar. html. 6"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 20,
+              "bbox": [
+                0.517,
+                0.378,
+                0.908,
+                0.446
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[15] Ziyi Lin, Shijie Geng, Renrui Zhang, Peng Gao, Gerard De Melo, Xiaogang Wang, Jifeng Dai, Yu Qiao, and Hongsheng Li. Frozen clip models are efficient video learners. In European Conference on Computer Vision, pages 388–404. Springer, 2022. 1"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 21,
+              "bbox": [
+                0.517,
+                0.449,
+                0.907,
+                0.503
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[16] Zhuoran Liu, Zhengyu Zhao, and Martha Larson. Image shortcut squeezing: Countering perturbative availability poisons with compression. In International conference on machine learning, 2023. 2, 3, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 22,
+              "bbox": [
+                0.517,
+                0.505,
+                0.908,
+                0.559
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[17] Yuning Lu, Jianzhuang Liu, Yonggang Zhang, Yajing Liu, and Xinmei Tian. Prompt distribution learning. In Proceedings of the IEEE/CVF International Conference on Computer Vision, 2022. 4"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 23,
+              "bbox": [
+                0.518,
+                0.563,
+                0.908,
+                0.645
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[18] Yiwei Ma, Guohai Xu, Xiaoshuai Sun, Ming Yan, Ji Zhang, and Rongrong Ji. X-clip: End-to-end multi-grained contrastive learning for video-text retrieval. In Proceedings of the 30th ACM International Conference on Multimedia, page 638–647, New York, NY, USA, 2022. Association for Computing Machinery. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 24,
+              "bbox": [
+                0.517,
+                0.647,
+                0.908,
+                0.701
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[19] Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and Adrian Vladu. Towards deep learning models resistant to adversarial attacks. arXiv preprint arXiv:1706.06083, 2017. 2, 3, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 25,
+              "bbox": [
+                0.517,
+                0.704,
+                0.909,
+                0.759
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[20] Samuel G Muller and Frank Hutter. Trivialaugment: Tuning- ¨ free yet state-of-the-art data augmentation. In Proceedings of the IEEE/CVF international conference on computer vision, pages 774–782, 2021. 4, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 26,
+              "bbox": [
+                0.517,
+                0.761,
+                0.908,
+                0.843
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[21] Anguelos Nicolaou, Vincent Christlein, Edgar Riba, Jian Shi, Georg Vogeler, and Mathias Seuret. Tormentor: Deterministic dynamic-path, data augmentations with fractals. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, pages 2707–2711, 2022. 4, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 27,
+              "bbox": [
+                0.517,
+                0.846,
+                0.906,
+                0.901
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[22] Maria-Elena Nilsback and Andrew Zisserman. Automated flower classification over a large number of classes. In 2008 Sixth Indian conference on computer vision, graphics & image processing, pages 722–729. IEEE, 2008. 5, 11"
+                }
+              ]
+            }
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true
+        },
+        {
+          "type": "page_number",
+          "index": 28,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9515"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 29,
+          "bbox": [
+            0.129,
+            0.963,
+            0.864,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 9,
+      "blocks": [
+        {
+          "type": "list",
+          "index": 0,
+          "bbox": [
+            0.089,
+            0.09,
+            0.49,
+            0.904
+          ],
+          "content": [
+            {
+              "type": "ref_text",
+              "index": 1,
+              "bbox": [
+                0.093,
+                0.092,
+                0.486,
+                0.147
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[23] Omkar M Parkhi, Andrea Vedaldi, Andrew Zisserman, and CV Jawahar. Cats and dogs. In 2012 IEEE conference on computer vision and pattern recognition, pages 3498–3505. IEEE, 2012. 5, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 2,
+              "bbox": [
+                0.093,
+                0.148,
+                0.486,
+                0.218
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[24] Tianrui Qin, Xitong Gao, Juanjuan Zhao, and Kejiang Ye. Destruction-restoration suppresses data protection perturbations against diffusion models. In 2023 IEEE 35th International Conference on Tools with Artificial Intelligence (IC-TAI), pages 586–594. IEEE, 2023. 1"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 3,
+              "bbox": [
+                0.093,
+                0.218,
+                0.485,
+                0.287
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[25] Tianrui Qin, Xitong Gao, Juanjuan Zhao, Kejiang Ye, and Cheng-Zhong Xu. Learning the unlearnable: Adversarial augmentations suppress unlearnable example attacks. In 4th Workshop on Adversarial Robustness In the Real World (AROW), ICCV 2023, 2023. 2, 3, 4, 7, 12"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 4,
+              "bbox": [
+                0.093,
+                0.288,
+                0.485,
+                0.343
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[26] Tianrui Qin, Xitong Gao, Juanjuan Zhao, Kejiang Ye, and Cheng zhong Xu. APBench: A unified availability poisoning attack and defenses benchmark. Transactions on Machine Learning Research, 2024. 3, 4, 6"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 5,
+              "bbox": [
+                0.093,
+                0.344,
+                0.485,
+                0.426
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[27] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. Learning transferable visual models from natural language supervision. In International conference on machine learning, pages 8748–8763. PMLR, 2021. 3, 5, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 6,
+              "bbox": [
+                0.093,
+                0.427,
+                0.485,
+                0.496
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[28] Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bjorn Ommer. High-resolution image ¨ synthesis with latent diffusion models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 10684–10695, 2022. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 7,
+              "bbox": [
+                0.093,
+                0.497,
+                0.485,
+                0.564
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[29] Pedro Sandoval-Segura, Vasu Singla, Jonas Geiping, Micah Goldblum, Tom Goldstein, and David Jacobs. Autoregressive perturbations for data poisoning. Advances in Neural Information Processing Systems, 35:27374–27386, 2022. 1, 2, 3, 4, 6, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 8,
+              "bbox": [
+                0.093,
+                0.566,
+                0.485,
+                0.621
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[30] Mainak Singha, Harsh Pal, Ankit Jha, and Biplab Banerjee. Ad-clip: Adapting domains in prompt space using clip. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 4355–4364, 2023. 1"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 9,
+              "bbox": [
+                0.093,
+                0.622,
+                0.485,
+                0.663
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[31] Khurram Soomro, Amir Roshan Zamir, and Mubarak Shah. UCF101: A dataset of 101 human actions classes from videos in the wild. arXiv preprint arXiv:1212.0402, 2012. 5, 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 10,
+              "bbox": [
+                0.093,
+                0.664,
+                0.485,
+                0.746
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[32] Zeyi Sun, Ye Fang, Tong Wu, Pan Zhang, Yuhang Zang, Shu Kong, Yuanjun Xiong, Dahua Lin, and Jiaqi Wang. Alphaclip: A clip model focusing on wherever you want. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pages 13019–13029, 2024. 1"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 11,
+              "bbox": [
+                0.093,
+                0.748,
+                0.485,
+                0.815
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[33] Lue Tao, Lei Feng, Jinfeng Yi, Sheng-Jun Huang, and Songcan Chen. Better safe than sorry: Preventing delusive adversaries with adversarial training. Advances in Neural Information Processing Systems, 34:16209–16225, 2021. 2, 4, 6, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 12,
+              "bbox": [
+                0.093,
+                0.817,
+                0.485,
+                0.873
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[34] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, !ukasz Kaiser, and Illia Polosukhin. Attention is all you need. Advances in neural information processing systems, 30, 2017. 5"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 13,
+              "bbox": [
+                0.093,
+                0.873,
+                0.485,
+                0.902
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[35] Jianyi Wang, Kelvin CK Chan, and Chen Change Loy. Exploring clip for assessing the look and feel of images. In"
+                }
+              ]
+            }
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true
+        },
+        {
+          "type": "list",
+          "index": 14,
+          "bbox": [
+            0.513,
+            0.091,
+            0.911,
+            0.615
+          ],
+          "content": [
+            {
+              "type": "ref_text",
+              "index": 15,
+              "bbox": [
+                0.545,
+                0.093,
+                0.908,
+                0.12
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Proceedings of the AAAI Conference on Artificial Intelligence, pages 2555–2563, 2023. 1"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 16,
+              "bbox": [
+                0.516,
+                0.122,
+                0.908,
+                0.177
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[36] Shutong Wu, Sizhe Chen, Cihang Xie, and Xiaolin Huang. One-pixel shortcut: on the learning preference of deep neural networks. In International Conference on Learning Representations, 2023. 1, 2, 3, 4, 6, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 17,
+              "bbox": [
+                0.516,
+                0.179,
+                0.908,
+                0.247
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[37] Jianxiong Xiao, James Hays, Krista A. Ehinger, Aude Oliva, and Antonio Torralba. Sun database: Large-scale scene recognition from abbey to zoo. In 2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, pages 3485–3492, 2010. 11"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 18,
+              "bbox": [
+                0.516,
+                0.249,
+                0.907,
+                0.317
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[38] Yao-Yuan Yang, Cyrus Rashtchian, Hongyang Zhang, Russ R Salakhutdinov, and Kamalika Chaudhuri. A closer look at accuracy vs. robustness. In Advances in Neural Information Processing Systems, pages 8588–8601. Curran Associates, Inc., 2020. 3, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 19,
+              "bbox": [
+                0.516,
+                0.319,
+                0.908,
+                0.387
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[39] Hantao Yao, Rui Zhang, and Changsheng Xu. Visuallanguage prompt tuning with knowledge-guided context optimization. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 6757–6767, 2023. 4"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 20,
+              "bbox": [
+                0.516,
+                0.389,
+                0.908,
+                0.445
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[40] Da Yu, Huishuai Zhang, Wei Chen, Jian Yin, and Tie-Yan Liu. Availability attacks create shortcuts. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, pages 2367–2376, 2022. 1, 2, 3, 4, 6, 7"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 21,
+              "bbox": [
+                0.516,
+                0.446,
+                0.908,
+                0.502
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[41] Yunrui Yu, Xitong Gao, and Cheng-Zhong Xu. LAFIT: Efficient and reliable evaluation of adversarial defenses with latent features. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 46(1):354–369, 2024. 3"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 22,
+              "bbox": [
+                0.516,
+                0.503,
+                0.908,
+                0.559
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[42] Kaiyang Zhou, Jingkang Yang, Chen Change Loy, and Ziwei Liu. Conditional prompt learning for vision-language models. In Proceedings of the IEEE/CVF International Conference on Computer Vision, 2022. 4, 6, 7, 8"
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 23,
+              "bbox": [
+                0.516,
+                0.559,
+                0.908,
+                0.614
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[43] Kaiyang Zhou, Jingkang Yang, Chen Change Loy, and Ziwei Liu. Learning to prompt for vision-language models. International Journal of Computer Vision, 130(9):2337–2348, 2022. 4, 6"
+                }
+              ]
+            }
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true
+        },
+        {
+          "type": "page_number",
+          "index": 24,
+          "bbox": [
+            0.484,
+            0.942,
+            0.514,
+            0.953
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9516"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 25,
+          "bbox": [
+            0.13,
+            0.963,
+            0.863,
+            0.975
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authorized licensed use limited to: University of Pittsburgh. Downloaded on July 07,2026 at 16:00:28 UTC from IEEE Xplore. Restrictions apply."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": true,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

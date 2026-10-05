@@ -1,0 +1,12 @@
+
+--- mineru server start ---
+2026-09-29 10:17:06,898 [INFO] mineru.doclib.app: Doclib logging configured level=INFO source=default path=C:\Users\Personal\.mineru\logs\doclib.log
+2026-09-29 10:17:06,903 [INFO] mineru.doclib.app: MinerU server listening on TCP http://127.0.0.1:15980
+2026-09-29 10:17:07,029 [INFO] uvicorn.error: Started server process [25340]
+2026-09-29 10:17:07,029 [INFO] uvicorn.error: Waiting for application startup.
+2026-09-29 10:17:07,168 [INFO] uvicorn.error: Application startup complete.
+2026-09-29 10:17:07,169 [INFO] mineru.scan_worker: Scan worker 0 started
+2026-09-29 10:17:07,169 [INFO] mineru.ingest: Ingest worker 0 started
+2026-09-29 10:17:07,169 [INFO] mineru.ingest: Ingest worker 1 started
+2026-09-29 10:17:07,170 [INFO] mineru.parse_worker: Parse worker 0 started
+2026-09-29 10:17:07,170 [INFO] mineru.parse_worker: Parse worker 1 started

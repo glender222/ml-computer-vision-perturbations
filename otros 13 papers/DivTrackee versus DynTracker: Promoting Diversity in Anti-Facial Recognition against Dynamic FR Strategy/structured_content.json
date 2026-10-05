@@ -1,0 +1,3223 @@
+{
+  "pages": [
+    {
+      "page_idx": 0,
+      "blocks": [
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.148,
+            0.102,
+            0.852,
+            0.153
+          ],
+          "level": 1,
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.163,
+            0.284,
+            0.178
+          ],
+          "content": "Wenshu Fan<sup>∗</sup>"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.18,
+            0.354,
+            0.194
+          ],
+          "content": "University of Electronic Science and"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.195,
+            0.303,
+            0.21
+          ],
+          "content": "Technology of China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.211,
+            0.288,
+            0.224
+          ],
+          "content": "Chengdu, China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.226,
+            0.306,
+            0.239
+          ],
+          "content": "fws@std.uestc.edu.cn"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.433,
+            0.163,
+            0.566,
+            0.18
+          ],
+          "content": "Minxing Zhang"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.405,
+            0.18,
+            0.597,
+            0.193
+          ],
+          "content": "CISPA Helmholtz Center for"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.428,
+            0.195,
+            0.572,
+            0.21
+          ],
+          "content": "Information Security"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.421,
+            0.211,
+            0.578,
+            0.225
+          ],
+          "content": "Saarbrücken, Germany"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.415,
+            0.226,
+            0.585,
+            0.24
+          ],
+          "content": "minxing.zhang@cispa.de"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.719,
+            0.163,
+            0.817,
+            0.18
+          ],
+          "content": "Hongwei Li"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.647,
+            0.18,
+            0.89,
+            0.194
+          ],
+          "content": "University of Electronic Science and"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.698,
+            0.195,
+            0.839,
+            0.21
+          ],
+          "content": "Technology of China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.713,
+            0.211,
+            0.824,
+            0.225
+          ],
+          "content": "Chengdu, China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.686,
+            0.226,
+            0.851,
+            0.24
+          ],
+          "content": "hongweili@uestc.edu.cn"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.253,
+            0.287,
+            0.271
+          ],
+          "content": "Wenbo Jiang†"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.272,
+            0.353,
+            0.286
+          ],
+          "content": "University of Electronic Science and"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.287,
+            0.302,
+            0.301
+          ],
+          "content": "Technology of China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.302,
+            0.287,
+            0.316
+          ],
+          "content": "Chengdu, China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.317,
+            0.323,
+            0.332
+          ],
+          "content": "wenbo\\_jiang@uestc.edu.cn"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.44,
+            0.255,
+            0.558,
+            0.269
+          ],
+          "content": "Hanxiao Chen"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.378,
+            0.272,
+            0.621,
+            0.286
+          ],
+          "content": "University of Electronic Science and"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.428,
+            0.287,
+            0.57,
+            0.301
+          ],
+          "content": "Technology of China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.444,
+            0.302,
+            0.555,
+            0.316
+          ],
+          "content": "Chengdu, China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.4,
+            0.317,
+            0.598,
+            0.332
+          ],
+          "content": "chenhanxiao.chx@gmail.com"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.714,
+            0.255,
+            0.82,
+            0.271
+          ],
+          "content": "Xiangyu Yue"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.642,
+            0.272,
+            0.894,
+            0.287
+          ],
+          "content": "The Chinese University of Hong Kong"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.704,
+            0.288,
+            0.831,
+            0.302
+          ],
+          "content": "Hong Kong, China"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.698,
+            0.303,
+            0.837,
+            0.317
+          ],
+          "content": "xyyue@cuhk.edu.hk"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.301,
+            0.346,
+            0.428,
+            0.361
+          ],
+          "content": "Michael Backes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.27,
+            0.363,
+            0.462,
+            0.377
+          ],
+          "content": "CISPA Helmholtz Center for"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.294,
+            0.379,
+            0.437,
+            0.393
+          ],
+          "content": "Information Security"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.288,
+            0.394,
+            0.443,
+            0.408
+          ],
+          "content": "Saarbrücken, Germany"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.307,
+            0.409,
+            0.422,
+            0.423
+          ],
+          "content": "backes@cispa.de"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.579,
+            0.344,
+            0.685,
+            0.364
+          ],
+          "content": "Xiao Zhang†"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.538,
+            0.364,
+            0.729,
+            0.377
+          ],
+          "content": "CISPA Helmholtz Center for"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.562,
+            0.379,
+            0.705,
+            0.393
+          ],
+          "content": "Information Security"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.555,
+            0.394,
+            0.711,
+            0.408
+          ],
+          "content": "Saarbrücken, Germany"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.562,
+            0.409,
+            0.704,
+            0.424
+          ],
+          "content": "xiao.zhang@cispa.de"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.433,
+            0.158,
+            0.447
+          ],
+          "level": 2,
+          "content": "Abstract"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.451,
+            0.484,
+            0.743
+          ],
+          "content": "The widespread adoption of facial recognition (FR) models raises serious concerns about their potential misuse, motivating the development of anti-facial recognition (AFR) to protect user facial privacy. In this paper, we argue that the static FR strategy, pre-dominantly adopted in prior literature for evaluating AFR efficacy, cannot faithfully characterize the actual capabilities of determined trackers who aim to track a specific target identity. In particular, we introduce DynTracker, a dynamic FR strategy where the model’s gallery database is iteratively updated with newly recognized target identity images. Surprisingly, such a simple approach renders all the existing AFR protections ineffective. To mitigate the privacy threats posed by DynTracker, we advocate for explicitly promoting diversity in the AFR-protected images. We hypothesize that the lack of diversity is the primary cause of the failure of existing AFR methods. Specifically, we develop DivTrackee, a novel method for crafting diverse AFR protections that builds upon a text-guided image generation framework and diversity-promoting adversarial losses. Through comprehensive experiments on various image benchmarks and feature extractors, we demonstrate DynTracker’s strength in breaking existing AFR methods and the superiority of DivTrackee in preventing user facial images from being identified"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.434,
+            0.916,
+            0.476
+          ],
+          "continues_prev": true,
+          "content": "by dynamic FR strategies. We believe our work can act as an important initial step towards developing more effective AFR methods for protecting user facial privacy against determined trackers."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.489,
+            0.634,
+            0.505
+          ],
+          "level": 2,
+          "content": "CCS Concepts"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.508,
+            0.914,
+            0.537
+          ],
+          "content": "• **Computing methodologies** → **Machine learning**; **Computer vision**; • **Security and privacy** → **Privacy protections**."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.55,
+            0.6,
+            0.565
+          ],
+          "level": 2,
+          "content": "Keywords"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.568,
+            0.913,
+            0.583
+          ],
+          "content": "(Anti-)Facial Recognition; Dynamic Strategy; Privacy Preservation"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.59,
+            0.662,
+            0.601
+          ],
+          "level": 2,
+          "content": "ACM Reference Format:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.603,
+            0.915,
+            0.679
+          ],
+          "content": "Wenshu Fan, Minxing Zhang, Hongwei Li, Wenbo Jiang, Hanxiao Chen, Xiangyu Yue, Michael Backes, and Xiao Zhang. 2025. DivTrackee versus Dyn-Tracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy. In Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS ’25), October 13–17, 2025, Taipei, Taiwan. ACM, New York, NY, USA, 15 pages. [https://doi.org/10.1145/3719027.3744867](https://doi.org/10.1145/3719027.3744867)"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.516,
+            0.698,
+            0.651,
+            0.712
+          ],
+          "level": 2,
+          "content": "1 Introduction"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.717,
+            0.916,
+            0.897
+          ],
+          "content": "Facial recognition models, where the goal is to recognize the identity of individuals from digital images or videos, have been adopted in various real-world applications such as security checking and attendance management [3, 24, 26, 37, 38]. Although FR systems greatly enhance the convenience of our daily lives, their potential misuse raises serious concerns. In particular, after the release of privacy protection regulations such as GDPR [1] and CCPA [2], more people have begun to realize that unauthorized FR models can significantly threaten their facial privacy. Therefore, there has been growing attention to developing AFR techniques to protect the facial privacy of users who post their images online [54]. Existing methods can be mainly divided into two categories, gallery-target AFR [9, 10, 21, 47] and query-target AFR [13, 14, 19, 29, 31, 32, 46,"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.084,
+            0.75,
+            0.182,
+            0.761
+          ],
+          "content": "<sup>∗</sup>Equal contribution."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.086,
+            0.761,
+            0.205,
+            0.773
+          ],
+          "content": "†Corresponding authors."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.084,
+            0.781,
+            0.483,
+            0.853
+          ],
+          "content": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.086,
+            0.854,
+            0.197,
+            0.864
+          ],
+          "content": "CCS ’25, Taipei, Taiwan"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.085,
+            0.865,
+            0.473,
+            0.875
+          ],
+          "content": "© 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.086,
+            0.875,
+            0.266,
+            0.884
+          ],
+          "content": "ACM ISBN 979-8-4007-1525-9/2025/10"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.086,
+            0.885,
+            0.273,
+            0.896
+          ],
+          "content": "[https://doi.org/10.1145/3719027.3744867](https://doi.org/10.1145/3719027.3744867)"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.515,
+            0.963
+          ],
+          "content": "3102"
+        }
+      ]
+    },
+    {
+      "page_idx": 1,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.299,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.826,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "Wenshu Fan et al."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.108,
+            0.482,
+            0.135
+          ],
+          "content": "51, 56, 58], depending on whether perturbations are crafted onto gallery or query images to avoid recognition of the target identity."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.136,
+            0.483,
+            0.274
+          ],
+          "content": "Witnessing the lack of a well-defined threat model in the existing literature on AFR, we start by formally defining the problem as a two-party security game between Tracker and Trackee (Section 3). We use Tracker to denote the malicious user who is determined to track the online images of a specific target identity using FR, while Trackee stands for the target identity who deploys AFR protections on their facial images before posting to dodge the tracking. Examin ing relevant literature on anti-facial recognition, we realize all the existing AFR methods, regardless of gallery-target or query-target, adopt a static FR strategy in their evaluation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.28,
+            0.483,
+            0.46
+          ],
+          "content": "**Contribution.** We argue that such a static assumption largely restricts the Tracker’s behavior when using an FR model, which is insufficient to characterize the actual capabilities of determined Trackers (Section 4.1). In particular, we propose DynTracker, a dy namic FR strategy that iteratively updates the gallery database of Tracker’s FR model with newly identified Trackee images (Section 4.2). DynTracker gradually enriches the gallery database with more clues about Trackee’s facial features and the deployed AFR perturbation scheme, enabling it to uncover more of Trackee’s facial images. Based on a preliminary case study, we demonstrate that DynTracker can indeed achieve significantly higher tracking success rates than the static FR strategy, rendering all the existing AFR protection schemes almost completely ineffective (Section 4.3)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.461,
+            0.483,
+            0.709
+          ],
+          "content": "Moreover, we analyze the underlying reasons behind the catastrophic failure of existing AFR methods against our DynTracker, where we hypothesize the main cause is the lack of diversity in the AFR-protected images (Section 5.1). For generative-based AFR, in particular, a fixed auxiliary image of a different identity from Trackee is typically used to guide the generation process, leading to similar patterns shared among AFR-protected Trackee images. Therefore, once a few protected Trackee images are recognized by the FR model and included in the gallery database, such similarities will significantly decrease the protection success rates of AFR. To address the privacy risks posed by DynTracker, we develop Div-Trackee, a novel text-guided generative-based AFR method that builds upon diversity-promoting modules and adversarial losses (Section 5.2). In particular, DivTrackee explicitly promotes more diverse generations of AFR perturbations by randomly selecting an auxiliary image from a pool of candidate images and penalizing the similarities of newly generated images to previously produced AFR-protected Trackee images stored in a queue."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.71,
+            0.483,
+            0.889
+          ],
+          "content": "We conduct extensive experiments across facial image benchmarks and feature extractors to validate DynTracker’s strength in identifying Trackee images and DivTrackee’s protection efficacy against dynamic FR strategies (Section 6). We also vary the Tracker’s initial knowledge about the Trackee and consider facial verification models to account for possible variations in Tracker’s tracking behaviors. Our results confirm that all the existing AFR methods are highly vulnerable to dynamic FR strategies. For instance, a state-of-the-art generative-based AFR scheme, Clip2Protect [46], achieves only less than 20% protection success rates with respect to Trackee images against our DynTracker. In sharp contrast, our DivTrackee significantly lowers DynTracker’s tracking success rates, consistently achieving more than a 40% increase in protection success"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.107,
+            0.915,
+            0.204
+          ],
+          "continues_prev": true,
+          "content": "while preserving high visual quality of Trackee’s AFR-protected images. Our work highlights the importance of adopting dynamic FR strategies, such as our DynTracker, for more rigorous evaluations of AFR methods and also reveals the effectiveness of promoting more diverse AFR protections as potential countermeasures. We hope our work can serve as an important first step towards developing more reliable AFR protection schemes against determined trackers."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.532,
+            0.205,
+            0.847,
+            0.218
+          ],
+          "content": "To summarize, our key contributions are as follows:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.541,
+            0.223,
+            0.916,
+            0.39
+          ],
+          "sub_type": "text",
+          "content": "• By characterizing the limitations of static FR strategies, we propose a dynamic FR strategy DynTracker, which is easy to implement and more powerful.\n• To adaptively mitigate the privacy breaches induced by Dyn-Tracker, we propose DivTrackee, which crafts diverse AFR protections using text-guided image generation and diversity promoting adversarial losses.\n• Extensive experiments show that DynTracker effectively breaks existing AFR methods across various facial image benchmarks and feature extractors, and DivTrackee demonstrates superior performance in preventing user facial images from being identified by dynamic FR strategies."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.403,
+            0.796,
+            0.419
+          ],
+          "level": 2,
+          "content": "2 Background and Related Work"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.422,
+            0.913,
+            0.464
+          ],
+          "content": "In this section, we introduce mathematical definitions, necessary preliminaries, and the most relevant literature on facial recognition models and anti-facial recognition technology."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.477,
+            0.712,
+            0.493
+          ],
+          "level": 2,
+          "content": "2.1 Facial Recognition"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.496,
+            0.915,
+            0.566
+          ],
+          "content": "Facial recognition models are designed to identify people by matching their facial characteristics in an unknown image with a database of known faces [30], typically consisting of three major components: a pre-trained facial feature extractor, a gallery database of known faces, and a query matching step based on some similarity metric."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.571,
+            0.915,
+            0.752
+          ],
+          "content": "**Feature Extractor.** Let $\\mathcal { X } \\subseteq \\mathbb { R } ^ { n }$ be the input space of facial images and $\\mathcal { Z } \\subseteq \\mathbb { R } ^ { d }$ be some low-dimensional latent feature space. A feature extractor in a modern FR model is usually a deep neural network $f : { \\mathcal { X } } \\to { \\mathcal { Z } }$ trained to extract distinctive facial features of different identities from their digital images. Since human faces often contain large variations between identities and even within a single identity, training a high-quality feature extractor from scratch is expensive in terms of both data collection and computational costs. To encourage collaboration and promote facial recognition applications, various well-established facial feature extractors are publicly available online [8, 12, 33, 45, 57]. Such open-source efforts provide practitioners and researchers with the feasibility and ease of deploying facial recognition models customized to their needs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.758,
+            0.915,
+            0.897
+          ],
+          "content": "**Gallery Database.** In addition to a reliable feature extractor, an FR model requires a collection of gallery images covering a diverse set of identities, denoted as the gallery database $\\mathcal { D } _ { \\mathrm { g } }   =   ( \\mathcal { X } _ { \\mathrm { g } } , \\mathcal { Y } _ { \\mathrm { g } } )$ where $X _ { \\mathrm { g } }$ is a set of gallery images and $y _ { \\mathrm { g } }$ is their corresponding ground-truth identities. Given a target identity that a facial recognition model aims to recognize, an implicit requirement is that the gallery database $\\mathcal { D } _ { \\mathrm { g } }$ contains at least one annotated facial image of the target identity, a prerequisite for successful facial identification. Including multiple facial images for the identities within the gallery database can enhance the robustness of facial recognition,"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.515,
+            0.963
+          ],
+          "content": "3103"
+        }
+      ]
+    },
+    {
+      "page_idx": 2,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.084,
+            0.076,
+            0.6,
+            0.088
+          ],
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.076,
+            0.914,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.107,
+            0.482,
+            0.137
+          ],
+          "continues_prev": true,
+          "content": "particularly when the identity’s face images vary widely, which has been adopted in state-of-the-art facial recognition systems."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.141,
+            0.483,
+            0.309
+          ],
+          "content": "**Query Matching.** At inference time, a facial recognition model will output an identity prediction for any query image $x _ { \\mathrm { q } }$ ∈ X based on the feature extractor $f ,$ the gallery database $\\mathcal { D } _ { \\mathrm { g } } ,$ and a query matching step. To be more specific, let $\\mathcal { Z } _ { \\mathrm { g } } = \\{ z _ { \\mathrm { g } } = f ( \\boldsymbol { x } _ { \\mathrm { g } } )$ $\\pmb { x } _ { \\mathrm { g } } \\in \\mathcal { X } _ { \\mathrm { g } } \\}$ be the set of extracted latent features corresponding to the gallery images. Let $z _ { \\mathrm { q } } = f ( \\pmb { x } _ { \\mathrm { q } } )$ be the extracted latent facial features of $x _ { \\mathbb { q } } .$ The query matching step first computes a cosine similarity score between $z _ { \\mathrm { q } }$ and each of the gallery latent features $z _ { \\mathrm { g } }   \\in   \\mathcal { Z } _ { \\mathrm { g } }$ and then outputs the identity $\\hat { y } _ { \\mathrm { g } }$ corresponding to the gallery image with the highest similarity score. Let $y$ be the output space of identities, then a facial recognition model can be regarded as a function FR : $X \\rightarrow { \\mathcal { Y } }$ such that: for any query image $x _ { \\mathrm { q } } ,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.091,
+            0.312,
+            0.483,
+            0.339
+          ],
+          "content": "\\mathrm{FR} \\left(\\boldsymbol {x} _ {\\mathrm{q}}\\right) = \\hat {y} _ {\\mathrm{g}}, \\text {where} \\left(\\hat {\\boldsymbol {x}} _ {\\mathrm{g}}, \\hat {y} _ {\\mathrm{g}}\\right) = \\underset {\\left(\\boldsymbol {x} _ {\\mathrm{g}}, y _ {\\mathrm{g}}\\right) \\in \\mathcal {D} _ {\\mathrm{g}}} {\\operatorname{argmax}} \\cos \\left(f \\left(\\boldsymbol {x} _ {\\mathrm{q}}\\right), f \\left(\\boldsymbol {x} _ {\\mathrm{g}}\\right)\\right). \\tag {1}",
+          "image_source": "images/page_2_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.342,
+            0.485,
+            0.62
+          ],
+          "content": "Note that the FR model, based on the cosine distance from the query image, returns the most similar gallery identity, which is adopted without explicit mention in our paper. Using cosine similarity for the query matching step aligns with existing literature [12, 33, 53]. Other alternative prediction rules can also be used, depending on the application scenario. For instance, returning a set of top-𝑘 most similar identities is also considered in [46] as the output of the FR model, while Euclidean distance was used to compute the similarity scores in earlier works such as [45]. When the gallery database contains a large number of high-dimensional images, dimensionreduction techniques and tree-based structures are often employed in k-nearest neighbor search to improve the computational efficiency of query matching. In addition, facial verification [7, 41, 50] is closely related to facial recognition, where similar feature extraction and query matching steps are employed. However, the key difference lies in that a single reference image of the target identity is used to compute the similarity score with a predefined threshold to determine the facial verification result, whereas the gallery database contains multiple images with diverse identities, and no thresholding step is involved in facial recognition."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.631,
+            0.323,
+            0.646
+          ],
+          "level": 2,
+          "content": "2.2 Anti-Facial Recognition"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.649,
+            0.483,
+            0.747
+          ],
+          "content": "Anti-facial recognition is an approach to avoid online tracking of user facial images based on adversarial examples [11, 19, 54]. An AFR method can be understood as a function AFR : $\\chi \\rightarrow$ X that maps any input facial image to a perturbed version of it. Existing AFR techniques can be divided into two categories, gallerytarget and query-target, depending on whether AFR injects small adversarial perturbations into the gallery or query images."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.752,
+            0.485,
+            0.811
+          ],
+          "content": "**Gallery-Target.** Gallery-target AFR aims to fool FR models by injecting adversarial perturbations into the gallery images of the target identity. Given a target identity $y _ { \\mathrm { t a r g } }$ that AFR aims to protect, the collection of gallery images after perturbation $\\tilde { X } _ { \\mathrm { g } }$ is defined as:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.124,
+            0.814,
+            0.483,
+            0.852
+          ],
+          "content": "\\begin{array}{l} \\tilde {\\chi} _ {\\mathrm{g}} = \\chi_ {\\mathrm{g}} ^ {\\mathrm{nt}} \\cup \\tilde {\\chi} _ {\\mathrm{g}} ^ {\\mathrm{t}}, \\text {where} \\chi_ {\\mathrm{g}} ^ {\\mathrm{nt}} = \\left\\{\\boldsymbol {x} _ {\\mathrm{g}} \\in \\chi_ {\\mathrm{g}} \\mid y _ {\\mathrm{g}} \\neq y _ {\\text {targ}} \\right\\}, \\tag {2} \\\\ \\text {and} \\check {\\mathcal {X}} _ {\\mathrm{g}} ^ {\\mathrm{t}} = \\{\\operatorname{AFR} (\\boldsymbol {x} _ {\\mathrm{g}}) \\mid \\boldsymbol {x} _ {\\mathrm{g}} \\in \\mathcal {X} _ {\\mathrm{g}}, y _ {\\mathrm{g}} = y _ {\\text {targ}} \\}, \\\\ \\end{array}",
+          "image_source": "images/page_2_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.855,
+            0.485,
+            0.897
+          ],
+          "content": "where $X _ { \\mathrm { g } }$ denotes the set of clean gallery images before perturbation. Note that only gallery images belonging to $y _ { \\mathrm { t a r g } }$ are adversarially perturbed by some gallery-target AFR techniques. Due to"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.107,
+            0.915,
+            0.15
+          ],
+          "continues_prev": true,
+          "content": "the injected adversarial features in $\\tilde { X } _ { \\mathrm { g } } ^ { \\mathrm { t } }$ , an FR model is expected to output an incorrect identity when a clean facial image of the target identity is queried."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.155,
+            0.915,
+            0.214
+          ],
+          "content": "**Query-Target.** The other category is known as query-target AFR, which crafts perturbations to the query images of the target. Let $y _ { \\mathrm { t a r g } }$ be the target and $y _ { \\mathrm { q } }$ be the ground-truth identity of $x _ { \\mathbf { q } } ,$ then the collection of (perturbed) query images ${ \\tilde { X } } _ { \\mathrm { q } }$ is defined as:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.556,
+            0.223,
+            0.913,
+            0.248
+          ],
+          "content": "\\tilde {\\mathcal {X}} _ {\\mathrm{q}} = \\mathcal {X} _ {\\mathrm{q}} ^ {\\mathrm{nt}} \\cup \\tilde {\\mathcal {X}} _ {\\mathrm{q}} ^ {\\mathrm{t}}, \\text {where} \\mathcal {X} _ {\\mathrm{q}} ^ {\\mathrm{nt}} = \\left\\{\\boldsymbol {x} _ {\\mathrm{q}} \\in \\mathcal {X} _ {\\mathrm{q}} \\mid y _ {\\mathrm{q}} \\neq y _ {\\text {targ}} \\right\\} \\tag {3}",
+          "image_source": "images/page_2_equation_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.591,
+            0.245,
+            0.847,
+            0.262
+          ],
+          "content": "\\text {and} \\check {\\mathcal {X}} _ {\\mathrm{q}} ^ {\\mathrm{t}} = \\{\\operatorname{AFR} (\\boldsymbol {x} _ {\\mathrm{q}}) \\mid \\boldsymbol {x} _ {\\mathrm{q}} \\in \\mathcal {X} _ {\\mathrm{q}}, y _ {\\mathrm{q}} = y _ {\\text {targ}} \\},",
+          "image_source": "images/page_2_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.273,
+            0.915,
+            0.345
+          ],
+          "content": "where $\\tilde { X } _ { \\mathrm { q } } ^ { \\mathrm { t } }$ is the set of perturbed query images with respect to 𝑦targ and some query-target AFR technique, and $X _ { \\mathrm { q } }$ denotes the clean counterpart of ${ \\tilde { X } } _ { \\mathrm { q } } .$ Due to the mismatched features between the unperturbed gallery and perturbed query images, the facial privacy of the target identity can be protected."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.351,
+            0.915,
+            0.614
+          ],
+          "content": "**Related Work.** In the prior literature on gallery-target AFR, Shan et al. proposed adding small perturbations that pretend to be non-target identities in the latent facial feature space [47], whereas Cherepanova et al. targeted to mislead the commercial facial recog nition APIs by creating perturbations based on an ensemble of FR models [9]. Later, Radiya-Dixit et al. argued that there exists an asymmetry between users who posted online facial images and the trainers of FR models, revealing the limitations of gallery-target AFR techniques against future-released FR models [40]. Generally speaking, gallery-target AFR imposes stronger assumptions on both the construction procedure of the FR model’s gallery database and when the target identity posts their facial images online with or without AFR protections. Initial attempts of query-target AFR focused on adversarial perturbations bounded in certain distance metrics such as $\\ell _ { p }$ -norm [13, 14, 32, 36, 56, 60], while other works considered patch-based approaches, which typically place an adversarial patch in localized regions [25, 48, 55]. Despite improved privacy protection, these methods suffer undesirable visual artifacts due to the restrictive constraint of the injected perturbations."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.615,
+            0.917,
+            0.753
+          ],
+          "content": "Recent works have shifted focus toward generative-based methods to produce more natural adversarial examples. For instance, Hu et al. proposed AMT-GAN that employs generative adversarial networks for makeup transfer [19], Shamshad et al. used text-guided generative models to craft adversarial makeup [46], while Sun et al. developed DiffAM by leveraging the strong generative capability of diffusion models [51]. These methods attain state-of-the-art privacy protection while largely preserving the naturalness of original facial images. Due to their superior performance and milder assumptions required, we primarily focus on generative-based AFR in this work."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.514,
+            0.768,
+            0.911,
+            0.783
+          ],
+          "level": 2,
+          "content": "3 Security Game Between Tracker and Trackee"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.786,
+            0.915,
+            0.884
+          ],
+          "content": "Recall that our work aims to study AFR technology for facial privacy protection against unauthorized FR models. However, existing literature on AFR does not provide a unified definition of attackers and defenders due to their distinct research aims. To avoid potential confusion, we formally define the problem of anti-facial recognition as a two-party security game between Tracker and Trackee, which will be used throughout this paper."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.515,
+            0.963
+          ],
+          "content": "3104"
+        }
+      ]
+    },
+    {
+      "page_idx": 3,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.3,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.826,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "Wenshu Fan et al."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.086,
+            0.103,
+            0.485,
+            0.201
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph Trackee\n  A[\"Post AFR-protected photos\"] --> B[\"AFR tool\"]\n  B --> C[\"Collect photos from social media\"]\n    D[\"Instagram\"] -.-> C\n    E[\"Facebook\"] -.-> C\n    F[\"X\"] -.-> C\n  end\n  subgraph Tracker\n  C --> G[\"Identify Trackee\"]\n  G --> H[\"Identity: Trackee\"]\n  end\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.082,
+                0.213,
+                0.484,
+                0.284
+              ],
+              "content": "Figure 1: Illustration of the security game between Tracker and Trackee. Trackee uploads AFR-protected images to social media, while Tracker aims to track Trackee using FR models. To avoid potential ethical issues, we use the fictional cartoon character Popeye to represent the victim identity of Trackee."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_3_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.299,
+            0.484,
+            0.382
+          ],
+          "content": "**Definition 1.** In this security game, Tracker employs an FR model FR(·) to track the online images Trackee posts. Before posting, Trackee deploys a query-target AFR protection scheme AFR(·) on their images to dodge the tracking. Let $y _ { \\mathrm { e e } }$ denote the Trackee’s identity and $X _ { \\mathrm { q } }$ be a collection of clean query images, then the goal of Tracker can be captured by the following optimization problem:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.146,
+            0.385,
+            0.484,
+            0.452
+          ],
+          "content": "\\begin{array}{l} \\max \\sum_ {\\boldsymbol {x} _ {\\mathrm{q}} \\in \\mathcal {X} _ {\\mathrm{q}}} \\mathbb {1} \\left\\{y _ {\\mathrm{q}} = y _ {\\mathrm{ee}}, \\text {FR} \\left(\\operatorname{AFR} \\left(\\boldsymbol {x} _ {\\mathrm{q}}\\right)\\right) = y _ {\\mathrm{ee}} \\right\\}, \\\\ \\text {s.t.} \\sum_ {\\boldsymbol {x} _ {\\mathrm{q}} \\in \\mathcal {X} _ {\\mathrm{q}}} \\mathbb {1} \\left\\{y _ {\\mathrm{q}} \\neq y _ {\\mathrm{ee}}, \\operatorname{FR} \\left(\\boldsymbol {x} _ {\\mathrm{q}}\\right) = y _ {\\mathrm{ee}} \\right\\} \\leq \\gamma , \\tag {4} \\\\ \\end{array}",
+          "image_source": "images/page_3_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.455,
+            0.483,
+            0.497
+          ],
+          "content": "where $y _ { \\mathrm { q } }$ stands for the ground-truth identity of query image $x _ { \\mathbf { q } } ,$ and $\\gamma \\in \\mathbb { N } _ { + }$ captures the tolerance threshold of the number of false positives. Correspondingly, the goal of Trackee can be defined as:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.147,
+            0.499,
+            0.482,
+            0.531
+          ],
+          "content": "\\min \\sum_ {\\boldsymbol {x} _ {\\mathrm{q}} \\in \\mathcal {X} _ {\\mathrm{q}}} \\mathbb {1} \\left\\{y _ {\\mathrm{q}} = y _ {\\mathrm{ee}}, \\operatorname{FR} \\left(\\operatorname{AFR} \\left(\\boldsymbol {x} _ {\\mathrm{q}}\\right)\\right) = y _ {\\mathrm{ee}} \\right\\}. \\tag {5}",
+          "image_source": "images/page_3_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.536,
+            0.483,
+            0.814
+          ],
+          "content": "Equations 4 and Equation 5 encode the objectives of Tracker and Trackee, respectively. Tracker aims to accurately identify Trackee’s images (i.e., maximizing true positives) while avoiding incorrect recognitions of other identities’ query images as Trackee (i.e., keeping a low false positive rate). In contrast, Trackee aims to lower the identification rate as much as possible by slightly perturbing the posted images using AFR. Figure 1 illustrates the two-party security game between Tracker and Trackee. Note that we consider the query dataset’s setting to have multiple different images for each identity, which aligns with the characteristics of the dataset gathered by Tracker in practical scenarios. To distinguish from the clean query set $X _ { \\mathbf { q } } ,$ we use ${ \\tilde { X } } _ { \\mathbf { q } }$ (similar in Equation 3) to denote the set of actual query images collected by Tracker. In particular, AFR perturbations are assumed to be involved in all the query images of Trackee, while other identities’ face images remain unperturbed since Trackees often only have access to their own images. This assumption largely simplifies our later analyses and is reasonable since, from Trackee’s perspective, perturbing all the images before posting is likely to minimize the risk of tracking by Tracker’s FR models and maximize protection success rates."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.814,
+            0.483,
+            0.897
+          ],
+          "content": "In this work, we focus on the dodging attack scenario when evaluating the success of AFR, whereas impersonating attacks are often primarily considered in the existing literature on generativebased AFR [19, 46, 51]. The key difference is that dodging aims for an untargeted attack goal through AFR, whereas impersonation is designed to mimic a specific identity different from Trackee, which"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.107,
+            0.916,
+            0.164
+          ],
+          "continues_prev": true,
+          "content": "is a targeted attack. We believe that dodging is a more suitable objective for protecting Trackee’s facial privacy than impersonating. As noted in [61], a successful impersonating attack does not necessarily imply high success rates in terms of dodging."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.169,
+            0.915,
+            0.335
+          ],
+          "content": "**Threat Modeling of Tracker.** We introduce the threat model of the Tracker in more detail. Recall that Tracker’s objective is to track Trackee’s online posted facial images, where the collection of Trackee’s query images is assumed to be all AFR-protected. To realize the tracking goal, Tracker is assumed to employ an FR model to recognize Trackee’s images from the collected query dataset automatically. We assume that Tracker initially has access to a single facial image of the Trackee, which will be included in the gallery database of the adopted facial recognition model. We believe these assumptions provide a realistic characterization of Tracker’s capabilities and align with the expectation that the constraints imposed on Tracker’s behavior should be as mild as possible."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.336,
+            0.915,
+            0.557
+          ],
+          "content": "In addition to the above assumptions, we do not impose any constraints on Tracker, aiming to capture the possible variabilities of FR schemes that Trackers may adopt in practice. In particular, we consider two scenarios for Tracker’s initial knowledge, starting with a clean or an AFR-protected image of Trackee, and evaluate the efficacy of AFR with respect to various publicly available FR models and even a black-box facial verification API. Existing literature on generative-based AFR only considers the initial knowledge of a clean Trackee gallery image for evaluation. However, since Trackee’s online posted AFR-protected image may also be spotted and downloaded by the Tracker, we consider both scenarios of Tracker initially holding a clean or protected Trackee image for comprehensiveness. In addition, we design a new dynamic FR strategy of Tracker tracking Trackee in Section 4, which is proven to be much stronger than existing static FR schemes and can better capture the actual behavior of determined Trackees and their incentives."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.563,
+            0.915,
+            0.633
+          ],
+          "content": "**Expectation for AFR from Trackee.** Trackee aims to dodge the tracking of unauthorized FR models by crafting AFR perturbations to their images before posting. Generally, two main objectives are expected to be attained by a desirable AFR protection scheme: protection efficacy and visual quality, which will be explained below."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.633,
+            0.916,
+            0.882
+          ],
+          "content": "The primary objective in designing AFR is protection efficacy, which characterizes how successfully AFR can avoid identification by FR models. Note that Trackee does not have the underly ing ground-truth knowledge of the actual FR model employed by Tracker. Thus, it is important to consider the protection efficacy of AFR against various FR models and to promote transferability in the AFR design. Besides, AFR needs to preserve the visual quality of Trackee’s facial images to ensure a satisfactory user experience; otherwise, Trackee may not post the AFR-protected images online if they look unnatural or visually dissimilar to the initial images. We primarily focus on query-target AFR schemes that do not significantly change the visual appearance of Trackee’s images, while privacy-preserving tools that remove visually distinctive features of the identity, such as face obfuscation and anonymization [5, 34, 49], are considered out of scope. Since AFR-protected Trackee images are posted before Tracker starts tracking, developing strong AFR schemes is more challenging than crafting adversarial examples to fool ML systems. Trackee has very limited knowledge about the FR"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.514,
+            0.963
+          ],
+          "content": "3105"
+        }
+      ]
+    },
+    {
+      "page_idx": 4,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.598,
+            0.088
+          ],
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.086,
+            0.105,
+            0.913,
+            0.417
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph Gallery_Database[\"Gallery Database\"]\n  Dg(0) --> Image1[\"Gallery Trackee Images\"]\n  Image1 --> QueryMatching[\"Query Matching\"]\n  QueryMatching --> FeatureExtractor[\"Feature Extractor\"]\n  FeatureExtractor --> OutputImages[\"Query Trackee Images\"]\n  end\n\n  subgraph Iteration_1[\"Iteration 1\"]\n  Dg(t-1) --> Image2[\"Gallery Trackee Images\"]\n  Image2 --> QueryMatching\n  QueryMatching --> FeatureExtractor\n  FeatureExtractor --> OutputImages\n  end\n\n  subgraph Iteration_t[\"Iteration t\"]\n  Dg(T-1) --> Image3[\"Gallery Trackee Images\"]\n  Image3 --> QueryMatching\n  QueryMatching --> FeatureExtractor\n  FeatureExtractor --> OutputImages\n  end\n\n  subgraph Iteration_T[\"Iteration T\"]\n  Dg(T-1) --> Image4[\"Gallery Trackee Images\"]\n  Image4 --> QueryMatching\n  QueryMatching --> FeatureExtractor\n  FeatureExtractor --> OutputImages\n  end\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.151,
+                0.419,
+                0.845,
+                0.431
+              ],
+              "content": "We adopt Popeye images that are in the public domain to represent Trackee facial images, to avoid potential ethical and copyright issues."
+            },
+            {
+              "bbox": [
+                0.109,
+                0.451,
+                0.886,
+                0.466
+              ],
+              "content": "Figure 2: Illustration of the proposed dynamic facial recognition strategy, DynTracker, for Tracker tracking Trackee."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_4_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.481,
+            0.483,
+            0.566
+          ],
+          "continues_prev": true,
+          "content": "model or strategy employed by Tracker. In contrast, traditional adversarial attacks usually assume the victim model can be exploited at least in a black-box manner. As we will illustrate in Section 4, a simple dynamic FR strategy can render almost all of the existing competitive AFR protection schemes ineffective, confirming the challenges we anticipate for the development of AFR."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.581,
+            0.436,
+            0.596
+          ],
+          "level": 2,
+          "content": "4 Dynamic Strategy of Facial Recognition"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.599,
+            0.483,
+            0.71
+          ],
+          "content": "In this section, we first explain why the (static) FR strategies adopted in prior AFR literature are insufficient to characterize the capacity of determined Trackers (Section 4.1). This observation motivates us to develop a dynamic FR strategy, DynTracker, which iteratively enriches the gallery database of Tracker’s FR model with newly identified Trackee images (Section 4.2). In addition, we show preliminary results that DynTracker can significantly lower the protection efficacy of existing AFR methods (Section 4.3)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.726,
+            0.219,
+            0.739
+          ],
+          "level": 2,
+          "content": "4.1 Motivation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.744,
+            0.483,
+            0.897
+          ],
+          "content": "As discussed in Section 3, a unique characteristic of the security game between Tracker and Trackee is that AFR protections are deployed on Trackee’s images, which are then posted online before Tracker starts the tracking. That said, the constraints imposed on modeling the Tracker’s behavior should be as less restrictive as possible. Otherwise, it is likely that we will underestimate the capability of Trackers who are determined to track the Trackee. Unfortunately, existing gallery-target and query-target AFR methods implicitly assume in their evaluation that the gallery database of the FR models used by Tracker remains fixed. We term such an evaluation setting as the static FR strategy. For example, gallery-target AFR"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.481,
+            0.914,
+            0.552
+          ],
+          "continues_prev": true,
+          "content": "injects small perturbations into gallery images of Trackee identity and assumes $\\tilde { \\mathcal { D } } _ { \\mathrm { g } }$ is used as the gallery database, while query-target AFR uses a clean facial image dataset with known identities $\\mathcal { D } _ { \\mathrm { g } }$ as the gallery database. Despite different choices, the gallery database will remain unchanged throughout the entire tracking process."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.552,
+            0.915,
+            0.829
+          ],
+          "content": "We argue that determined Trackers have both the capability and strong incentives to update the gallery database dynamically, particularly when the adopted FR model recognizes some of Trackee’s query images. First, given that many well-trained facial recognition models are available online, Trackers can easily download them and make necessary changes to the corresponding gallery database to realize their tracking goal. In fact, Trackee’s initial facial image needs to be inserted into the gallery database to ensure the tracking is specific to the target, which already justifies Tracker’s capability of updating the gallery database. Second, the strong incentives are due to the fact that abundant information about the Trackee might exist in the query images recognized as Trackee. Including these identified Trackee images in the gallery database will likely increase the accuracy of the targeted identity’s recognition, thereby matching the goal of determined Trackers. To support our argument with more concrete evidence, we are going to introduce DynTracker, a dynamic FR strategy featuring multi-round tracking and iterative updates of the gallery database, and provide empirical results showing that Dyntracker is much stronger than the static FR strategy for realizing the tracking goal in the following sections."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.514,
+            0.85,
+            0.839,
+            0.866
+          ],
+          "level": 2,
+          "content": "4.2 DynTracker: Dynamic FR Strategy"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.869,
+            0.914,
+            0.897
+          ],
+          "content": "So far, we’ve explained the limitations of existing static FR strategies used in AFR literature and motivated the need to consider dynamic"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.515,
+            0.963
+          ],
+          "content": "3106"
+        }
+      ]
+    },
+    {
+      "page_idx": 5,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.3,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.826,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "Wenshu Fan et al."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.107,
+            0.483,
+            0.192
+          ],
+          "content": "FR strategies for better capturing the capabilities and incentives of determined Trackers. In this section, we introduce the detailed design of our DynTracker, which is illustrated in Figure 2. We refer readers to Algorithm 1 in the appendix of the full ArXiv version of our work<sup>1</sup>for the detailed pseudocode of DynTracker. In particular, DynTracker consists of the following stages of tracking:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.197,
+            0.483,
+            0.298
+          ],
+          "content": "**Preparation.** Tracker initially holds a single Trackee image, either clean or protected, and includes it in the gallery database of the FR model. Initialize $\\mathcal { D } _ { \\mathbf { g } } ( 0 ) = \\mathcal { D } _ { \\mathbf { g } }$ as the gallery database at the start of tracking, and let $\\tilde { \\mathcal { X } _ { \\mathrm { q } } } ( 0 ) = \\tilde { \\mathcal { X } _ { \\mathrm { q } } }$ be the set of query images collected by Tracker, consisting of both AFR-protected Trackee images and clean images from other identities. Here, we use 0 to indicate the 0-th iteration before any facial recognition happens."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.302,
+            0.483,
+            0.426
+          ],
+          "content": "**Iterative Update.** As discussed in Section 4.1, a determined Tracker is incentivized to update the gallery database of the FR model with the recognized query images and conduct dynamic facial recognition. Taking the 𝑡-th iteration as an example, Tracker first obtains $X _ { \\mathrm { e e } } ( t )$ , the set of query Trackee images predicted as $y _ { \\mathrm { e e } }$ by the FR model, then includes $X _ { \\mathsf { e e } } ( t )$ in the gallery database and perform the 𝑡-th facial recognition. To be more specific, the update rule with respect to the 𝑡-th iteration of DynTracker is defined as: for any $t = 1 , 2 , 3 , \\ldots ,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.124,
+            0.432,
+            0.443,
+            0.449
+          ],
+          "content": "\\mathcal {X} _ {\\mathrm{ee}} (t) = \\left\\{\\boldsymbol {x} _ {\\mathrm{q}} \\in \\check {\\mathcal {X}} _ {\\mathrm{q}} (t - 1) \\mid \\operatorname{FR} \\left(\\boldsymbol {x} _ {\\mathrm{q}}; \\mathcal {D} _ {\\mathrm{g}} (t - 1)\\right) = y _ {\\mathrm{ee}} \\right\\},",
+          "image_source": "images/page_5_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.126,
+            0.452,
+            0.482,
+            0.469
+          ],
+          "content": "\\left. \\mathcal {D} _ {\\mathrm{g}} (t) = \\mathcal {D} _ {\\mathrm{g}} (t - 1) \\cup \\left\\{\\left(\\boldsymbol {x}, y _ {\\mathrm{ee}}\\right) \\mid \\boldsymbol {x} \\in \\mathcal {X} _ {\\mathrm{ee}} (t) \\right\\}, \\right. \\tag {6}",
+          "image_source": "images/page_5_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.129,
+            0.472,
+            0.293,
+            0.489
+          ],
+          "content": "\\ddot {\\mathcal {X}} _ {\\mathrm{q}} (t) = \\ddot {\\mathcal {X}} _ {\\mathrm{q}} (t - 1) \\setminus \\mathcal {X} _ {\\mathrm{ee}} (t),",
+          "image_source": "images/page_5_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.494,
+            0.483,
+            0.675
+          ],
+          "content": "where identified images from the previous iteration are dynamically removed from the query dataset to avoid repetition, and we explicitly write out the dependence of FR(·) on the corresponding gallery database for clarity. Since $\\mathcal { D } _ { \\mathrm { g } } ( t )$ is updated dynamically, the set of Trackee query images $\\bar { X _ { \\mathsf { e e } } ( t ) }$ returned by the FR model will be different for different iterations. Technically speaking, there might exist other identities’ images incorrectly recognized as Trackee in the returned set $X _ { \\mathsf { e e } } ( t )$ . However, the false positive rate turns out to be very low if the FR model is well-trained, which has been verified in our experiments (see Section 7.3 for more discussions on the negligible impact of false positive rates). This iterative update stage gradually inserts more Trackee images into the gallery database to improve the target identity’s recognition."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.68,
+            0.483,
+            0.776
+          ],
+          "content": "**Completion.** As long as new query images can be recognized as Trackee’s identity $y _ { \\mathsf { e e } } ,$ Tracker will continue the iterative update stage, aiming to uncover as many Trackee images as possible. Finally, Tracker will complete the whole tracking process when no more Trackee query images are returned from the previous iteration since no benefits can be gained from an extra FR step. For ease of presentation, we use 𝑇 to denote the total number of iterations."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.777,
+            0.483,
+            0.86
+          ],
+          "content": "Although the gallery dataset is dynamically updated during tracking, the query matching scheme remains the same, which still outputs the identity of the gallery image most similar to the query image. As more Trackee images are recognized and included in the gallery database, the likelihood of the remaining Trackee query images identified by the updated FR model is expected to"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.52,
+            0.17,
+            0.915,
+            0.393
+          ],
+          "content": "<table><tr><td rowspan=\"2\">AFR Method</td><td colspan=\"2\">Clean</td><td colspan=\"2\">Protected</td></tr><tr><td>Static</td><td>Dynamic</td><td>Static</td><td>Dynamic</td></tr><tr><td>No Protection</td><td>96.15</td><td>99.62</td><td>N/A</td><td>N/A</td></tr><tr><td>Fawkess [47]</td><td>N/A</td><td>N/A</td><td>38.75</td><td>98.87</td></tr><tr><td>Lowkey [9]</td><td>N/A</td><td>N/A</td><td>9.37</td><td>98.69</td></tr><tr><td>PGD [32]</td><td>28.47</td><td>98.76</td><td>48.32</td><td>97.66</td></tr><tr><td>MI-FGSM [13]</td><td>31.93</td><td>98.94</td><td>47.36</td><td>97.53</td></tr><tr><td>TI-DIM [14]</td><td>25.57</td><td>97.80</td><td>45.87</td><td>96.68</td></tr><tr><td>TIP-IM [56]</td><td>13.82</td><td>97.10</td><td>40.56</td><td>96.54</td></tr><tr><td>Adv-Makeup [58]</td><td>43.49</td><td>98.02</td><td>62.34</td><td>97.12</td></tr><tr><td>AMT-GAN [19]</td><td>44.25</td><td>99.87</td><td>83.50</td><td>98.85</td></tr><tr><td>Clip2Protect [46]</td><td>33.83</td><td>98.04</td><td>80.39</td><td>98.04</td></tr><tr><td>DiffAM [51]</td><td>26.74</td><td>98.10</td><td>82.36</td><td>98.42</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.514,
+                0.105,
+                0.916,
+                0.162
+              ],
+              "content": "Table 1: Comparisons of tracking success rates (%) between static and dynamic FR strategies against various AFR methods. Here, Clean and Protected indicate Tracker starting with a single clean and protected Trackee image, respectively."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_5_table_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.419,
+            0.915,
+            0.476
+          ],
+          "continues_prev": true,
+          "content": "increase. It is worth noting that the first iteration of the dynamic update phase corresponds to the static FR strategy used in existing query-target AFR methods; thus, our DynTracker is more powerful by design in identifying Trackee’s query facial images."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.49,
+            0.836,
+            0.506
+          ],
+          "level": 2,
+          "content": "4.3 DynTracker Defeats Existing AFR"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.508,
+            0.915,
+            0.744
+          ],
+          "content": "Moreover, we conduct a preliminary study to evaluate the efficacy of the proposed dynamic strategy DynTracker with comparisons to the static FR strategy. In particular, we randomly select an identity from FaceScrub [35] as the Trackee. Tracker employs ResNet-101 [17] as the feature extractor, which is trained on MS-Celeb-1M [16] via MagFace loss [33], and adopts FaceScrub as the gallery database with a single clean or protected image of Trackee. Table 1 summarizes the tracking success rates against various AFR methods, including gallery-target schemes [9, 47], query-target approaches based on adversarial noises [13, 14, 32, 56] and generative models [19, 46, 58]. We strictly follow the iterative update rule specified in Section 4.2 to carry out DynTracker against query-target AFR schemes. In comparison, we follow a similar dynamic strategy to evaluate gallery-target AFR but iteratively update the protected gallery database $( \\tilde { \\mathcal { X } } _ { \\mathrm { g } } , \\mathcal { Y } _ { \\mathrm { g } } )$ with identified clean query images recognized as Trackee. This aligns with the evaluation setup of existing works on gallery-target AFR [9, 47] (see Section 2.2 for details)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.744,
+            0.916,
+            0.897
+          ],
+          "content": "Table 1 shows that DynTracker significantly outperforms the static FR strategy in identifying Trackee images from the query dataset, regardless of the initial Tracker’s knowledge being a single clean or protected Trackee image. For instance, starting with a single clean image, DynTracker can increase the tracking success rate from 33.83% to 98.04% against Clip2Protect, almost rendering the deployed AFR protection useless. Even against the static FR strategy, if Tracker initially holds a protected Trackee image, state-of-the-art generative-based AFR methods exhibit significantly decreased protection efficacy; not to say against our proposed dynamic FR strategy, all the existing AFR methods appear to be almost useless."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.083,
+            0.874,
+            0.483,
+            0.897
+          ],
+          "content": "<sup>1</sup>The full paper of our work with detailed appendices is available on arXiv at https://arxiv.org/pdf/2501.06533.pdf"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.514,
+            0.963
+          ],
+          "content": "3107"
+        }
+      ]
+    },
+    {
+      "page_idx": 6,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.084,
+            0.076,
+            0.598,
+            0.088
+          ],
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.076,
+            0.914,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.107,
+            0.482,
+            0.177
+          ],
+          "content": "Our preliminary results confirm that the static FR strategy is insufficient to capture the capability of determined Trackers, where the stronger DynTracker should be considered when evaluating the protection effectiveness of AFR methods (see Table 3 for more comprehensive results with similar trends)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.2,
+            0.473,
+            0.216
+          ],
+          "level": 2,
+          "content": "5 Promoting Diversity to Combat DynTracker"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.219,
+            0.483,
+            0.342
+          ],
+          "content": "As demonstrated in Section 4.3, existing AFR methods are reasonably effective against the static FR strategy but fail against our DynTracker. In this section, we hypothesize that a fundamental reason behind such a failure is the lack of diversity in the design of AFR protections (Section 5.1), which further motivates us to develop DivTrackee, a novel framework that explicitly promotes diversity in generating AFR protections for Trackee images (Section 5.2). We refer readers to Algorithm 2 in the appendix of our full paper for the pseudocode of DivTrackee."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.366,
+            0.4,
+            0.382
+          ],
+          "level": 2,
+          "content": "5.1 Lack of Diversity in Existing AFR"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.385,
+            0.483,
+            0.55
+          ],
+          "content": "Before developing countermeasures, it is important to pinpoint the cause of the existing AFR’s failure against DynTracker. As explained in Section 4.2, the main difference between the static FR strategy and DynTracker lies in the set of gallery images corresponding to Trackee’s identity. As DynTracker proceeds with more iterative updates, more query images recognized as Trackee will be included in the gallery database. Compared with $\\mathcal { D } _ { \\mathtt { g } } ( 0 )$ , the gallery database updated after the 𝑡-th iteration of DynTracker $\\mathcal { D } _ { \\mathrm { g } } ( t )$ is expected to contain multiple AFR-protected images of Trackee, thus covering more variations of Trackee’s facial features and may provide crucial information about the deployed AFR protection scheme, both of which increase the success rates of Tracker tracking Trackee."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.551,
+            0.483,
+            0.897
+          ],
+          "content": "We hypothesize that adversarial perturbations produced by existing AFR share a similar pattern across different facial images, causing the failure against dynamic FR strategies. Revisiting Table 1, we can observe that protection success rates across different query-target AFR methods against the static FR strategy are consistently lower when the Tracker starts with a protected Trackee image, compared with the other clean settings. Such a uniformly decreased performance supports our hypothesis that adversarial perturbations generated by a specific AFR scheme are likely to share similar characteristics, which DynTracker can further exploit. For generative-based AFR [19, 46, 51, 58], an auxiliary facial image that belongs to a different person, denoted as $x _ { \\mathrm { a u x } }$ for simplicity, is usually employed to guide the targeted image generation process. However, the same auxiliary image is shared across different query images when generating AFR perturbations, potentially leading to low protection effectiveness against our DynTracker. For traditional adversarial noise-based AFR [13, 14, 32, 56], although no auxiliary image $x _ { \\mathrm { a u x } }$ is utilized, they rely on untargeted adversarial examples, which may inherently be prone to misclassification into a particular identity class close to Trackee in the latent space. We believe the failure of existing AFR methods in privacy protection against Dyn-Tracker can be mainly attributed to the lack of explicit diversity promotion in protected image generations. As shown in Table 1, existing AFR methods fail catastrophically against our DynTracker, which provides strong empirical support to our hypothesis."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.521,
+            0.17,
+            0.915,
+            0.282
+          ],
+          "content": "<table><tr><td rowspan=\"2\">AFR Method</td><td colspan=\"2\">Clean</td><td colspan=\"2\">Protected</td></tr><tr><td>Fixed</td><td>Diverse</td><td>Fixed</td><td>Diverse</td></tr><tr><td>Adv-Makeup [58]</td><td>98.02</td><td>96.23</td><td>97.12</td><td>95.82</td></tr><tr><td>AMT-GAN [19]</td><td>99.87</td><td>97.69</td><td>98.85</td><td>92.54</td></tr><tr><td>Clip2Protect [46]</td><td>98.04</td><td>82.65</td><td>98.04</td><td>85.81</td></tr><tr><td>DiffAM [51]</td><td>98.10</td><td>79.68</td><td>98.42</td><td>82.90</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.514,
+                0.105,
+                0.916,
+                0.161
+              ],
+              "content": "Table 2: Comparisons of DynTracker’s tracking success rates (%) between fixed and diverse auxiliary images for generativebased AFR. Here, Clean and Protected mean Tracker starts with a single clean and protected Trackee image, respectively."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_6_table_9.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.298,
+            0.869,
+            0.314
+          ],
+          "level": 2,
+          "content": "5.2 DivTrackee: Diversity-Promoting AFR"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.317,
+            0.915,
+            0.427
+          ],
+          "content": "Built upon previous analyses, we explore whether promoting diversity in AFR can result in more effective protection. In the following discussions, we will focus on generative-based AFR since it can preserve a better visual quality of facial images than adversarial noise-based AFR. Besides, unlike gallery-target AFR that assumes Trackers will construct their FR model’s gallery database in a certain period of time [40], generative-based AFR does not impose strong assumptions on Tracker’s behavior to be effective."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.433,
+            0.915,
+            0.558
+          ],
+          "content": "**Initial Attempt.** Our first attempt is to promote diversity by assigning different Trackee images with distinct auxiliary images in existing generative-based AFR. Specifically, let $\\chi _ { \\mathrm { a u x } }$ be the auxiliary image dataset with distinct identities. For any clean Trackee image 𝒙<sub>ee</sub>, one can randomly select an auxiliary image $x _ { \\mathrm { a u x } } \\in \\mathcal { X } _ { \\mathrm { a u x } } ,$ then apply some generative-based AFR method to craft the protection on $x _ { \\mathbf { e e } } .$ Since randomly selected auxiliary images with different identities are used to guide the image generation process, the diversity of Trackee’s protected images is expected to increase."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.559,
+            0.915,
+            0.807
+          ],
+          "content": "Under the same setting as our preliminary experiments in Section 4.3, we evaluate whether diversifying the auxiliary images can help improve AFR performance. We select 2000 images of distinct identities from LFW [20] to construct the auxiliary dataset $\\chi _ { \\mathrm { a u x } } .$ Table 2 shows the evaluation results for a few makeup-based AFR methods with diversified auxiliary images. Compared with fixing the auxiliary image, diversifying auxiliary images increases the protection success of generative-based AFR against DynTracker. In particular, tracking success rates of DynTracker against Clip2Protect are lowered by 15.39% and 12.23%, respectively, when Tracker initially holds a single clean and protected Trackee image. For DiffAM, diversifying auxiliary images improves performance by nearly 20% against DynTracker. Nevertheless, the limited overall improvement in protection effectiveness is unsatisfactory from Trackee’s perspective. Therefore, we take a further step to explore the concept of diversity and propose DivTrackee, a novel generative-based AFR method with diversity-promoting modules and losses to enhance the protection efficacy of Trackee images against DynTracker."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.813,
+            0.915,
+            0.898
+          ],
+          "content": "**Text-Guided AFR Generation.** We adopt StyleGAN [23], which has been employed for various text-guided image generation and editing tasks [42, 44, 46, 52, 59], as the generative backbone of DivTrackee. Let $G _ { \\theta } : \\mathcal { W } \\to \\mathcal { X }$ be a generative model that maps a latent vector 𝒘 $\\in \\mathcal { W }$ to a generated facial image $G _ { \\theta } ( \\boldsymbol { w } )$ . Given a Trackee’s clean image $x _ { \\mathrm { e e } }$ and a target text prompt $p _ { \\mathrm { t a r g } } ~ ( \\mathrm { e . g . }$"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.514,
+            0.962
+          ],
+          "content": "3108"
+        }
+      ]
+    },
+    {
+      "page_idx": 7,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.3,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.826,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "Wenshu Fan et al."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.107,
+            0.482,
+            0.19
+          ],
+          "continues_prev": true,
+          "content": "“natural makeup”), the goal is to search for a latent code 𝒘ˆ $\\in \\mathcal { W }$ such that the generated image $G _ { \\theta } ( \\hat { \\pmb w } )$ follows the specifications of the text prompt $p _ { \\mathrm { t a r g } }$ and satisfies the expectations for AFR from Trackee discussed in Section 3. Using text-guided generative models and makeup prompts allows ease and flexibility in creating natural AFR perturbations on Trackee’s facial images."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.19,
+            0.483,
+            0.385
+          ],
+          "content": "To obtain a desirable 𝒘ˆ , we start with finding a good initialization $w _ { \\mathrm { i n i t } }$ such that $G _ { \\theta } ( \\pmb { w } _ { \\mathrm { i n i t } } )$ is close to $x _ { \\mathrm { e e } }$ to ensure visual similarity. Leveraging the inversion-based technique for StyleGAN image manipulation [52], we use a pre-trained e4e encoder $F _ { \\phi } : \\mathcal { X } \\to \\mathcal { W }$ to infer the inverse of the clean Trackee image as the initialization $\\pmb { w } _ { \\mathrm { i n i t } }   =   F _ { \\phi } ( \\pmb { x } _ { \\mathrm { e e } } )$ . Inspired by [43, 46], we fine-tune the generator $G _ { \\theta }$ to improve the quality of the reconstructed image $G _ { \\theta } \\big ( F _ { \\phi } ( \\boldsymbol { x } _ { \\mathrm { e e } } ) \\big )$ without sacrificing the editing capabilities of the generative model (see the appendix of our full paper for implementation details of such a generator fine-tuning step). After acquiring the finetuned generator, denoted as $G _ { \\theta ^ { * } }$ , we perform gradient descent on a carefully designed loss function $\\mathcal { L } _ { \\mathrm { t o t } }$ to optimize $\\mathbf { w } _ { \\mathrm { i n i t } }$ . To be more specific, the gradient update rule is defined as: for any $s = 0 , 1 , 2 , \\ldots , S - 1$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.2,
+            0.393,
+            0.482,
+            0.407
+          ],
+          "content": "\\boldsymbol {w} _ {s + 1} = \\boldsymbol {w} _ {s} - \\lambda \\nabla_ {\\boldsymbol {w}} \\mathcal {L} _ {\\text {tot}} (\\boldsymbol {w} _ {s}). \\tag {7}",
+          "image_source": "images/page_7_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.413,
+            0.482,
+            0.468
+          ],
+          "content": "Here $\\pmb { w } _ { 0 }$ is initialized as $w _ { \\mathrm { i n i t } }$ , 𝑆 is the total number of gradient updates, and 𝜆 denotes the step size. In particular, $\\mathcal { L } _ { \\mathrm { t o t } }$ represents the total loss function that encodes all Trackee’s expectations for text-guided AFR generation, which will be detailed next."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.474,
+            0.483,
+            0.585
+          ],
+          "content": "**Diversity-Promoting Adversarial Loss.** Now that we’ve determined the generative framework, the remaining task is to design the total loss $\\mathcal { L } _ { \\mathrm { t o t } }$ such that the final output from the gradientbased optimization $G _ { \\theta ^ { * } } ( \\boldsymbol { w } _ { S } )$ achieves high protection success rates against DynTracker and maintains the visual quality with reference to the Trackee’s original image $x _ { \\mathrm { e e } }$ and the given text prompt $p .$ To achieve high protection efficacy against DynTracker, we design the following adversarial loss that explicitly promotes diversity:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.128,
+            0.592,
+            0.482,
+            0.607
+          ],
+          "content": "\\mathcal {L} _ {\\text {eff}} (\\boldsymbol {w}) = \\mathcal {L} _ {\\text {adv}} (\\boldsymbol {w}) + \\alpha_ {1} \\cdot \\mathcal {L} _ {\\text {guide}} (\\boldsymbol {w}) + \\alpha_ {2} \\cdot \\mathcal {L} _ {\\text {div}} (\\boldsymbol {w}), \\tag {8}",
+          "image_source": "images/page_7_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.613,
+            0.482,
+            0.669
+          ],
+          "content": "where $\\alpha _ { 1 }   \\geq   0$ and $\\alpha _ { 2 }   \\geq   0$ are hyperparameters that control the weights of each loss term. In particular, $\\mathcal { L } _ { \\mathrm { e f f } }$ consists of three terms: an adversarial loss $\\mathcal { L } _ { \\mathrm { a d v } } ,$ a diverse guidance loss $\\mathcal { L } _ { \\mathrm { g u i d e } }$ and a diversity-promoting loss ${ \\mathcal { L } } _ { \\mathrm { d i v } } ,$ which are detailed below:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.671,
+            0.483,
+            0.727
+          ],
+          "content": "Adversarial Loss. The first loss term $\\mathcal { L } _ { \\mathrm { a d v } }$ in Equation 8 contributes to the primary goal of dodging: avoiding $G _ { \\theta ^ { * } } ( w )$ being recognized as Trackee’s identity. Specifically, let $f$ be a facial feature extractor, then the adversarial loss $\\mathcal { L } _ { \\mathrm { a d v } }$ is defined as:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.733,
+            0.482,
+            0.749
+          ],
+          "content": "\\mathcal {L} _ {\\mathrm{adv}} (\\boldsymbol {w}) = - \\mathrm{D} _ {f} \\left(G _ {\\theta^ {*}} (\\boldsymbol {w}), \\boldsymbol {x} _ {\\mathrm{ee}}\\right), \\tag {9}",
+          "image_source": "images/page_7_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.754,
+            0.483,
+            0.852
+          ],
+          "content": "where $\\mathrm { D } _ { f } \\; : \\; X \\times X \\; \\to \\; [ 0 , 2 ]$ captures the cosine dissimilarity between the features of two input images extracted by the feature extractor $f , \\mathrm { i . e . } , \\mathrm { D } _ { f } ( \\boldsymbol { x } _ { 1 } , \\boldsymbol { x } _ { 2 } ) = 1 - \\cos \\left( f ( \\boldsymbol { x } _ { 1 } ) , f ( \\boldsymbol { x } _ { 2 } ) \\right)$ . Note that the feature extractor used in $\\mathcal { L } _ { \\mathrm { a d v } }$ does not need to be the same as that of DynTracker. As we optimize 𝒘 to decrease $\\mathcal { L } _ { \\mathrm { a d v } }$ through gradient descent, $G _ { \\theta ^ { * } } ( w )$ is expected to be less similar to the original Trackee image $x _ { \\mathrm { e e } }$ in the latent facial feature space."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.855,
+            0.483,
+            0.897
+          ],
+          "content": "Diverse Guidance Loss. The second term $\\mathcal { L } _ { \\mathrm { g u i d e } }$ in Equation 8 denotes the diverse guidance loss, which encourages the generated image $G _ { \\theta ^ { * } } ( w )$ to get closer to a randomly selected auxiliary image"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.107,
+            0.913,
+            0.137
+          ],
+          "continues_prev": true,
+          "content": "$x _ { \\mathrm { a u x } }$ up to some margin-based threshold $\\delta \\geq 0$ . Specifically, the diverse guidance loss $\\mathcal { L } _ { \\mathrm { g u i d e } }$ is defined as:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.581,
+            0.145,
+            0.913,
+            0.161
+          ],
+          "content": "\\mathcal {L} _ {\\text {guide}} (\\boldsymbol {w}) = \\max \\left(0, \\mathrm{D} _ {f} \\left(G _ {\\theta^ {*}} (\\boldsymbol {w}), \\boldsymbol {x} _ {\\text {aux}}\\right) - \\delta\\right). \\tag {10}",
+          "image_source": "images/page_7_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.167,
+            0.915,
+            0.235
+          ],
+          "content": "Similar to our initial attempt, different Trackee image $x _ { \\mathrm { e e } }$ will be assigned with random auxiliary image $x _ { \\mathrm { a u x } }$ selected from a dataset $\\chi _ { \\mathrm { a u x } }$ to guide the generation. We additionally employ a marginbased loss with a threshold 𝛿 to allow less restrictive directions to search for the desirable latent code."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.24,
+            0.915,
+            0.324
+          ],
+          "content": "Diversity-Promoting Loss. The last loss term $\\mathcal { L } _ { \\mathrm { d i v } }$ in Equation 8 explicitly promotes diversity within the generated protected images of Trackee. Specifically, a queue Q with maximum length $m > 0$ is maintained using the first-in, first-out (FIFO) principle. For any newly arrived Trackee’s query image $x _ { \\mathrm { e e } } ,   \\mathcal { L } _ { \\mathrm { d i v } }$ is defined as the averaged cosine dissimilarity to previously stored images in Q:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.607,
+            0.33,
+            0.913,
+            0.363
+          ],
+          "content": "\\mathcal {L} _ {\\mathrm{div}} (\\boldsymbol {w}) = - \\frac {1}{m} \\sum_ {\\boldsymbol {x} \\in Q} \\mathrm{D} _ {f} \\left(G _ {\\theta^ {*}} (\\boldsymbol {w}), \\boldsymbol {x}\\right). \\tag {11}",
+          "image_source": "images/page_7_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.37,
+            0.915,
+            0.578
+          ],
+          "content": "Note that $Q$ is sequentially expanded as we generate Trackee’s protected images. When the first Trackee image arrives, Q is empty, so the initial $\\mathcal { L } _ { \\mathrm { d i v } }   =   0$ . After the first protected image is generated and stored in $Q ,$ the generation of the new image needs to account for previous ones. When |Q| reaches the maximum allowable length 𝑚, the queue Q will be updated in a FIFO manner. In our experiments, we set 𝑚 = 10 to achieve the diversity-promoting goal without incurring high computational overhead, where further increasing the value of 𝑚 does not improve the performance much. Minimizing $\\mathcal { L } _ { \\mathrm { d i v } }$ encourages the newly generated image $G _ { \\theta ^ { * } } ( w )$ to be dissimilar to the previously-stored protected Trackee images, thus promoting diversity in AFR and enhancing the protection against DynTracker. As will be illustrated in Section $7 . 2 ,$ the proposed diversity-promoting loss terms, $\\mathcal { L } _ { \\mathrm { g u i d e } }$ and $\\mathcal { L } _ { \\mathrm { d i v } } ,$ are essential for DivTrackee to achieve high protection success rates."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.584,
+            0.915,
+            0.654
+          ],
+          "content": "**Loss Design for Visual Quality.** In addition to designing diversitypromoting adversarial loss necessary to achieve effective protection against DynTracker, we also need to ensure the visual quality of generated images. To achieve this goal, we adopt the following loss inspired by prior work [15, 28, 46]:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.587,
+            0.662,
+            0.913,
+            0.677
+          ],
+          "content": "\\mathcal {L} _ {\\text {vis}} (\\boldsymbol {w}) = \\alpha_ {3} \\cdot \\mathcal {L} _ {\\text {align}} (\\boldsymbol {w}) + \\alpha_ {4} \\cdot \\mathcal {L} _ {\\text {latent}} (\\boldsymbol {w}), \\tag {12}",
+          "image_source": "images/page_7_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.684,
+            0.913,
+            0.768
+          ],
+          "content": "where $\\alpha _ { 3 }   \\geq   0$ and $\\alpha _ { 4 } \\geq 0$ are hyperparameters that controls the trade-off. In particular, the first term $\\mathcal { L } _ { \\mathrm { a l i g n } }$ in Equation 12 captures the alignment of the embeddings regarding the text-image pairs between the initial and generated images based on a pre-trained CLIP model [39]. Let $E _ { \\mathrm { I } }$ and $E _ { \\mathrm { T } }$ be the pre-trained CLIP image and text encoders, respectively, then $\\mathcal { L } _ { \\mathrm { a l i g n } }$ is defined as:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.626,
+            0.777,
+            0.913,
+            0.792
+          ],
+          "content": "\\mathcal {L} _ {\\text {align}} (\\boldsymbol {w}) = 1 - \\cos (\\Delta I, \\Delta T), \\tag {13}",
+          "image_source": "images/page_7_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.799,
+            0.914,
+            0.897
+          ],
+          "content": "where $\\Delta I = E _ { \\mathrm { I } } \\big ( G _ { \\theta ^ { * } } ( \\pmb { w } ) \\big ) - E _ { \\mathrm { I } } \\big ( G _ { \\theta ^ { * } } ( \\pmb { w } _ { \\mathrm { i n i t } } ) \\big )$ is the distance between the image embeddings, $\\Delta T \\; = \\; E _ { \\mathrm { T } } ( p _ { \\mathrm { t a r g } } )   -   E _ { \\mathrm { T } } ( p _ { \\mathrm { s r c } } )$ denotes the distance between the text embeddings, and $p _ { \\mathrm { s r c } }$ is the semantic text prompt of the query image $x _ { \\mathsf { e e } } .$ . Following [46], we simply set $p _ { \\mathrm { s r c } }$ as $\\text{\" }  f  a  c  e  \\text{\" }$ since we are generally working with facial images. Such an alignment loss promotes the generated images to follow the specifications of the target text prompt more closely. Finally, the"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.514,
+            0.963
+          ],
+          "content": "3109"
+        }
+      ]
+    },
+    {
+      "page_idx": 8,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.084,
+            0.076,
+            0.598,
+            0.088
+          ],
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.076,
+            0.914,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.107,
+            0.482,
+            0.136
+          ],
+          "continues_prev": true,
+          "content": "last term $\\mathcal { L } _ { \\mathrm { l a t e n t } }$ in Equation 12 penalizes the Euclidean distance between the current latent code 𝒘 and the initial latent code $w _ { \\mathrm { i n i t } } \\mathrm { : }$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.203,
+            0.142,
+            0.483,
+            0.157
+          ],
+          "content": "\\mathcal {L} _ {\\text {latent}} (\\boldsymbol {w}) = \\| \\boldsymbol {w} - \\boldsymbol {w} _ {\\text {init}} \\| _ {2}. \\tag {14}",
+          "image_source": "images/page_8_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.162,
+            0.483,
+            0.246
+          ],
+          "content": "By keeping 𝒘 close to $w _ { \\mathrm { i n i t } } ,   \\mathcal { L } _ { \\mathrm { l a t e n t } }$ ensures the visual similarity between initial and generated images. Putting pieces together, we design the total loss function as $\\mathcal { L } _ { \\mathrm { t o t } } ( \\pmb { w } ) = \\mathcal { L } _ { \\mathrm { e f f } } ( \\pmb { w } ) + \\mathcal { L } _ { \\mathrm { v i s } } ( \\pmb { w } )$ and perform gradient descent on $\\mathcal { L } _ { \\mathrm { t o t } }$ to obtain the optimized latent code $\\boldsymbol { w } _ { S }$ based on Equation 7. Finally, $G _ { \\theta ^ { * } } ( w _ { S } )$ will be returned as the protected Trackee image corresponding to the original $x _ { \\mathrm { e e } }$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.258,
+            0.22,
+            0.273
+          ],
+          "level": 2,
+          "content": "6 Experiments"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.276,
+            0.483,
+            0.415
+          ],
+          "content": "To systematically study the strength of our DynTracker and validate the superiority of our DivTracker regarding state-of-the-art AFR protection schemes, we conduct comprehensive experiments to compare the protection efficacy and visual aspects of different AFR methods across various image benchmarks and facial recognition settings (Section $6 . 1 )$ . Besides, we also test the generalizability of our methods to facial verification models (Section 6.2). Due to space limits, additional experimental details and results are deferred to the appendix of our full paper. Below, we start by explaining the main setup of our experiments."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.421,
+            0.483,
+            0.492
+          ],
+          "content": "**Dataset.** We consider 4 widely-used facial image benchmarks, Face-Scrub [35], PubFig [27], UMDFaces [4] and CelabA-HQ [22], among which CelabA-HQ is the dataset with high-resolution facial images. All these datasets consist of images with annotated identities, each associated with multiple facial images."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.496,
+            0.483,
+            0.705
+          ],
+          "content": "**Configuration.** For each benchmark dataset, we first randomly select 5 identities as the target identities of Trackees. Then, for each Trackee identity, we generate AFR protections for all the Trackee images, including one image in the gallery database owned by Tracker, while treating the remaining images as the query images of Trackees. We follow Lowkey [9] to set up the query and gallery images for the remaining identities other than Trackee. We compare our DivTrackee with state-of-the-art generative-based methods, such as Adv-Makeup [58], AMT-GAN [19], Clip2Protect [46] and DiffAM [51]. For DivTrackee, we use the first 2000 images from LFW [20] to construct the auxiliary dataset $\\chi _ { \\mathrm { a u x } }$ in the diverse guidance loss and consider the text prompt $p _ { \\mathrm { t a r g } }$ as “natural makeup” We choose the hyperparameters involved in DivTrackee as follows: $m = 1 0 ,   \\alpha _ { 1 } = 0 . 6 ,   \\alpha _ { 2 } = 1 . 2 ,   \\alpha _ { 3 } = 0 . 5 ,   \\alpha _ { 4 } = 0 . 0 2 ,   \\delta = 0 . 2 ,   \\lambda = 0 . 0 1$ and 𝑆 = 60 (see Section 7.1 for our sensitivity analysis experiments)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.71,
+            0.483,
+            0.864
+          ],
+          "content": "**Feature Extractor.** To set the FR model of Tracker, we consider 4 pre-trained facial feature extractors, including MobileFace [8], WebFace [57], VGGFace [6], and MagFace [33]. To generate AFR protections for Trackee images, we use IR-50 [18], IR-152 [12], and FaceNet [45] as the substitute feature extractors to compute the cosine dissimilarity function $\\mathrm { D } _ { f }$ for the adversarial losses in Equation 8. Aligned with existing literature [19, 46, 51], we consider the scenarios where feature extractors used for AFR generation differ from those employed by Tracker. This black-box transferability setting simulates the scenario of having imprecise knowledge of Tracker’s FR model when generating AFR protections."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.868,
+            0.483,
+            0.897
+          ],
+          "content": "**Evaluation Metric.** We adopt tracking success rate (TSR) to evaluate the strength of a specific Tracker’s FR strategy. Specifically,"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.107,
+            0.915,
+            0.219
+          ],
+          "content": "TSR is defined as the ratio of the number of query images correctly identified as Trackee to the total number of Trackee images in the query dataset. The higher the TSR is, the stronger the employed FR strategy is. For Trackee, we use protection success rate (PSR), defined as $1 - \\mathrm { T S R } _ { i }$ , to evaluate the efficacy of an AFR protection scheme. We also visualize the generated AFR-protected images to provide qualitative comparison results, which is considered the primary criterion for evaluating the visual quality of generated images."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.249,
+            0.847,
+            0.265
+          ],
+          "level": 2,
+          "content": "6.1 Main Results on Facial Recognition"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.268,
+            0.915,
+            0.405
+          ],
+          "content": "Table 3 summarizes the tracking success rates of Tracker’s FR strategies against various generative-based AFR methods. We report the average tracking success rate for each AFR scheme over the 5 selected Trackee identities against static FR strategy and our Dyn-Tracker, respectively. We consider two settings of Tracker’s initial knowledge of Trackee, either including a clean or an AFR-protected image in the gallery database gathered by Tracker. As a reference, we evaluate the performance of tracking strategies when no AFR protection is employed on the set of Trackee query images, depicted as No Protection in Table 3."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.412,
+            0.915,
+            0.591
+          ],
+          "content": "**Strength of DynTracker.** We start by looking at the tracking success rates of DynTracker when Trackee’s protected images are crafted using existing AFR techniques. Table 3 shows that our dynamic FR strategy, DynTracker, is very effective in breaking the protections crafted by existing AFR generative-based AFR methods that do not promote diversity explicitly, achieving more than 80% tracking success rates in almost all the tested scenarios. For example, DiffAM can only achieve protection success rates of around 10% on the high-resolution CelebA-HQ dataset against our dynamic FR strategy. Compared with the scenario where no protections are deployed, existing AFR methods can only achieve a marginal improvement in protection success against DynTraker, confirming their limitations against determined trackers."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.592,
+            0.915,
+            0.897
+          ],
+          "content": "In sharp contrast, the tracking success rates of static FR strategy are found to be significantly lower than DynTracker, especially when Tracker holds an initial clean Trackee image. This is the typical evaluation setting adopted in the prior AFR literature. Even if Tracker initially includes a single Trackee’s protected image in the FR model’s gallery database, the protection efficacy of existing AFR methods clearly drops in most cases. For instance, Clip2Protect is very effective on the FaceScrub dataset against the static FR strategy with MobileFace and a clean Trackee image, while TSR increases from 2.46% to 31.37% when the initial Trackee image is changed from clean to protected. These empirical results align with our insights and preliminary results discussed in Section 4, suggesting a crucial overlooked aspect in AFR evaluations. That said, if we use the static FR strategy to evaluate and compare AFR methods, we will obtain a largely overestimated protection efficacy due to the strong assumptions imposed on Tracker’s behavior of not updating the FR model’s gallery database with newly identified Trackee’s protected images. This overestimation can lead to wrong conclusions and a false sense of security for AFR protections against real-world determined Trackers. Thus, we strongly recommend the community consider dynamic FR strategies like DynTracker when evaluating the efficacy of AFR protection schemes."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.515,
+            0.963
+          ],
+          "content": "3110"
+        }
+      ]
+    },
+    {
+      "page_idx": 9,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.299,
+            0.088
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.826,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "Wenshu Fan et al."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.087,
+            0.184,
+            0.913,
+            0.576
+          ],
+          "content": "<table><tr><td rowspan=\"2\">Dataset</td><td rowspan=\"2\">AFR Method</td><td colspan=\"2\">MobileFace</td><td colspan=\"2\">WebFace</td><td colspan=\"2\">VGGFace</td><td colspan=\"2\">MagFace</td></tr><tr><td>Clean</td><td>Protected</td><td>Clean</td><td>Protected</td><td>Clean</td><td>Protected</td><td>Clean</td><td>Protected</td></tr><tr><td rowspan=\"6\">FaceScrub</td><td>No Protection</td><td>85.89/87.76</td><td>N/A</td><td>98.17/98.29</td><td>N/A</td><td>98.26/98.29</td><td>N/A</td><td>99.29/99.36</td><td>N/A</td></tr><tr><td>Adv-Makeup</td><td>15.93/85.52</td><td>45.93/82.62</td><td>31.54/91.02</td><td>58.66/88.84</td><td>27.96/92.58</td><td>59.42/89.16</td><td>43.49/98.02</td><td>62.34/97.12</td></tr><tr><td>AMT-GAN</td><td>13.38/85.42</td><td>24.26/82.64</td><td>29.87/92.35</td><td>56.64/91.17</td><td>30.29/92.58</td><td>57.18/91.26</td><td>44.25/99.87</td><td>83.50/98.85</td></tr><tr><td>Clip2Protect</td><td>2.46/83.33</td><td>31.37/83.33</td><td>4.68/91.40</td><td>42.64/89.65</td><td>4.32/90.87</td><td>43.85/88.60</td><td>33.83/98.04</td><td>80.39/98.04</td></tr><tr><td>DiffAM</td><td>14.54/84.96</td><td>34.65/85.20</td><td>27.64/92.72</td><td>52.50/91.46</td><td>24.86/91.25</td><td>53.90/90.82</td><td>39.65/98.26</td><td>83.74/98.06</td></tr><tr><td>DivTrackee</td><td>2.67/26.58</td><td>1.86/22.16</td><td>7.82/30.62</td><td>2.37/29.49</td><td>5.94/31.69</td><td>1.98/32.68</td><td>6.82/31.94</td><td>2.53/28.57</td></tr><tr><td rowspan=\"6\">PubFig</td><td>No Protection</td><td>86.29/88.07</td><td>N/A</td><td>96.85/97.08</td><td>N/A</td><td>98.01/98.15</td><td>N/A</td><td>99.15/99.24</td><td>N/A</td></tr><tr><td>Adv-Makeup</td><td>24.37/83.38</td><td>55.87/79.19</td><td>34.46/86.12</td><td>58.36/82.08</td><td>32.18/88.54</td><td>56.73/83.42</td><td>35.68/94.57</td><td>65.24/92.85</td></tr><tr><td>AMT-GAN</td><td>27.64/83.83</td><td>56.44/79.67</td><td>40.78/87.01</td><td>49.64/84.82</td><td>34.15/88.53</td><td>51.07/85.44</td><td>39.34/94.74</td><td>60.85/93.16</td></tr><tr><td>Clip2Protect</td><td>3.45/81.93</td><td>32.37/79.53</td><td>4.83/84.69</td><td>39.69/82.71</td><td>5.35/86.28</td><td>40.60/83.46</td><td>42.63/93.70</td><td>68.18/91.89</td></tr><tr><td>DiffAM</td><td>22.10/83.90</td><td>52.46/80.40</td><td>27.65/85.38</td><td>46.09/84.46</td><td>28.24/87.32</td><td>48.70/83.98</td><td>38.10/94.65</td><td>63.25/93.18</td></tr><tr><td>DivTrackee</td><td>3.23/28.57</td><td>2.88/29.58</td><td>4.82/32.17</td><td>2.63/29.72</td><td>5.25/35.76</td><td>3.27/32.54</td><td>5.88/37.06</td><td>4.71/34.53</td></tr><tr><td rowspan=\"6\">UMDFaces</td><td>No Protection</td><td>86.89/87.42</td><td>N/A</td><td>96.01/96.27</td><td>N/A</td><td>98.19/98.33</td><td>N/A</td><td>99.30/99.30</td><td>N/A</td></tr><tr><td>Adv-Makeup</td><td>18.93/84.28</td><td>53.58/80.62</td><td>29.23/87.38</td><td>57.32/84.21</td><td>25.03/88.77</td><td>56.79/85.82</td><td>33.68/96.08</td><td>59.60/95.36</td></tr><tr><td>AMT-GAN</td><td>22.37/82.83</td><td>47.68/80.60</td><td>31.23/88.17</td><td>57.72/83.83</td><td>30.78/89.48</td><td>56.28/84.25</td><td>33.48/97.08</td><td>61.34/94.88</td></tr><tr><td>Clip2Protect</td><td>3.01/81.57</td><td>33.01/80.62</td><td>4.54/88.61</td><td>43.60/87.45</td><td>5.38/90.18</td><td>48.52/89.87</td><td>31.46/95.48</td><td>63.56/95.48</td></tr><tr><td>DiffAM</td><td>18.62/83.44</td><td>45.18/81.36</td><td>27.52/87.95</td><td>51.46/87.02</td><td>23.70/91.04</td><td>52.26/91.32</td><td>32.19/96.68</td><td>60.46/96.30</td></tr><tr><td>DivTrackee</td><td>3.69/29.17</td><td>3.22/27.54</td><td>5.63/31.64</td><td>3.89/28.79</td><td>4.86/32.61</td><td>3.46/29.57</td><td>5.18/33.64</td><td>4.10/31.15</td></tr><tr><td rowspan=\"6\">CelebA-HQ</td><td>No Protection</td><td>82.30/85.83</td><td>N/A</td><td>95.62/95.80</td><td>N/A</td><td>96.90/97.08</td><td>N/A</td><td>99.29/99.37</td><td>N/A</td></tr><tr><td>Adv-Makeup</td><td>42.38/90.26</td><td>45.54/91.42</td><td>46.68/91.39</td><td>52.62/91.25</td><td>47.70/92.40</td><td>52.16/90.94</td><td>49.85/90.62</td><td>54.62/92.46</td></tr><tr><td>AMT-GAN</td><td>36.74/89.42</td><td>38.36/90.50</td><td>41.69/90.42</td><td>46.78/92.40</td><td>40.42/91.86</td><td>43.60/90.74</td><td>42.65/93.42</td><td>44.55/91.84</td></tr><tr><td>Clip2Protect</td><td>16.34/86.62</td><td>31.75/88.36</td><td>19.42/92.38</td><td>33.68/91.52</td><td>21.40/91.98</td><td>29.64/90.75</td><td>22.56/94.64</td><td>36.72/93.18</td></tr><tr><td>DiffAM</td><td>28.05/89.60</td><td>36.42/88.16</td><td>37.48/93.25</td><td>48.20/92.66</td><td>36.44/92.50</td><td>43.84/91.94</td><td>43.36/94.90</td><td>46.72/93.56</td></tr><tr><td>DivTrackee</td><td>18.62/45.82</td><td>15.34/42.98</td><td>20.68/49.26</td><td>16.54/47.38</td><td>18.75/51.32</td><td>15.68/44.83</td><td>21.24/52.37</td><td>17.95/50.60</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.082,
+                0.105,
+                0.916,
+                0.175
+              ],
+              "content": "Table 3: Comparisons of tracking success rates (%) of static and dynamic FR strategies against different generative-based AFR methods across various image benchmarks and feature extractors. For each entry, the first number stands for TSR against the static FR strategy, and the second represents TSR against our DynTracker. Here, Clean and Protected mean Tracker starting with a single clean and protected Trackee image in the gallery database, respectively. For DynTracker, the lowest tracking success rate is bolded to highlight the best-performing AFR method in terms of Trackee’s facial privacy protection."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_9_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.597,
+            0.483,
+            0.889
+          ],
+          "content": "**Effectiveness of DivTrackee.** Next, we examine the protection efficacy of our DivTrackee. Table 3 shows that DivTrackee consistently improves protection success rates against DynTracker over existing generative-based AFR methods. In particular, DivTrackee maintains tracking success rates of around 30% against DynTracker across FaceScrub, PugFig, and UMDFaces. For the high-resolution CelebA-HQ image dataset, DivTrackee achieves around 50% protection success rates against DynTracker, which significantly improves protection efficacy over existing AFR methods with PSR usually less than 10%. As we have explained in Section 5, the crucial difference lies in the diverse guidance and the diversity-promoting losses involved in DivTrackee, reducing the similarity between AFR-protected Trackee images during generation, which is the reason why DivTrackee can be much more resilient to dynamic FR strate gies. In addition, looking at the TSRs of the static FR strategy, we note that the protection efficacy with respect to DivTrackee is even better when the initial Trackee gallery image is protected, which is in sharp contrast to the decreased PSRs for existing AFR methods. Our evaluation results highlight the usefulness of explicit diversity promotion in AFR protections against Trackers who update the gallery database. We believe that our exploration of diversifying"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.597,
+            0.913,
+            0.639
+          ],
+          "continues_prev": true,
+          "content": "the AFR-protected images in DivTrackee can serve as an important initial step toward more effective AFR protection schemes against determined Trackers in real-world application scenarios."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.644,
+            0.915,
+            0.755
+          ],
+          "content": "**Visual Quality.** Besides focusing on the primary goal of enhancing the protection efficacy of AFR, we also empirically study whether the protected images produced by DivTrackee can preserve the visual quality of the original facial images, which is a secondary but still important pursuit from Trackee’s perspective. In particular, we visualize the AFR-protected Trackee images generated by different query-target AFR techniques on high-resolution images from the CelebA-HQ dataset."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.756,
+            0.916,
+            0.895
+          ],
+          "content": "Figure 3 compares DivTrackee with state-of-the-art generativebased AFR methods, including AMT-GAN, Clip2Protect, and DiffAM, to compare their capabilities of preserving the visual quality of original facial images. We can observe that the protected facial images generated by DivTrackee look natural, without visual distortion of the original identity. In contrast, due to its severe impact at the pixel level, protected images generated by AMT-GAN can be easily distinguished from their clean version. Despite preserving facial characteristics, Clip2Protect tends toward more sallow skin colors. DiffAM has a prominent makeup effect on the eyes and"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.513,
+            0.963
+          ],
+          "content": "3111"
+        }
+      ]
+    },
+    {
+      "page_idx": 10,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.598,
+            0.088
+          ],
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.076,
+            0.914,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.088,
+            0.104,
+            0.477,
+            0.355
+          ],
+          "sub_type": "text_image",
+          "content": "Clean\nAMT-GAN\nClip2Protect\nDiffAM\nDivTrackee",
+          "captions": [
+            {
+              "bbox": [
+                0.083,
+                0.363,
+                0.483,
+                0.406
+              ],
+              "content": "Figure 3: Visualizations of protected Trackee images produced by different generative-based AFR methods. The target text prompt $p _ { \\mathrm { t a r g } }$ in DivTrackee is set as “natural makeup”."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_10_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.417,
+            0.483,
+            0.487
+          ],
+          "continues_prev": true,
+          "content": "mouth, and the overall skin tone appears brighter, while protected images generated by DivTrackee are more vivid. From the human perceptual view, DivTrackee can largely satisfy the expectations from Trackees for the visual quality pursuit of their images while maintaining strong protection performance."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.498,
+            0.421,
+            0.512
+          ],
+          "level": 2,
+          "content": "6.2 Generalization to Facial Verification"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.516,
+            0.483,
+            0.821
+          ],
+          "content": "Due to the similarity to facial recognition, Trackers have the freedom and capability to use a facial verification model to realize a similar goal of identifying Trackee images. Therefore, we further investigate whether the proposed DynTracker and DivTrackee can generalize to facial verification scenarios. Unlike facial recognition models that require the construction of a gallery database, a reference image of a known identity (e.g., Trackee) and a predefined threshold 𝛾 ∈ [−1, 1] are sufficient to verify whether a given query image belongs to the reference identity. Facial images from other individuals are not involved in the facial verification process. Similar to the settings of DynTracker in Section 4, we assume Tracker initially holds a Trackee image, either clean or protected, as the reference image for facial verification. During the dynamic updating stage, Tracker iteratively verifies the facial images in the query dataset based on the similarity scores to the reference image. As long as a successful match exists, the newly identified images will be regarded as reference images in the following iterations. When there are multiple reference images, a new query image is compared with each of them, which will be considered successful if any reference image yields a similarity score exceeding the threshold 𝛾. The tracking process will be terminated when no new query matches can be returned in the current iteration."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.827,
+            0.483,
+            0.897
+          ],
+          "content": "**Result.** Figure 4 summarizes the comparisons of the tracking success rates of DynTracker adapted to facial verification across various generative-based AFR schemes. In this experiment, we consider the FaceScrub image dataset and different facial verification models, including 3 publicly available feature extractors and Face++, a"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.107,
+            0.915,
+            0.316
+          ],
+          "continues_prev": true,
+          "content": "commercial facial verification $\\mathrm { A P I . } ^ { 2 }$ We set the threshold 𝛾 to 0.542, which is fixed throughout the tracking process. Similar to our facial recognition experiments, we report the tracking success rate averaged over the same 5 selected identities to compare the efficacy of various AFR methods. Figure 4 shows that DynTracker can be successfully applied to different facial verification frameworks, which all render the existing generative-based AFR methods ineffective. In sharp contrast, DivTrackee achieves significantly higher protection success rates against the facial verification-adapted version of Dyn-Tracker. For instance, DivTrackee lowers DynTracker’s tracking success rates by more than 50% compared to existing generativebased AFR methods. These results again validate the strength of our dynamic tracking strategy and suggest that DivTrackee is superior in achieving high protection efficacy, particularly when the Tracker updates the reference Trackee images."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.322,
+            0.915,
+            0.682
+          ],
+          "content": "**Analysis.** Compared with publicly available feature extractors, we observe a performance drop in the protection efficacy achieved by our DivTrackee when the Tracker employs the Face++ API. We suspect that Face++ may have adopted data augmentation or adversarial training techniques to enhance the robustness of the employed facial feature extractor, making it easier to identify the protected Trackee images generated by DivTrackee. This suggests that real-world APIs are powerful tools to implement DynTracker from Tracker’s perspective, where developing better schemes to enhance the protection efficacy of DivTrackee against dynamic tracking strategy using API tools would be an interesting future direction. In addition, we note that the TSRs of DynTracker under facial verification setup are slightly higher than those in Table 3. Such a difference is likely due to the difference in the query matching step: a query match is regarded as successful in our facial verification experiments as long as there exists a reference image with similarity exceeding the threshold 𝛾, whereas only the most similar gallery identity is returned for facial recognition. As will be illustrated in Section 7.3, like what we observe under facial recognition, DynTracker under facial verification settings also induces only negligible false positive rates. Given the improved identification accuracy of Trackee images and negligible impact on false positive rates, dynamic tracking strategies with facial verification models pose significant threats to user facial privacy, where our diversity promoting AFR method, DivTrackee, offers a viable solution to mitigate the privacy risks induced by DynTracker."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.695,
+            0.81,
+            0.71
+          ],
+          "level": 2,
+          "content": "7 Further Analysis and Discussion"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.713,
+            0.914,
+            0.783
+          ],
+          "content": "In this section, we study the impact of hyperparameter choices and designed loss terms on the performance of DivTrackee (Sections 7.1 and 7.2), as well as how dynamically updating gallery database affects false positive rates (Section 7.3). All the experiments are conducted on the FaceScrub dataset without loss of generality."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.796,
+            0.787,
+            0.811
+          ],
+          "level": 2,
+          "content": "7.1 Hyperparameter Sensitivity"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.814,
+            0.915,
+            0.87
+          ],
+          "content": "We conduct sensitivity analyses of the key hyperparameters used in DivTrackee. Specifically, we consider the scenario where Tracker initially holds a clean Trackee image and employs MagFace as the facial feature extractor. We record the tracking success rates of"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.515,
+            0.884,
+            0.808,
+            0.896
+          ],
+          "content": "<sup>2</sup>Face++ is available online at https://www.faceplusplus.com/."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.515,
+            0.963
+          ],
+          "content": "3112"
+        }
+      ]
+    },
+    {
+      "page_idx": 11,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.301,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.825,
+            0.076,
+            0.914,
+            0.087
+          ],
+          "content": "Wenshu Fan et al."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.092,
+            0.105,
+            0.905,
+            0.251
+          ],
+          "sub_type": "bar",
+          "content": "| Dataset | Condition | AMT-GAN (%) | Clip2Protect (%) | DiffAM (%) | DivTrackee (%) |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| MobileFace | Clean | ~90 | ~88 | ~89 | ~32 |\n| MobileFace | Protected | ~89 | ~86 | ~88 | ~29 |\n| WebFace | Clean | ~94 | ~93 | ~94 | ~36 |\n| WebFace | Protected | ~92 | ~92 | ~93 | ~34 |\n| VGGFace | Clean | ~94 | ~92 | ~94 | ~35 |\n| VGGFace | Protected | ~94 | ~92 | ~94 | ~34 |\n| Face++ | Clean | ~97 | ~94 | ~96 | ~65 |\n| Face++ | Protected | ~97 | ~94 | ~96 | ~63 |",
+          "captions": [
+            {
+              "bbox": [
+                0.082,
+                0.258,
+                0.916,
+                0.302
+              ],
+              "content": "Figure 4: Comparisons of tracking success rates (TSRs) of DynTracker adapted to facial verification settings against various generative-based AFR methods. Here, Figures (a)-(c) consider the scenarios where Tracker adopts some publicly available facial feature extractor, while a facial verification API, Face++, is tested in Figure (d)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_2.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.093,
+            0.309,
+            0.297,
+            0.43
+          ],
+          "sub_type": "line",
+          "content": "| Value of \\(\\alpha1\\) | Static TSR (%) | Dynamic TSR (%) |\n| --- | --- | --- |\n| 0.4 | ~7 | ~34 |\n| 0.6 | ~7 | ~32 |\n| 0.8 | ~7 | ~33 |\n| 1.0 | ~7 | ~30 |\n| 1.2 | ~7 | ~29 |",
+          "captions": [
+            {
+              "bbox": [
+                0.147,
+                0.435,
+                0.242,
+                0.448
+              ],
+              "content": "(a) Impact of 𝛼<sub>1</sub>"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_4.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.298,
+            0.309,
+            0.498,
+            0.43
+          ],
+          "sub_type": "line",
+          "content": "| Value of \\(\\alpha2\\) | Static TSR (%) | Dynamic TSR (%) |\n| --- | --- | --- |\n| 0.6 | ~6 | ~34 |\n| 0.8 | ~6 | ~35 |\n| 1.0 | ~6 | ~33 |\n| 1.2 | ~7 | ~32 |\n| 1.4 | ~8 | ~30 |",
+          "captions": [
+            {
+              "bbox": [
+                0.349,
+                0.435,
+                0.444,
+                0.448
+              ],
+              "content": "(b) Impact of 𝛼<sub>2</sub>"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_6.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.498,
+            0.31,
+            0.7,
+            0.43
+          ],
+          "sub_type": "line",
+          "content": "| Value of \\(\\delta\\) | Static TSR (%) | Dynamic TSR (%) |\n| --- | --- | --- |\n| 0.1 | ~6 | ~30 |\n| 0.2 | ~7 | ~31 |\n| 0.4 | ~8 | ~40 |\n| 0.6 | ~9 | ~52 |\n| 0.8 | ~10 | ~75 |",
+          "captions": [
+            {
+              "bbox": [
+                0.554,
+                0.435,
+                0.642,
+                0.448
+              ],
+              "content": "(c) Impact of 𝛿"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_8.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.7,
+            0.31,
+            0.902,
+            0.43
+          ],
+          "sub_type": "line",
+          "content": "| Value of m | Static TSR (%) | Dynamic TSR (%) |\n| --- | --- | --- |\n| 1 | ~7 | ~42 |\n| 10 | ~7 | ~32 |\n| 20 | ~6 | ~31 |\n| 40 | ~7 | ~30 |\n| 60 | ~6 | ~29 |",
+          "captions": [
+            {
+              "bbox": [
+                0.753,
+                0.435,
+                0.846,
+                0.448
+              ],
+              "content": "(d) Impact of 𝑚"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_10.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.09,
+            0.481,
+            0.302,
+            0.592
+          ],
+          "sub_type": "bar",
+          "content": "| Category | C_tot | w/o C_guide | w/o C_div | w/o C_div + C_guide |\n| --- | --- | --- | --- | --- |\n| Clean | ~26 | ~43 | ~62 | ~94 |\n| Protected | ~24 | ~45 | ~57 | ~96 |",
+          "captions": [
+            {
+              "bbox": [
+                0.083,
+                0.458,
+                0.914,
+                0.473
+              ],
+              "content": "Figure 5: Visualizations of sensitivity analysis results of key hyperparameters regarding the protection efficacy of DivTrackee."
+            },
+            {
+              "bbox": [
+                0.131,
+                0.597,
+                0.262,
+                0.61
+              ],
+              "content": "(a) Facial Recognition"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_13.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.302,
+            0.481,
+            0.512,
+            0.592
+          ],
+          "sub_type": "bar",
+          "content": "| Category | L_tot (%) | w/o L_guide (%) | w/o L_div (%) | w/o L_div + L_guide (%) |\n| --- | --- | --- | --- | --- |\n| Clean | ~30 | ~48 | ~59 | ~95 |\n| Protected | ~26 | ~44 | ~56 | ~97 |",
+          "captions": [
+            {
+              "bbox": [
+                0.341,
+                0.597,
+                0.471,
+                0.609
+              ],
+              "content": "(b) Facial Verification"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_15.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.517,
+            0.482,
+            0.712,
+            0.592
+          ],
+          "sub_type": "line",
+          "content": "| Iteration | Trackee A: TP | Trackee A: FP | Trackee B: TP | Trackee B: FP |\n| --- | --- | --- | --- | --- |\n| 1 | ~4 | ~2 | ~2 | ~2 |\n| 2 | ~7 | ~2 | ~4 | ~2 |\n| 3 | ~12 | ~2 | ~10 | ~2 |\n| 4 | ~16 | ~2 | ~14 | ~3 |\n| 5 | ~18 | ~2 | ~16 | ~3 |\n| 6 | 20 | ~2 | 16 | ~3 |\n| 7 | 20 | ~2 | 16 | ~3 |\n| 8 | 20 | ~2 | 16 | ~3 |",
+          "captions": [
+            {
+              "bbox": [
+                0.548,
+                0.597,
+                0.678,
+                0.61
+              ],
+              "content": "(c) Facial Recognition"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_17.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.712,
+            0.482,
+            0.905,
+            0.592
+          ],
+          "sub_type": "line",
+          "content": "| Iteration | Trackee A: TP | Trackee A: FP | Trackee B: TP | Trackee B: FP |\n| --- | --- | --- | --- | --- |\n| 1 | ~5.2 | ~2.0 | ~4.0 | ~2.0 |\n| 2 | ~10.0 | ~2.0 | ~8.0 | ~3.0 |\n| 3 | ~16.0 | ~2.0 | ~13.0 | ~3.0 |\n| 4 | ~19.0 | ~2.0 | ~16.0 | ~3.0 |\n| 5 | ~21.0 | ~2.0 | ~18.0 | ~3.0 |\n| 6 | ~23.0 | ~2.0 | ~19.0 | ~3.0 |\n| 7 | ~24.0 | ~2.0 | ~19.0 | ~3.0 |\n| 8 | ~24.0 | ~2.0 | ~19.0 | ~3.0 |",
+          "captions": [
+            {
+              "bbox": [
+                0.743,
+                0.597,
+                0.871,
+                0.609
+              ],
+              "content": "(d) Facial Verification"
+            },
+            {
+              "bbox": [
+                0.082,
+                0.62,
+                0.914,
+                0.648
+              ],
+              "content": "Figure 6: (a)-(b) visualizes the effectiveness of the terms designed in our diversity-promoting adversarial loss, and (c)-(d) plots the curves of the number of true and false positives versus the number of dynamic updates in DynTracker."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_11_chart_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.665,
+            0.485,
+            0.887
+          ],
+          "content": "DynTracker by varying the values of $\\alpha _ { 1 } , \\alpha _ { 2 } , \\delta ,$ and 𝑚, where we observe similar trends for other experimental settings. Figure 5 visualizes our sensitivity analysis results, showing that DivTrackee is highly sensitive to the threshold parameter 𝛿 involved in $\\mathcal { L } _ { \\mathsf { g u i d e } } ,$ i.e., the TSR of DynTracker against DivTrackee sharply increases as we increase the value of 𝛿. In contrast, other hyperparameters have more minor impacts on DivTrackee’s efficacy, and increasing their values decreases DynTracker’s TSR slightly. Also, we note that all the tested hyperparameters have almost no impact on the tracking success rates of the static FR strategy. This phenomenon aligns with our expectations, as these hyperparameters are associated with the diversity-promoting loss terms in $\\mathcal { L } _ { \\mathrm { t o t } }$ and thus are expected to be more influential to the protection success rates of DivTrackee when DynTracker is employed. We chose the values of these hyperparameters for DivTrackee based on our sensitivity analyses, considering their impact on image generation quality."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.664,
+            0.796,
+            0.679
+          ],
+          "level": 2,
+          "content": "7.2 Design Choice of DivTrackee"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.682,
+            0.917,
+            0.877
+          ],
+          "content": "To validate the key design choices of DivTrackee, we conduct ablation studies to examine the effectiveness of the proposed diversitypromoting adversarial loss terms in Equation 8. We are particularly interested in how the diverse guidance loss $\\mathcal { L } _ { \\mathrm { g u i d e } }$ and the diversity-promoting loss $\\mathcal { L } _ { \\mathrm { d i v } }$ affect the protection success rates of DivTrackee against DynTracker. Figures 6a and 6b illustrate the results under facial recognition and verification, respectively, where Tracker employs MagFace as the feature extractor of the FR model and involves an initial clean or protected Trackee image in the gallery database. To be more concrete, we compare the tracking success rates of DynTracker when $\\mathcal { L } _ { \\mathrm { g u i d e } } , \\mathcal { L } _ { \\mathrm { d i v } }$ or both are separately excluded from the total loss function used in DivTrackee for optimizing the latent code in Equation 7. We set the same remaining loss terms and choose the same hyperparameters for DivTrackee."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.516,
+            0.963
+          ],
+          "content": "3113"
+        }
+      ]
+    },
+    {
+      "page_idx": 12,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.084,
+            0.076,
+            0.598,
+            0.088
+          ],
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.076,
+            0.914,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.107,
+            0.483,
+            0.288
+          ],
+          "content": "**Result Analysis.** The blue bars in Figures 6a and 6b correspond to the performance of our DivTrackee with the total loss employed, where DynTracker exhibits the lowest tracking success rates. When $\\mathcal { L } _ { \\mathrm { g u i d e } }$ is solely excluded from $\\mathcal { L } _ { \\mathrm { t o t } } ,$ the TSR of DynTracker increases by approximately 15%, which suggests the effectiveness of diversifying the auxiliary image guidance with a properly selected thresholding parameter 𝛿. In addition, when we exclude $\\mathcal { L } _ { \\mathrm { d i v } }$ from the total loss function, the tracking success rate increases more drastically with nearly 30% on average. In comparison, the TSR of DynTracker can be as high as 95% if both $\\mathcal { L } _ { \\mathrm { g u i d e } }$ and $\\mathcal { L } _ { \\mathrm { d i v } }$ loss terms are ignored. Our results highlight the effectiveness of the proposed losses in DivTrackee against determined Trackers, confirming the importance of explicitly promoting diversity in the design of AFR."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.304,
+            0.367,
+            0.319
+          ],
+          "level": 2,
+          "content": "7.3 Impact on False Positive Rate"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.322,
+            0.483,
+            0.586
+          ],
+          "content": "Although we expect well-trained FR models to be capable of accurately recognizing the identity from clean facial images, it is theoretically possible for clean query images of other identities to be misclassified as Trackee. If the employed FR model induces many false positive identifications, the Tracker will need to manually verify the recognized query images, which is particularly undesirable for DynTracker since it involves multiple rounds of facial recognition. Therefore, we conduct experiments to investigate the impact of false positives during the tracking process of DynTracker. Specifically, we first adopt a 7/3 split on FaceScrub to construct training and testing sets and then record the testing identities into which clean images of other individuals are misclassified. Two such iden tities are selected as Trackee, denoted as Trackee A and Trackee B. Figures 6c and 6d visualize how the number of true and false positives changes during the dynamic update stage of DynTracker, where we consider both facial recognition and verification settings. Similar to our experiments in Section 7.1, Tracker is assumed to adopt MagFace and initially hold a clean Trackee image. We assume Trackee employs our DivTrackee as the AFR protection scheme."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.592,
+            0.483,
+            0.829
+          ],
+          "content": "**Result Analysis.** According to our experimental design, both selected Trackees incur two false positives at the initial iteration of DynTracker. Note that these false positives will be included and paired with the Trackee identity in the FR model’s gallery database after the first iteration of DynTracker. However, as the gallery database is updated with newly identified Trackee query images, surprisingly, 0 (resp. 1) additional false positives are introduced for Trackee A (resp. Trackee B) during the subsequent tracking process. In comparison, the number of true positives for both Trackees steadily increases until it plateaus. These results not only confirm the effectiveness of dynamically updating the gallery database in boosting the tracking success rate but also validate the negligible impact of DynTracker on false positive rates. One possible explanation for the negligible increase in FPR is that since the most similar gallery identity is always returned and the gallery database contains many images, it is unlikely that the query matching step picks the false positive samples included in the gallery database."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.844,
+            0.359,
+            0.859
+          ],
+          "level": 2,
+          "content": "7.4 Discussion and Future Work"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.868,
+            0.483,
+            0.897
+          ],
+          "content": "**Computation.** For DynTracker, even when the gallery database contains over 40, 000 images, the employed FR model can still"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.558,
+            0.138,
+            0.869,
+            0.215
+          ],
+          "content": "| Preprocessing Scheme | Clean | Protected |\n| --- | --- | --- |\n| No Preprocessing | 31.94% | 28.57% |\n| JPEG Compression | 32.87% | 29.16% |\n| Gaussian Smoothing | 34.52% | 36.10% |",
+          "captions": [
+            {
+              "bbox": [
+                0.514,
+                0.105,
+                0.915,
+                0.133
+              ],
+              "content": "Table 4: TSR comparisons of DynTracker with various data preprocessing schemes against DivTrackee on FaceScrub."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_12_table_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.227,
+            0.915,
+            0.394
+          ],
+          "continues_prev": true,
+          "content": "quickly predict the identity of a query facial image in an average of 28ms. Each update of the nearest neighbor classifier generated from the gallery database takes an average of 8ms. The dynamic update stage of DynTracker typically takes 4-8 iterations to complete. Since our DynTracker is not intended for real-time prediction, we regard the additionally-incurred computational costs as negligible from Tracker’s perspective. In addition, the most time-consuming step for DivTrackee is generator fine-tuning, which is designed to improve the generator’s generalizability to individual Trackee facial images but often takes 1-2 minutes. Exploring how to reduce the computation overhead or even avoid the costly generative fine-tuning step in AFR could be an interesting future direction."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.399,
+            0.915,
+            0.58
+          ],
+          "content": "**Effectiveness.** Despite achieving high PSRs on FaceScrub, PubFig, and UMDFaces, DivTrackee’s performance degrades on the CelebA-HQ dataset against dynamic FR strategies. This may be because high-resolution images contain more facial feature details, and achieving adversarial effects requires adding more perturbations, thereby impacting the visual quality of the generated AFR-protected images. Future work can explore ways to improve DivTrackee’s protection efficacy on high-resolution datasets. In addition, this paper does not consider potential time shifts in Trackee’s facial images, such as the differences in appearance between childhood and adulthood. It remains an open question whether DynTracker can effectively track recently posted Trackee images when the initial gallery image is collected from much earlier periods."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.586,
+            0.915,
+            0.863
+          ],
+          "content": "**Image Preprocessing.** Tracker might adopt state-of-the-art facial recognition models or more robust models in the future, or apply preprocessing techniques (such as image compression or makeup removal tools) to compromise the adversarial perturbations added to the Trackee facial images. Our experiments in Section 6.2 suggest that when DynTracker is implemented based on a more robust FR model (e.g., the Face++ facial verification API), the protection efficacy of DivTrackee can deteriorate. As a preliminary exploration, we conduct experiments to examine the sensitivity of DivTrackee’s performance to two simple data preprocessing schemes, including JPEG compression and Gaussian Smoothing. These preprocessing steps were also studied in existing literature [9]. The results are demonstrated in Table 4, where we consider the FaceScrub dataset and implement our DynTracker based on the MagFace feature extractor. We can observe that DynTracker’s tracking success rate slightly improves when Trackee images are preprocessed before feeding them into the FR model. Nevertheless, Tracker needs to ensure that the preprocessing methods do not remove excessive facial features of the target identity; otherwise, integrating preprocessing techniques might adversely affect DynTracker’s tracking success."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.868,
+            0.914,
+            0.897
+          ],
+          "content": "**Adaptive Variations of FR Tracking Strategies.** Our proposed DynTracker can be regarded as a specific adaptive FR strategy that"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.516,
+            0.963
+          ],
+          "content": "3114"
+        }
+      ]
+    },
+    {
+      "page_idx": 13,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.3,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.826,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "Wenshu Fan et al."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.108,
+            0.483,
+            0.495
+          ],
+          "continues_prev": true,
+          "content": "is likely to be adopted by determined trackers. However, there are also other variants of tracking strategies that are worth discussing. In this work, Tracker is assumed to include a single Trackee facial image, either clean or protected, in the gallery database to launch DynTracker. In reality, however, Tracker may have already collected multiple clean or protected images by following Trackee’s social media accounts. Including more Trackee images might increase DynTracker’s tracking success rates, aligned with the incentives of determined trackers and real-world application scenarios. In addition, it is worth studying the scenarios in which the FR model’s feature extractor is further fine-tuned using the additional recognized Trackee query images. Note that the feature extractor is assumed to be fixed in DynTracker to simplify the tracking strategy. Similar to the idea of DynTracker versus the static FR strategy in terms of the gallery database, dynamically updating the feature extractor using additional Trackee images may also improve tracking success, compared with fixing the feature extractor. However, the challenge lies in the fact that Tracker does not know precisely about Trackee’s AFR strategy. Instead, Tracker needs to rely on a small amount of AFR-protected images to implement adaptive fine-tuning or unlearning, which is more difficult than building adversarial defenses against specific (known types of) perturbations. Nevertheless, we consider exploring stronger adaptive modifications to DynTracker that may break our protections as interesting future work. On the flip side, developing effective schemes based on our DivTrackee’s insight to be robust to the aforementioned (adaptive) variations of FR tracking strategies would be an important future direction for advancing anti-facial recognition technology."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.502,
+            0.483,
+            0.792
+          ],
+          "content": "**Game between Tracker and Trackee.** Again, we want to emphasize that in the security game between Tracker and Trackee (Definition 1), Trackee is perpetually at a disadvantage since Trackee cannot modify the facial images once they are published. In contrast, Tracker can iteratively refine the tracking strategy, aiming to identify more Trackee posted images [40]. Such asymmetry does not imply that the Trackee is at a “fundamental” disadvantage but rather represents a challenging task that the community can work on to find better solutions. At a higher level, such asymmetry between Tracker and Trackee is similar to the problem of building robust models against adversarial perturbations, where the defender (like Trackee) is at a disadvantage compared with the attacker (like Tracker). The fundamental difference lies in that we do not have a clear picture of how to model Tracker’s behavior, as opposed to the explicit constraint that we usually impose on adversarial examples. Our work makes an initial step by introducing the precise working pipeline of DynTracker, which is strictly more potent than its static counterpart, relies only on necessary assumptions, and is easy to implement. This enables us to characterize the actual behaviors of determined Trackers better and establish an essential foundation for developing more reliable AFR technologies."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.809,
+            0.208,
+            0.823
+          ],
+          "level": 2,
+          "content": "8 Conclusion"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.827,
+            0.483,
+            0.897
+          ],
+          "content": "In this paper, we proposed a simple but highly effective dynamic FR strategy, DynTracker, where the model’s gallery database is progressively updated with newly recognized target identity images. Our work reveals the limitations of existing AFR, particularly highlighting the importance of using dynamic FR strategies for more"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.108,
+            0.915,
+            0.233
+          ],
+          "continues_prev": true,
+          "content": "rigorous AFR evaluations. To counteract, we developed DivTrackee, an innovative text-guided generative AFR method that leverages diversity-promoting modules and adversarial losses. It explicitly encourages more diverse generations of AFR-protected images as a promising solution to defend against DynTracker. We hope that our comprehensive investigations of dynamic FR tracking strategies and their countermeasures can inspire more reliable designs of anti-facial recognition techniques that can potentially be deployed for practical use."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.245,
+            0.615,
+            0.261
+          ],
+          "level": 2,
+          "content": "Availability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.264,
+            0.913,
+            0.292
+          ],
+          "content": "Our DynTracker and DivTrackee implementations, as well as all our experiments, are available as open-source code at [this url.](https://github.com/fiora6/divtrackee)"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.305,
+            0.671,
+            0.32
+          ],
+          "level": 2,
+          "content": "Acknowledgments"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.513,
+            0.323,
+            0.917,
+            0.462
+          ],
+          "content": "We would like to thank the anonymous reviewers for their helpful comments. This work is supported by the National Key R&D Program of China under Grant 2022YFB3103500, the National Natural Science Foundation of China under Grant 62402087 and 62020106013, the Chengdu Science and Technology Program under Grant 2023- XT00-00002-GX, the Sichuan Science and Technology Program under Grant 2024ZHCG0188 and 2025ZNSFSC1490, the Fundamental Research Funds for Chinese Central Universities under Grant ZYGX2024J019, the China Postdoctoral Science Foundation under Grant BX20230060, BX20240053 and 2024M760356."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.517,
+            0.475,
+            0.609,
+            0.489
+          ],
+          "level": 2,
+          "content": "References"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.519,
+            0.49,
+            0.917,
+            0.897
+          ],
+          "sub_type": "ref_text",
+          "content": "[1] [n. d.]. [https://gdpr-info.eu/.](https://gdpr-info.eu/)\n[2] [n. d.]. [https://oag.ca.gov/privacy/ccpa.](https://oag.ca.gov/privacy/ccpa)\n[3] Insaf Adjabi, Abdeldjalil Ouahabi, Amir Benzaoui, and Abdelmalik Taleb-Ahmed. 2020. Past, present, and future of face recognition: A review. Electronics 9, 8 (2020), 1188.\n[4] Ankan Bansal, Anirudh Nanduri, Carlos D Castillo, Rajeev Ranjan, and Rama Chellappa. 2017. Umdfaces: An annotated face dataset for training deep networks. In 2017 IEEE international joint conference on biometrics (IJCB). IEEE, 464–473.\n[5] Jingyi Cao, Bo Liu, Yunqian Wen, Rong Xie, and Li Song. 2021. Personalized and invertible face de-identification by disentangled identity information manipulation. In Proceedings of the IEEE/CVF international conference on computer vision. 3334–3342.\n[6] Qiong Cao, Li Shen, Weidi Xie, Omkar M Parkhi, and Andrew Zisserman. 2018. Vggface2: A dataset for recognising faces across pose and age. In 2018 13th IEEE international conference on automatic face & gesture recognition (FG 2018). IEEE, 67–74.\n[7] Xudong Cao, David Wipf, Fang Wen, Genquan Duan, and Jian Sun. 2013. A practical transfer learning algorithm for face verification. In Proceedings of the IEEE international conference on computer vision. 3208–3215.\n[8] Sheng Chen, Yang Liu, Xiang Gao, and Zhen Han. 2018. Mobilefacenets: Efficient cnns for accurate real-time face verification on mobile devices. In Biometric Recognition: 13th Chinese Conference, CCBR 2018, Urumqi, China, August 11-12, 2018, Proceedings 13. Springer, 428–438.\n[9] Valeriia Cherepanova, Micah Goldblum, Harrison Foley, Shiyuan Duan, John P Dickerson, Gavin Taylor, and Tom Goldstein. 2021. LowKey: Leveraging Adversarial Attacks to Protect Social Media Users from Facial Recognition. In International Conference on Learning Representations. [https://openreview.net/forum?id=hJmtwocEqzc](https://openreview.net/forum?id=hJmtwocEqzc)\n[10] Ka-Ho Chow, Sihao Hu, Tiansheng Huang, Fatih Ilhan, Wenqi Wei, and Ling Liu. 2024. Diversity-driven privacy protection masks against unauthorized face recognition. Proceedings on Privacy Enhancing Technologies (2024).\n[11] Ka-Ho Chow, Sihao Hu, Tiansheng Huang, and Ling Liu. 2025. Personalized Privacy Protection Mask Against Unauthorized Facial Recognition. In European Conference on Computer Vision. Springer, 434–450.\n[12] Jiankang Deng, Jia Guo, Niannan Xue, and Stefanos Zafeiriou. 2019. Arcface: Additive angular margin loss for deep face recognition. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 4690–4699.\n[13] Yinpeng Dong, Fangzhou Liao, Tianyu Pang, Hang Su, Jun Zhu, Xiaolin Hu, and Jianguo Li. 2018. Boosting adversarial attacks with momentum. In Proceedings of the IEEE conference on computer vision and pattern recognition. 9185–9193."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.514,
+            0.963
+          ],
+          "content": "3115"
+        }
+      ]
+    },
+    {
+      "page_idx": 14,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.085,
+            0.076,
+            0.598,
+            0.088
+          ],
+          "content": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.076,
+            0.913,
+            0.087
+          ],
+          "content": "CCS ’25, October 13–17, 2025, Taipei, Taiwan"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.085,
+            0.109,
+            0.484,
+            0.877
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true,
+          "content": "[14] Yinpeng Dong, Tianyu Pang, Hang Su, and Jun Zhu. 2019. Evading defenses to transferable adversarial examples by translation-invariant attacks. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 4312–4321.\n[15] Rinon Gal, Or Patashnik, Haggai Maron, Amit H Bermano, Gal Chechik, and Daniel Cohen-Or. 2022. Stylegan-nada: Clip-guided domain adaptation of image generators. ACM Transactions on Graphics (TOG) 41, 4 (2022), 1–13.\n[16] Yandong Guo, Lei Zhang, Yuxiao Hu, Xiaodong He, and Jianfeng Gao. 2016. Ms-celeb-1m: A dataset and benchmark for large-scale face recognition. In Computer Vision–ECCV 2016: 14th European Conference, Amsterdam, The Netherlands, October 11-14, 2016, Proceedings, Part III 14. Springer, 87–102.\n[17] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition. 770–778.\n[18] Jie Hu, Li Shen, and Gang Sun. 2018. Squeeze-and-excitation networks. In Proceedings of the IEEE conference on computer vision and pattern recognition. 7132–7141.\n[19] Shengshan Hu, Xiaogeng Liu, Yechao Zhang, Minghui Li, Leo Yu Zhang, Hai Jin, and Libing Wu. 2022. Protecting facial privacy: Generating adversarial identity masks via style-robust makeup transfer. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 15014–15023.\n[20] Gary B Huang, Marwan Mattar, Tamara Berg, and Eric Learned-Miller. 2008. Labeled faces in the wild: A database forstudying face recognition in unconstrained environments. In Workshop on faces in’Real-Life’Images: detection, alignment, and recognition.\n[21] Hanxun Huang, Xingjun Ma, Sarah Monazam Erfani, James Bailey, and Yisen Wang. 2021. Unlearnable examples: Making personal data unexploitable. arXiv preprint arXiv:2101.04898 (2021).\n[22] Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen. 2017. Progressive growing of gans for improved quality, stability, and variation. arXiv preprint arXiv:1710.10196 (2017).\n[23] Tero Karras, Samuli Laine, and Timo Aila. 2019. A Style-Based Generator Architecture for Generative Adversarial Networks. In Conference on Computer Vision and Pattern Recognition CVPR. IEEE, 4401–4410.\n[24] Paramjit Kaur, Kewal Krishan, Suresh K Sharma, and Tanuj Kanchan. 2020. Facialrecognition algorithms: A literature review. Medicine, Science and the Law 60, 2 (2020), 131–139.\n[25] Stepan Komkov and Aleksandr Petiushko. 2021. Advhat: Real-world adversarial attack on arcface face id system. In 2020 25th international conference on pattern recognition (ICPR). IEEE, 819–826.\n[26] Yassin Kortli, Maher Jridi, Ayman Al Falou, and Mohamed Atri. 2020. Face recognition systems: A survey. Sensors 20, 2 (2020), 342.\n[27] Neeraj Kumar, Alexander C Berg, Peter N Belhumeur, and Shree K Nayar. 2009. Attribute and simile classifiers for face verification. In 2009 IEEE 12th international conference on computer vision. IEEE, 365–372.\n[28] Gihyun Kwon and Jong Chul Ye. 2022. Clipstyler: Image style transfer with a single text condition. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 18062–18071.\n[29] Minh-Ha Le and Niklas Carlsson. 2024. StyleAdv: A Usable Privacy Framework Against Facial Recognition with Adversarial Image Editing. Proceedings on Privacy Enhancing Technologies (2024).\n[30] Lixiang Li, Xiaohui Mu, Siying Li, and Haipeng Peng. 2020. A review of face recognition technology. IEEE access 8 (2020), 139110–139120.\n[31] Minghui Li, Jiangxiong Wang, Hao Zhang, Ziqi Zhou, Shengshan Hu, and Xiaobing Pei. 2024. Transferable adversarial facial images for privacy protection. In Proceedings of the 32nd ACM International Conference on Multimedia. 10649–10658.\n[32] Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and Adrian Vladu. 2018. Towards Deep Learning Models Resistant to Adversarial Attacks. In International Conference on Learning Representations.\n[33] Qiang Meng, Shichao Zhao, Zhida Huang, and Feng Zhou. 2021. Magface: A universal representation for face recognition and quality assessment. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 14225–14234.\n[34] Elaine M Newton, Latanya Sweeney, and Bradley Malin. 2005. Preserving privacy by de-identifying face images. IEEE transactions on Knowledge and Data Engineering 17, 2 (2005), 232–243.\n[35] Hong-Wei Ng and Stefan Winkler. 2014. A data-driven approach to cleaning large face datasets. In 2014 IEEE international conference on image processing (ICIP). IEEE, 343–347.\n[36] Seong Joon Oh, Mario Fritz, and Bernt Schiele. 2017. Adversarial Image Perturbation for Privacy Protection – A Game Theory Perspective. In IEEE International Conference on Computer Vision (ICCV), 2017.\n[37] Omkar Parkhi, Andrea Vedaldi, and Andrew Zisserman. 2015. Deep face recognition. In BMVC 2015-Proceedings of the British Machine Vision Conference 2015. British Machine Vision Association.\n[38] Divyarajsinh N Parmar and Brijesh B Mehta. 2014. Face recognition methods & applications. arXiv preprint arXiv:1403.0485 (2014)."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.517,
+            0.109,
+            0.916,
+            0.874
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true,
+          "content": "[39] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. 2021. Learning transferable visual models from natural language supervision. In International conference on machine learning. PMLR, 8748–8763.\n[40] Evani Radiya-Dixit, Sanghyun Hong, Nicholas Carlini, and Florian Tramer. 2022. Data Poisoning Won’t Save You From Facial Recognition. In International Conference on Learning Representations. [https://openreview.net/forum?id=B5XahNLmna](https://openreview.net/forum?id=B5XahNLmna)\n[41] Narayanan Ramanathan and Rama Chellappa. 2006. Face verification across age progression. IEEE transactions on image processing 15, 11 (2006), 3349–3361.\n[42] Elad Richardson, Yuval Alaluf, Or Patashnik, Yotam Nitzan, Yaniv Azar, Stav Shapiro, and Daniel Cohen-Or. 2021. Encoding in style: a stylegan encoder for image-to-image translation. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2287–2296.\n[43] Daniel Roich, Ron Mokady, Amit H Bermano, and Daniel Cohen-Or. 2022. Pivotal tuning for latent-based editing of real images. ACM Transactions on graphics (TOG) 42, 1 (2022), 1–13.\n[44] Axel Sauer, Katja Schwarz, and Andreas Geiger. 2022. Stylegan-xl: Scaling stylegan to large diverse datasets. In ACM SIGGRAPH 2022 conference proceedings. 1–10.\n[45] Florian Schroff, Dmitry Kalenichenko, and James Philbin. 2015. Facenet: A unified embedding for face recognition and clustering. In Proceedings of the IEEE conference on computer vision and pattern recognition. 815–823.\n[46] Fahad Shamshad, Muzammal Naseer, and Karthik Nandakumar. 2023. CLIP2Protect: Protecting Facial Privacy using Text-Guided Makeup via Adversarial Latent Search. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 20595–20605.\n[47] Shawn Shan, Emily Wenger, Jiayun Zhang, Huiying Li, Haitao Zheng, and Ben Y Zhao. 2020. Fawkes: Protecting privacy against unauthorized deep learning models. In 29th USENIX security symposium (USENIX Security 20). 1589–1604.\n[48] Mahmood Sharif, Sruti Bhagavatula, Lujo Bauer, and Michael K. Reiter. 2019. A general framework for adversarial examples with objectives. ACM Transactions on Privacy and Security 22, 3 (2019).\n[49] Qianru Sun, Liqian Ma, Seong Joon Oh, Luc Van Gool, Bernt Schiele, and Mario Fritz. 2018. Natural and effective obfuscation by head inpainting. In Proceedings of the IEEE conference on computer vision and pattern recognition. 5050–5059.\n[50] Yi Sun, Xiaogang Wang, and Xiaoou Tang. 2013. Hybrid deep learning for face verification. In Proceedings of the IEEE international conference on computer vision. 1489–1496.\n[51] Yuhao Sun, Lingyun Yu, Hongtao Xie, Jiaming Li, and Yongdong Zhang. 2024. DiffAM: Diffusion-based Adversarial Makeup Transfer for Facial Privacy Protection. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 24584–24594.\n[52] Omer Tov, Yuval Alaluf, Yotam Nitzan, Or Patashnik, and Daniel Cohen-Or. 2021. Designing an encoder for stylegan image manipulation. ACM Transactions on Graphics (TOG) 40, 4 (2021), 1–14.\n[53] Hao Wang, Yitong Wang, Zheng Zhou, Xing Ji, Dihong Gong, Jingchao Zhou, Zhifeng Li, and Wei Liu. 2018. Cosface: Large margin cosine loss for deep face recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition. 5265–5274.\n[54] Emily Wenger, Shawn Shan, Haitao Zheng, and Ben Y Zhao. 2023. Sok: Anti-facial recognition technology. In 2023 IEEE Symposium on Security and Privacy (SP). IEEE, 864–881.\n[55] Zihao Xiao, Xianfeng Gao, Chilin Fu, Yinpeng Dong, Wei Gao, Xiaolu Zhang, Jun Zhou, and Jun Zhu. 2021. Improving transferability of adversarial patches on face recognition with generative models. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 11845–11854.\n[56] Xiao Yang, Yinpeng Dong, Tianyu Pang, Hang Su, Jun Zhu, Yuefeng Chen, and Hui Xue. 2021. Towards face encryption by generating adversarial identity masks. In Proceedings of the IEEE/CVF International Conference on Computer Vision. 3897–3907.\n[57] Dong Yi, Zhen Lei, Shengcai Liao, and Stan Z Li. 2014. Learning face representation from scratch. arXiv preprint arXiv:1411.7923 (2014).\n[58] Bangjie Yin, Wenxuan Wang, Taiping Yao, Junfeng Guo, Zelun Kong, Shouhong Ding, Jilin Li, and Cong Liu. 2021. Adv-makeup: A new imperceptible and transferable attack on face recognition. arXiv preprint arXiv:2105.03162 (2021).\n[59] Fei Yin, Yong Zhang, Xiaodong Cun, Mingdeng Cao, Yanbo Fan, Xuan Wang, Qingyan Bai, Baoyuan Wu, Jue Wang, and Yujiu Yang. 2022. Styleheat: Oneshot high-resolution editable talking face generation via pre-trained stylegan. In European conference on computer vision. Springer, 85–101.\n[60] Yaoyao Zhong and Weihong Deng. 2022. Opom: Customized invisible cloak towards face privacy protection. IEEE Transactions on Pattern Analysis and Machine Intelligence 45, 3 (2022), 3590–3603.\n[61] Fengfan Zhou, Qianyu Zhou, Bangjie Yin, Hui Zheng, Xuequan Lu, Lizhuang Ma, and Hefei Ling. 2024. Rethinking Impersonation and Dodging Attacks on Face Recognition Systems. In ACM Multimedia 2024."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.952,
+            0.515,
+            0.963
+          ],
+          "content": "3116"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.9"
+    },
+    "document": {
+      "title": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy",
+      "authors": [
+        "Wenshu Fan"
+      ],
+      "subject": "-  Computing methodologies  ->  Machine learning.Computer vision.-  Security and privacy  ->  Privacy protections.",
+      "keywords": [
+        "(Anti-)Facial Recognition; Dynamic Strategy; Privacy Preservation"
+      ],
+      "description": "-  Computing methodologies  ->  Machine learning.Computer vision.-  Security and privacy  ->  Privacy protections.",
+      "languages": [
+        "en"
+      ],
+      "identifiers": [
+        "info:doi/10.1145/3719027.3744867"
+      ],
+      "publisher": "Association for Computing Machinery",
+      "created_at": "2025-07-10T13:36:15Z",
+      "modified_at": "2025-10-05T18:42:57-04:00",
+      "creator_application": "LaTeX with acmart 2025/05/30 v2.14 Typesetting articles for the Association for Computing Machinery and hyperref 2023-07-08 v7.01b Hypertext links for LaTeX",
+      "producer_application": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "page_count": 15,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ]
+    }
+  },
+  "is_full_document": true
+}

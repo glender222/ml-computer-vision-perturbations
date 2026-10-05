@@ -1,0 +1,577 @@
+<!-- MinerU 4.0.9, tier advanced, VLM llama.cpp/Vulkan GPU; automatic extraction, tables require comparison with the PDF. -->
+
+[PDF original](../../A%20Predictable-Image%20Solution%20for%20Copyright%20Protection%20Based%20on%20Layer-Wise%20Relevance%20Propagation.pdf)
+
+Article
+
+# A Predictable-Image Solution for Copyright Protection Based on Layer-Wise Relevance Propagation
+
+**Yougyung Park †, Sieun Kim † and Inwhee Joe \***
+
+Department of Computer Science, Hanyang University, Wangsimni-ro, Seongdong-gu, Seoul 04763, Republic of Korea; eunicepark83@gmail.com (Y.P.); clown14@hanyang.ac.kr (S.K.)
+
+\* Correspondence: iwjoe@hanyang.ac.kr
+† These authors contributed equally to this work.
+
+## Abstract
+
+As artificial intelligence (AI) systems are increasingly deployed in real-world applications, concerns regarding the unauthorized use of copyrighted images during model training have become more pronounced. In particular, both generative and discriminative models may implicitly internalize distinctive visual patterns from copyrighted data, leading to potential ethical and legal risks even after data removal. In this study, we propose a practical copyright protection framework, termed the Predictable-Image Solution (PIS), which aims to disrupt the learning of copyrighted visual features during the training process. PIS leverages Layer-wise Relevance Propagation (LRP) to identify image regions that contribute positively to a model’s prediction and selectively modifies these regions using non-copyrighted visual substitutes, such as textures or benign image patterns. By targeting semantically influential regions rather than applying global perturbations, the proposed approach effectively interferes with feature extraction while preserving the perceptual quality and overall visual structure of the original image. Extensive experiments conducted on multiple pre-trained image classification models demonstrate that PIS consistently degrades classification performance on protected images, while maintaining high visual similarity as measured by perceptual metrics. These results indicate that PIS offers an effective, model-agnostic, and visually unobtrusive solution for mitigating unauthorized exploitation of copyrighted images in practical AI training scenarios.
+
+**Keywords:** copyright protection; Layer-wise Relevance Propagation (LRP); explainable AI
+
+![](images/page_0_image_13.jpg)
+
+## Check for updates
+
+Academic Editor: Zhengjun Liu
+
+Received: 6 February 2026
+
+Revised: 5 March 2026
+
+Accepted: 14 March 2026
+
+Published: 16 March 2026
+
+**Copyright:** © 2026 by the authors.
+
+Licensee MDPI, Basel, Switzerland.
+
+This article is an open access article
+
+distributed under the terms and
+
+conditions of the [Creative Commons](https://creativecommons.org/licenses/by/4.0/)
+
+[Attribution (CC BY) license.](https://creativecommons.org/licenses/by/4.0/)
+
+## 1. Introduction
+
+Artificial intelligence (AI) has become deeply integrated into various aspects of modern life, including healthcare, communication, and image generation. Among diverse data modalities, images convey richer semantic information than textual descriptions, making them particularly valuable for visual understanding and content creation. However, the cre ation of high-quality images requires substantial creativity and human effort. To overcome this limitation, many AI models are trained using copyrighted images without the consent of copyright holders, raising serious ethical and legal concerns. Such unauthorized use not only infringes upon creators’ rights but also undermines artistic motivation. The rapid advancement of generative AI and large-scale datasets has further intensified this issue. When copyrighted images are included in training data, deep learning models inevitably internalize visual features into their parameters. Once learned, these features cannot be easily removed, even if the original data are deleted or access is restricted [1].
+
+Consequently, post-training control mechanisms are fundamentally insufficient for effective copyright protection.
+
+Conventional copyright protection techniques, such as digital watermarking, invisible perturbations, and embedding-based authentication, suffer from inherent limitations. Watermarks can often be removed through post-processing, while invisible perturbations may be detected or neutralized by advanced restoration algorithms. Moreover, these approaches are typically applied post hoc, making them structurally incapable of preventing models from retaining previously learned information.
+
+Recently, research on copyright protection and model security has increasingly fo cused on explainable artificial intelligence (XAI) techniques for analyzing model behavior. Methods such as saliency maps, Grad-CAM, and relevance-based attribution have been widely used for model interpretation and vulnerability analysis. However, these techniques have largely remained descriptive, and their use as proactive mechanisms for protecting training data remains limited. In contrast, the proposed Predictable-Image Solution (PIS) repurposes relevance information not merely as an explanatory output, but as an active control signal for copyright protection. In this context, a “Predictable-Image” refers to an image whose global semantic structure remains interpretable to human observers, while being intentionally designed to induce misclassification during model learning. In other words, PIS explicitly decouples perceptual predictability for humans from predictive consistency in machine learning models.
+
+This approach is fundamentally distinct from conventional adversarial examples, which typically introduce imperceptible perturbations at inference time to manipulate model outputs. Instead, PIS targets the training stage by preventing the internalization of critical copyrighted features into model parameters. By leveraging Layer-wise Relevance Propagation (LRP) [2,3], the proposed framework identifies image regions that contribute most significantly to classification decisions and selectively replaces these regions with non-copyrighted substitute content. This structured modification preserves the global semantic context while systematically distorting discriminative cues that would otherwise be learned. Extensive experiments across multiple vision architectures demonstrate that PIS effectively degrades classification performance on protected images while maintaining high visual similarity. These results indicate that PIS constitutes a practical, explainable, and learning-stage-oriented copyright protection framework, rather than a post hoc defensive mechanism.
+
+The remainder of this paper is organized as follows. Section 2 reviews existing copyright protection techniques and XAI-based related studies, and discusses their limitations. Section 3 presents the overall architecture of the proposed PIS and describes the relevanceguided image reconstruction method in detail. Section 4 introduces the experimental setup and evaluation metrics across various models. Section 5 provides an analysis and discussion of the experimental results. Finally, conclusions and future research directions are presented.
+
+## 2. Related Works
+
+## 2.1. Watermark
+
+Watermarking is one of the most widely adopted techniques for copyright protection in digital images [4]. In general, watermarks are embedded into images as visible or semi-transparent logos, text, or patterns to indicate ownership and discourage unauthorized reproduction. Conventional watermarking approaches rely on spatial- or frequency-domain embedding to ensure traceability and ownership verification. However, the effectiveness of watermarking has been significantly weakened by recent advances in image editing and restoration technologies. Deep learning-based inpainting methods and commercial software, such as Adobe Photoshop, enable the removal of visible watermarks with minimal visual degradation [5,6]. As a result, watermarks can often be erased without compromising image quality, raising serious concerns regarding their robustness against unauthorized reuse. In contrast, the proposed Predictable-Image Solution (PIS) addresses copyright protection at the learning stage by replacing regions that are most influential for model prediction. This strategy prevents models from internalizing copyrighted features, making the recovery of original visual information computationally infeasible.
+
+## 2.2. Perturbation-Based Protection
+
+Recent studies have proposed perturbation-based protection techniques that insert carefully designed modifications into images in order to disrupt model learning or prevent data extraction [7,8]. These approaches aim to prevent the internalization of sensitive visual features by injecting perturbations into user-provided images during training or fine-tuning. For instance, Fawkes focuses on protecting facial identity against recognition systems, while Glaze is designed to prevent generative models from imitating a specific artistic style.
+
+More recently, protection methods targeting diffusion-based generative models have also been introduced. MetaCloak [9], for example, employs meta-learning-based optimiza tion to generate perturbations that hinder unauthorized diffusion model training. These methods share a similar objective with PIS in that they aim to disrupt unauthorized model learning. Despite their effectiveness, most perturbation-based approaches rely on iterative gradient-based optimization and assume specific target models or training pipelines. As a result, their cross-domain robustness may be limited, particularly for images with complex textures or in large-scale dataset settings. Moreover, the optimization process incurs substantial computational overhead, and the protection effectiveness can vary significantly depending on the target architecture and training configuration.
+
+In contrast, PIS provides a deterministic and lightweight protection mechanism that does not require iterative optimization. Rather than embedding adversarial noise, PIS re constructs images by selectively modifying semantically critical regions identified through Layer-wise Relevance Propagation (LRP). This relevance-guided reconstruction preserves the global semantic structure from a human perspective, while systematically disrupting the discriminative cues that would otherwise be internalized during model training. Owing to this structural distinction, PIS achieves comparatively stable and reproducible protection performance across diverse image domains and model architectures. To further clarify the differences between existing perturbation-based methods and PIS, Table 1 summarizes their characteristics in terms of target models, protection mechanisms, perceptibility, computational cost, and protection objectives.
+
+Table 1. Comparison of model-specific objectives and human perception.
+
+| Method | Mechanism | Human Perceptibility | Goal |
+| --- | --- | --- | --- |
+| Fawkes | Adversarial perturbation via optimization | Imperceptible | Prevent identity recognition |
+| Glaze | Style-shifting adversarial perturbation | Slightly perceptible | Prevent style mimicry |
+| MetaCloak | Feature-space disruption during training | Mostly imperceptible | Prevent generative training |
+| PIS (Ours) | LRP-guided semantic region substitution | Clearly recognizable by humans | Active protection via predictable misclassification |
+
+## 2.3. Explainable AI (XAI)
+
+Explainable Artificial Intelligence (XAI) aims to interpret and visualize the internal decision-making processes of deep neural networks. Representative techniques include Grad-CAM [10], Layer-wise Relevance Propagation (LRP) [2], LIME [11], SHAP [12], and Integrated Gradients [13]. These methods have been widely adopted to enhance transparency, fairness, and accountability in machine learning systems [12].
+
+However, existing XAI techniques are primarily designed for diagnostic purposes. They provide post hoc explanations of model behavior but do not inherently prevent the unauthorized use of copyrighted data during training.
+
+The proposed PIS extends XAI beyond interpretability by transforming relevance analysis into an active copyright protection mechanism. By leveraging LRP to identify critical regions and selectively modifying them, PIS obstructs the extraction of meaningful copyrighted features. This approach redefines XAI as a proactive defense strategy rather than a passive explanatory tool.
+
+## 2.4. Research Gap
+
+In summary, existing copyright protection methods exhibit fundamental limitations. Watermarking techniques rely on post hoc protection and can be easily removed with modern image restoration and editing tools. Perturbation-based approaches are effective in disrupting model training, but often suffer from instability across image domains and incur high computational costs. Meanwhile, explainable AI (XAI) methods primarily focus on interpreting model decisions and do not directly prevent the unauthorized use of copyrighted images during training.
+
+To address this research gap, we propose a novel framework termed the Predictable Image Solution (PIS), which extends explainability into an active protection mechanism. By leveraging LRP-based relevance analysis, PIS identifies regions that are critical to the model’s classification decision and selectively replaces them to disrupt the learning process itself. Unlike existing approaches, PIS preserves perceptual quality while proactively preventing models from internalizing copyrighted features, offering a model-agnostic and practical solution for copyright protection.
+
+## 3. Methodology
+
+When training artificial intelligence (AI) models on visual data, individual pixels or regions do not contribute equally to the final prediction. Instead, a limited number of semantically salient regions dominate the decision-making process, while others play a marginal or even suppressive role. To explicitly identify and quantify such contributions, this study adopts Layer-wise Relevance Propagation (LRP) [3], an explainability technique that attributes the model’s output back to the input space.
+
+Based on relevance information obtained via LRP, we propose a Predictable-Image Solution (PIS) that selectively modifies image regions according to their contribution to classification. The core idea is to intentionally disrupt the learning of discriminative visual patterns by altering regions that the model relies on reminding, while preserving overall perceptual plausibility. Figure 1 illustrates example images from the ImageNet-100 dataset processed using the proposed approach.
+
+![](images/page_4_image_2.jpg)
+
+<details>
+<summary>text_image</summary>
+
+swin_b | pos 50% neg 50%
+clean
+Image
+clean_0
+clean_21
+clean_42
+clean_63
+clean_85
+clean_106
+clean_127
+clean_149
+prot_0
+prot_21
+prot_42
+prot_63
+prot_85
+prot_106
+prot_127
+prot_149
+Noise
+On
+Positive
+prot_0
+prot_21
+prot_42
+prot_63
+prot_85
+prot_106
+prot_127
+prot_149
+Replace
+On
+Positive
+</details>
+
+Figure 1. Examples of images from the ImageNet-100 dataset processed using the proposed Predictable-Image Solution (PIS). The first row shows the original clean images. The second row illustrates the application of noise to regions with positive contributions to the classification decision, as identified by Layer-wise Relevance Propagation (LRP). The third row shows the case where the same positive relevance regions are replaced with copyright-free substitute images. In all protected images, regions with negative contributions are consistently modified using blur-based color trans formation in order to preserve the overall visual structure while selectively disrupting discriminative features used by the classifier.
+
+## 3.1. Relevance Propagation
+
+Layer-wise Relevance Propagation (LRP) is an attribution method designed to explain a model’s prediction by redistributing the output score backward through the network layers while conserving total relevance [14]. Starting from the output neuron corresponding to the predicted class, relevance scores are propagated layer by layer toward the input, resulting in a relevance map that reflects the contribution of each input unit. Formally, the relevance propagation rule for an input neuron jis given by:
+
+$$
+R _ {j} = \sum_ {k} \frac {a _ {j} w _ {j k}}{\epsilon + \sum_ {0 , j} a _ {j} w _ {j k}} R _ {k}, \tag {1}
+$$
+
+where $R _ { j }$ denotes the relevance score of neuron $j ,   a _ { j }$ is its activation, $w _ { j k }$ represents the weight connecting neurons j and k, and ϵ is a small stabilizing constant introduced to avoid numerical instability. In this work, we follow the standard formulation commonly adopted in the Layer-wise Relevance Propagation (LRP) literature [2,15]. The role of ϵ is to ensure stable relevance propagation rather than to serve as a tunable hyperparameter. Due to its relevance conservation property, LRP provides faithful localization of decisioncritical regions and enables direct analysis of how semantic dependencies shift under image protection mechanisms.
+
+## 3.2. Selective Region Replacement
+
+Using LRP, relevance scores are computed for each input image and subsequently partitioned into positively and negatively contributing regions [15]. Regions with positive relevance correspond to features that actively support the predicted class, whereas negatively relevant regions suppress or counteract the prediction. Based on this distinction, the proposed PIS applies targeted modifications to each region type. The overall relevance-based image protection procedure is summarized in Algorithm 1.
+
+Algorithm 1 Relevance-Based Image Protection via LRP
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+Require: Image $I$, relevance ratios $(\alpha, \beta)$
+Ensure: Protected image $I'$
+$R \leftarrow \text{LRP}(I)$
+$R^{+} \leftarrow \text{Top-}\alpha\%$ of $R$
+$R^{-} \leftarrow \text{Bottom-}\beta\%$ of $R$
+Replace $R^{+}$ with external image patches
+Visual Processing of $R^{-}$
+Output $I'$
+</div>
+
+Specifically, positively relevant regions are replaced with copyright-free visual content, such as texture patterns, random noise, or semantically unrelated object images. This replacement strategy is intentionally chosen over simple noise injection, as modern deep learning models may ignore or suppress random noise through interpolation or internal denoising mechanisms. In contrast, visually complex patterns originating from different image sources introduce ambiguity during training and inference, thereby preventing the model from consistently learning the original discriminative features. Negatively relevant regions are treated differently. Since these regions do not directly contribute to correct classification, aggressive modification is unnecessary. Instead, mild transformations such as blurring, mosaicing, or color adjustment are applied. In this study, blurring is adopted to maintain overall visual coherence while introducing additional perceptual interference.
+
+## 3.3. Integration into Predictable-Image Solution (PIS)
+
+The selective replacement and visual adjustment procedures are integrated as a core component of the proposed Predictable-Image Solution (PIS). Unlike post hoc protection strategies that attempt to mitigate privacy or copyright risks after model training, PIS is explicitly designed to disrupt learning at the training stage. By preventing the internalization of critical visual representations associated with copyrighted content, the proposed approach aims to fundamentally reduce the persistence of protected features, even in scenarios where datasets are later removed or modified. Figure 1 presents qualitative examples of images processed using PIS, where noise injection and replacement operations are applied to regions with positive and negative relevance at a ratio of 50%. To further analyze the impact on model behavior, Figure 2 reports the confusion matrices obtained after training a representative ViT-B/16 model under different protection settings.
+
+![](images/page_5_chart_7.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+| True label \ Predicted label | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1.0 | — | — | — | — | — | — | — | — | — |
+| 1 | — | 1.0 | — | — | — | — | — | — | — | — |
+| 2 | — | — | 1.0 | — | — | — | — | — | — | — |
+| 3 | — | — | — | 1.0 | — | — | — | — | — | — |
+| 4 | — | — | — | — | 1.0 | — | — | — | — | — |
+| 5 | — | — | — | — | — | 1.0 | — | — | — | — |
+| 6 | — | — | — | — | — | — | 1.0 | — | — | — |
+| 7 | — | — | — | — | — | — | — | 1.0 | — | — |
+| 8 | — | — | — | — | — | — | — | — | 1.0 | — |
+| 9 | — | — | — | — | — | — | — | — | — | 1.0 |
+</details>
+
+(a)
+
+![](images/page_5_chart_9.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+| True label | Predicted label 0 | Predicted label 1 | Predicted label 2 | Predicted label 3 | Predicted label 4 | Predicted label 5 | Predicted label 6 | Predicted label 7 | Predicted label 8 | Predicted label 9 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | ~0.15 | ~0.55 | ~0.25 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.35 | ~0.35 |
+| 1 | ~0.15 | ~0.75 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.35 |
+| 2 | ~0.15 | ~0.45 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.65 | ~0.65 | ~0.65 |
+| 3 | ~0.15 | ~0.55 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.45 | ~0.45 | ~0.45 |
+| 4 | ~0.15 | ~0.35 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.75 | ~0.75 | ~0.75 |
+| 5 | ~0.15 | ~0.45 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.65 | ~0.65 | ~0.65 |
+| 6 | ~0.15 | ~0.45 | ~0.25 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.35 | ~0.35 | ~0.35 |
+| 7 | ~0.15 | ~0.75 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.35 | ~0.35 | ~0.35 |
+| 8 | ~0.15 | ~0.45 | ~0.45 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.35 | ~0.35 | ~0.35 |
+| 9 | ~0.15 | ~0.65 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.15 | ~0.45 | ~0.45 | ~0.45 |
+</details>
+
+(b)
+
+![](images/page_5_chart_11.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+| True label | Predicted label 0 | Predicted label 1 | Predicted label 2 | Predicted label 3 | Predicted label 4 | Predicted label 5 | Predicted label 6 | Predicted label 7 | Predicted label 8 | Predicted label 9 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | ~0.65 | — | — | — | ~0.35 | — | — | — | — | — |
+| 1 | ~0.35 | — | — | — | ~0.65 | — | ~0.25 | — | — | — |
+| 2 | ~0.15 | — | ~0.15 | — | ~0.70 | — | ~0.45 | ~0.35 | — | — |
+| 3 | — | — | — | — | ~0.70 | — | ~0.45 | — | — | — |
+| 4 | ~0.15 | — | — | — | ~0.75 | — | ~0.25 | — | — | — |
+| 5 | ~0.20 | — | — | — | ~0.45 | — | ~0.55 | — | — | — |
+| 6 | ~0.35 | — | — | — | ~0.45 | — | ~0.30 | — | — | — |
+| 7 | ~0.15 | — | — | — | ~0.65 | — | ~0.25 | ~0.20 | ~0.15 | — |
+| 8 | ~0.25 | — | — | — | ~0.45 | — | ~0.25 | ~0.15 | — | — |
+| 9 | ~0.35 | — | — | — | ~0.25 | — | ~0.45 | — | — | — |
+</details>
+
+(c)
+
+Figure 2. Confusion matrices obtained from training the representative ViT-B/16 model using images with 50% PIS protection applied to positive and negative regions under (a) clean, (b) noise-based, and (c) replacement-based settings. While the clean images preserve balanced class predictions, the noiseand replacement-based protected images exhibit biased predictions toward specific classes rather than the correct ones.
+
+## 3.4. Replacement Image Selection Strategy
+
+In the replacement-based perturbation, substitute images were collected from publicly available Wikimedia Commons images [16]. These images were external to the original evaluation dataset, thereby minimizing potential distribution overlap. No specific criteria or class-level constraints were imposed during selection.
+
+To examine whether the observed performance degradation depends on the specific replacement content, we compared noise, texture, and replacement perturbations under identical experimental conditions. As shown in Table 2, all three perturbation types yielded comparable accuracy (Accuracy ≈ 0.09), indicating a consistent degradation effect across perturbation types. This suggests that the degradation does not strongly depend on the semantic characteristics of the replacement images.
+
+Table 2. Quantitative experimental results of the three PIS protection variants (noise, replace, and texture) on the ImageNet-100, CIFAR-10, and CIFAR-100 (Subset) datasets. Classification accuracy, mean prediction confidence, and mean entropy are reported to evaluate the degree of learning disruption, while SSIM and PSNR are measured to assess perceptual image quality preservation.Because CIFAR-10 images have very low resolution (32 × 32), PSNR and SSIM metrics are less reliable and provide limited information regarding perceptual quality.
+
+<table><tr><td>Dataset</td><td>Method</td><td>Accuracy</td><td>Mean_Confidence</td><td>Mean_Entropy</td><td>Mean_SSIM</td><td>Mean_PSNR</td></tr><tr><td rowspan="3">ImageNet-100</td><td>noise</td><td>0.090909</td><td>0.918324</td><td>0.341966</td><td>0.254969</td><td>12.78203</td></tr><tr><td>replace</td><td>0.090909</td><td>0.515685</td><td>1.889622</td><td>0.296057</td><td>14.1461</td></tr><tr><td>texture</td><td>0.090909</td><td>0.606044</td><td>1.52149</td><td>0.290198</td><td>15.12889</td></tr><tr><td rowspan="3">CIFAR-10</td><td>noise</td><td>0.0</td><td>0.912624</td><td>5.049304</td><td>-</td><td>-</td></tr><tr><td>replace</td><td>0.0</td><td>0.903358</td><td>4.930081</td><td>-</td><td>-</td></tr><tr><td>texture</td><td>0.0</td><td>0.907134</td><td>4.866816</td><td>-</td><td>-</td></tr><tr><td rowspan="3">CIFAR-100 (Subset)</td><td>noise</td><td>0.0</td><td>0.305385</td><td>1.904548</td><td>0.167871</td><td>12.5146</td></tr><tr><td>replace</td><td>0.0</td><td>0.290138</td><td>1.932238</td><td>0.257229</td><td>15.22556</td></tr><tr><td>texture</td><td>0.0</td><td>0.306736</td><td>1.910972</td><td>0.291306</td><td>16.49597</td></tr></table>
+
+Furthermore, the replacement perturbation produced higher mean predictive entropy compared to the noise-based perturbation, indicating increased output uncertainty rather than bias toward a specific class. In addition, image similarity metrics show that replacement and texture perturbations resulted in slightly higher SSIM and PSNR values compared to noise perturbation. Despite these differences in structural similarity and signal fidelity, the classification accuracy remained equally degraded. This observation further supports the interpretation that the performance drop is not attributable to low-level image distortion alone, but rather reflects model sensitivity to content-level substitution. Therefore, the observed performance degradation is interpreted as reflecting a general vulnerability to content replacement rather than artifacts of particular image selection or simple pixel-level corruption.
+
+## 4. Experiments
+
+This section describes the experimental setup and evaluation protocol used to verify the effectiveness of the proposed copyright protection framework, namely the Predictable Image Solution (PIS). The objective of the experiments is to analyze how PIS-protected images affect the learning and inference performance of image classification models, while quantitatively assessing whether perceptual quality and human-recognizable semantic structures are preserved after the application of the protection mechanism.
+
+The experimental data consist of clean (original) images and their corresponding protected images generated using PIS. To explicitly examine the impact of the protection mechanism on model learning, all experiments initialize models with pre-trained weights and perform additional fine-tuning exclusively on protected images for a limited number of epochs. This design allows for a direct observation of how protected images influence learning dynamics.
+
+PIS-protected images are generated based on relevance maps obtained through Layerwise Relevance Propagation (LRP). According to the model’s prediction, image regions are divided into positive relevance regions and negative relevance regions. Positive relevance regions, which contribute most significantly to classification decisions, are modified through noise injection, replacement with copyright-free substitute images, or texture substitution. In contrast, negative relevance regions are subjected only to limited color transformations, thereby preserving the global structure and semantic coherence of the image while selectively disrupting discriminative visual features.
+
+Model performance is evaluated by comparing classification accuracy before and after protection. Specifically, accuracy obtained by training and evaluating models on clean images (denoted as acc\_clean) is compared with accuracy achieved after additional training on protected images (denoted as acc\_protected). This comparison provides a quantitative measure of the learning collapse induced by PIS. The perceptual quality of protected images is further assessed using average Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM) values. In addition, cosine similarity between clean and protected images is computed to analyze feature-level changes caused by the protection process.
+
+The evaluation includes a diverse set of pre-trained architectures, including MobileNet, ResNet-50, EfficientNet, ViT-B/16 [17], Swin-B, and DeiT-B/16, covering both convolutional neural networks (CNNs) and transformer-based models. This broad experimental setup demonstrates that the proposed PIS framework operates in a model-agnostic manner.
+
+Experiments are conducted on publicly available datasets with varying resolutions, visual complexity, and data scales. ImageNet-100 [18,19] is a subset of the large-scale ImageNet dataset consisting of 100 randomly selected classes and high-resolution natural images. CIFAR-10 [20] is a 10-class dataset composed of 32 × 32 color images and is used to analyze learning collapse effects in low-resolution settings. In addition, a small-scale subset of CIFAR-100 is constructed by selecting 10 classes and sampling 15 images per class, resulting in a total of 150 images.
+
+All models are trained under identical optimization settings. Cross-entropy loss is employed as the objective function, and the Adam optimizer is used for training. The initial learning rate is set to $1 \times 1 0 ^ { - 3 }$ , and training is intentionally limited to three epochs to reflect the small-scale data regime and to directly observe whether protected images can induce learning collapse even under short fine-tuning schedules. No learning rate scheduling is applied.
+
+By limiting the number of images per class across all datasets, the experimental design enables a precise examination of learning collapse and degradation in discriminative performance caused by the protection mechanism. This setup facilitates an analysis of the stability and generalizability of PIS across datasets with different resolutions and data scales.
+
+## 5. Test Results
+
+This section presents the experimental results obtained using the proposed Predictable-Image Solution (PIS) on the ImageNet-100 dataset. The analysis focuses on how classification performance is affected when PIS-protected images are used as inputs, while simultaneously examining whether visual quality and feature-space similarity are pre-served or disrupted.
+
+## 5.1. Impact of PIS on Classification Accuracy
+
+Figure 3 illustrates the variation in classification accuracy (acc\_protected) as a function of protection strength, controlled by the ratios of positively and negatively relevant regions. Figure 3a shows the results obtained using noise-based PIS, whereas Figure 3b presents the results for replacement-based PIS. The noise-based protection scheme significantly degrades classification performance by perturbing relevance-critical regions. In particular, for Transformer-based architectures, partial recovery of accuracy is observed as the propor tion of positively relevant regions increases. This behavior suggests that these models can partially compensate for noise-induced perturbations when sufficient discriminative infor mation remains available. In contrast, the replacement-based protection scheme selectively substitutes semantic decision cues while relatively preserving feature-space similarity. As a result, classification accuracy degrades more gradually but remains consistently low across protection ratios, demonstrating a more stable and controlled suppression effect compared to noise-based protection.
+
+![](images/page_8_image_5.jpg)
+
+Figure 3. Classification accuracy as a function of the protection ratio applied by the proposed Predictable-Image Solution (PIS). The protection ratio controls the proportion of positively and negatively relevant regions modified according to the relevance map obtained via Layer-wise Relevance Propagation (LRP). (a) presents the results when noise is injected into positively contributing regions, while (b) shows the results when those regions are replaced with copyright-free substitute content. The results illustrate how increasing protection strength influences model prediction reliability under different protection strategies.
+
+## 5.2. Visual Quality Evaluation
+
+Figure 4 presents a quantitative evaluation of the visual quality of PIS-protected images using PSNR and SSIM metrics. The x-axis denotes the proportion of positively relevant regions replaced with noise or replacement images. Notably, the curves corresponding to all evaluated models nearly overlap across different protection ratios. This observation indicates that the proposed protection method maintains consistent visual quality regardless of the underlying model architecture. These results confirm that PIS introduces minimal perceptual degradation while achieving effective disruption of model learning.
+
+![](images/page_9_image_2.jpg)
+
+Figure 4. Quantitative evaluation of visual quality with respect to the protection ratio. (a,b) show the PSNR variations after applying noise-based and replacement-based PIS, respectively, while (c,d) present the corresponding SSIM results under the same conditions.
+
+## 5.3. Feature-Space Similarity Analysis
+
+The relationship between feature-space similarity and classification accuracy after applying PIS is shown in Figure 5. Despite variations in protection ratios, a consistently low accuracy regime is maintained, indicating that PIS is not sensitive to specific hyperparameter settings and can reliably suppress classification performance over a wide range of configurations. An exception is observed for the Swin-B model, which exhibits relatively higher accuracy around a cosine similarity value of approximately 0.6 compared to other architectures. Additionally, under the noise-based protection scheme, a limited accu racy rebound occurs in the cosine similarity range of approximately 0.85–0.9. In contrast, the replacement-based protection scheme effectively suppresses classification performance across all models while maintaining comparatively higher cosine similarity, demonstrating more stable semantic feature disruption behavior [21].
+
+![](images/page_9_chart_6.jpg)
+
+<details>
+<summary>line</summary>
+
+| Cosine Similarity (Flattened Features) | deit_b16 | efficientnet_b0 | mobilenet_v2 | resnet50 | swin_b | vit_b16 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.60 | — | ~0.19 | — | 0.10 | ~0.49 | ~0.23 |
+| 0.70 | — | ~0.16 | — | 0.10 | ~0.18 | ~0.15 |
+| 0.80 | — | ~0.12 | ~0.11 | ~0.11 | ~0.13 | ~0.10 |
+| 0.85 | ~0.07 | — | ~0.13 | ~0.10 | ~0.16 | ~0.10 |
+| 0.90 | — | ~0.09 | ~0.12 | ~0.09 | ~0.22 | ~0.08 |
+</details>
+
+(a)
+
+![](images/page_9_chart_8.jpg)
+
+<details>
+<summary>line</summary>
+
+| Cosine Similarity (Flattened Features) | deit_b16 | efficientnet_b0 | mobilenet_v2 | resnet50 | swin_b | vit_b16 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.77 | ~0.17 | ~0.14 | ~0.12 | 0.10 | 0.52 | ~0.16 |
+| 0.83 | ~0.13 | ~0.16 | ~0.13 | 0.10 | 0.25 | ~0.15 |
+| 0.88 | ~0.11 | ~0.12 | ~0.16 | 0.10 | 0.21 | ~0.11 |
+| 0.90 | ~0.07 | ~0.10 | ~0.15 | 0.10 | 0.22 | ~0.10 |
+</details>
+
+(b)
+
+Figure 5. Relationship between cosine similarity of feature representations and classification accuracy after applying PIS. (a) corresponds to noise-based PIS, and (b) corresponds to replacement-based PIS.
+
+## 5.4. Robustness Test
+
+We evaluated model robustness under JPEG compression (jpeg70), random cropping (crop90), and Gaussian blur (σ = 1). Figure 6 presents the robust accuracy of each model under these transformations.
+
+![](images/page_10_chart_4.jpg)
+
+<details>
+<summary>bar</summary>
+
+| model | blur | crop 90 | jpeg 70 |
+| --- | --- | --- | --- |
+| efficientnet_b0 | ~0.13 | ~0.14 | ~0.09 |
+| mobilenet_v2 | ~0.22 | ~0.23 | ~0.22 |
+| resnet50 | ~0.15 | ~0.17 | ~0.14 |
+| swin_b | ~0.37 | ~0.64 | ~0.51 |
+| deit_b16 | ~0.29 | ~0.47 | ~0.47 |
+| vit_b16 | ~0.32 | ~0.52 | ~0.52 |
+</details>
+
+Figure 6. Robust accuracy of various pre-trained models under common image transformations, including JPEG compression (quality 70), cropping (crop 90), and blurring (blur). This figure visually compares how classification performance on PIS-protected images varies across different model architectures, highlighting the model-dependent effects of the protection mechanism.
+
+The experimental results show that Transformer-based models (Swin-B, ViT-B16, and DeiT-B16) generally achieved higher robust accuracy than CNN-based models (ResNet50, EfficientNet-B0, and MobileNet-V2). In particular, Swin-B achieved the highest robustness to spatial transformation, recording a robust accuracy of 0.633 under crop90. ViT-B16 also maintained stable performance under jpeg70 and crop90, achieving robust accuracy values of 0.52 and 0.51, respectively.
+
+In contrast, ResNet50 exhibited relatively low robust accuracy (0.13–0.16). However, as shown in Table 3, cosine similarity remained comparatively high across transformations. This observation suggests that although feature representations remain relatively stable after transformation, the final decision boundary may still be sensitive to input perturbations [22]. In other words, representation-level similarity does not necessarily guarantee classification robustness [23].
+
+Table 3. Robustness of the ResNet-50 model under common image transformations, including JPEG compression, cropping, and blurring. Both the classification accuracy (robust accuracy) and the cosine similarity between clean and protected images are reported for each transformation. This table demonstrates that PIS-protected images retain certain feature characteristics while still inducing a controlled degradation in model performance.
+
+| Transform | Robust_ACC | Cosine_Similarity |
+| --- | --- | --- |
+| jpeg 70 | 0.13 | 0.74 |
+| crop 90 | 0.16 | 0.79 |
+| blur | 0.14 | 0.77 |
+
+These findings indicate that architectures based on global self-attention may exhibit relatively stronger robustness to compression and spatial transformations than CNN architectures that rely primarily on local receptive fields.
+
+Figure 7 compares protected accuracy under JPEG compression and cropping conditions across different protection ratios (replace\_pos75\_neg25, replace\_pos50\_neg50, and replace\_pos25\_neg75).
+
+![](images/page_11_chart_4.jpg)
+
+<details>
+<summary>bar</summary>
+
+| model | protected (no transform) | jpeg 70 | jpeg 50 | crop 0.8 | crop 0.7 |
+| --- | --- | --- | --- | --- | --- |
+| resnet50 | ~0.075 | ~0.04 | ~0.10 | ~0.14 | ~0.065 |
+| efficientnet_b0 | ~0.12 | ~0.10 | ~0.06 | ~0.075 | ~0.115 |
+| mobilenet_v2 | ~0.125 | ~0.045 | ~0.045 | ~0.105 | ~0.075 |
+| swin_b | ~0.115 | ~0.205 | ~0.245 | ~0.08 | ~0.04 |
+| deit_b16 | ~0.095 | ~0.195 | ~0.185 | ~0.235 | ~0.095 |
+| vit_b16 | ~0.08 | ~0.10 | ~0.045 | ~0.065 | ~0.04 |
+</details>
+
+Figure 7. Protected accuracy of PIS-protected images under extended transformations, including JPEG compression (quality 70, 50) and cropping (crop 0.8, 0.7). This figure allows for assessing how well protected images maintain classification performance under altered conditions and how the degree of learning collapse varies across different transformation scenarios.
+
+Across all models, clean accuracy remained high (0.85–1.0), while protected accuracy was consistently maintained within a low range (0.06–0.13). This demonstrates that the proposed protection mechanism preserves classification performance on clean data while intentionally reducing accuracy for protected samples.
+
+Under JPEG transformations, Swin-B and DeiT-B16 exhibited relatively higher protected accuracy compared to CNN-based models. This tendency may be attributed to the ability of Transformer architectures to integrate broader contextual information via global self-attention, making them relatively less sensitive to local high-frequency distortions introduced by JPEG compression. Even when fine-grained details are partially degraded, global structural information may still be preserved, allowing the protection signal to remain partially effective.
+
+Furthermore, DeiT-B16 showed comparatively higher protected accuracy under the crop0.8 condition. As a Vision Transformer-based model, DeiT-B16 tokenizes images into patches and models global relationships through self-attention [24]. When the central region is preserved, as in crop0.8, global contextual information may still be effectively utilized [17]. This behavior is consistent with prior findings that self-attention mechanisms capture global dependencies beyond local receptive fields [25]. In contrast, CNN-based models may experience greater degradation of protection signals when spatial regions are partially removed.
+
+Importantly, even under relatively strong transformations such as JPEG50 and crop0.8, protected accuracy remained within the range of 0.04–0.24. This result indicates that the proposed method retains a certain degree of protection persistence against common image manipulations.
+
+Overall, the proposed protection mechanism demonstrates stable performance under realistic image transformation scenarios.
+
+## 5.5. Confusion Matrix Analysis
+
+Figure 2 reveals a critical failure mode induced by the proposed PIS that extends beyond a simple reduction in classification accuracy. For clean images, misclassifications are largely concentrated among semantically related classes, forming structured confusion patterns. In contrast, predictions for noise- and replacement-based protected images lose this semantic organization, collapsing toward a small subset of classes or becoming irregularly distributed. This behavior indicates that the observed performance degradation is not merely caused by increased uncertainty, but rather reflects a collapse of semantic understanding. By preserving the global appearance of the image while disrupting relevance-critical regions, PIS prevents models from exploiting class-discriminative features, resulting in predictions that no longer align with semantic class relationships.
+
+## 5.6. Quantitative Summary
+
+Table 4 summarizes the quantitative evaluation metrics, including classification accuracy on clean images (acc\_clean), classification accuracy after retraining on PIS-protected images (acc\_protected), average PSNR and SSIM values, and average cosine similarity between flattened feature vectors. All evaluated models achieve near-perfect classification accuracy on clean images. However, when protected images are used as inputs, a sub stantial performance degradation is consistently observed. For instance, the DeiT-B/16 model maintains an accuracy of 1.0 on clean images, while its average accuracy drops to 0.116 when evaluated on PIS-protected images. Importantly, this degradation occurs even when visual quality is not completely destroyed. For the DeiT-B/16 model, the average PSNR and SSIM values of noise-based protected images are 9.95 and 0.21, respectively, while replacement-based protection yields higher values of 12.32 and 0.26 under non-zero protection ratios. These results indicate that the protected images remain perceptually recognizable to human observers while becoming unreliable inputs for deep learning models. Overall, the experimental results demonstrate that the proposed PIS framework effectively disrupts deep learning-based classification performance while minimizing perceptual degradation. This confirms the practicality of PIS as a copyright protection mechanism that preserves human interpretability while preventing unauthorized model exploitation.
+
+Table 4. Summary of PIS results for each model. The parameters α and β denote the application ratios of noise and replacement, respectively.
+
+<table><tr><td>Model</td><td>Solution</td><td>α</td><td>β</td><td>Acc_Clean</td><td>Acc_Protected</td><td>Psnr_Mean</td><td>Ssim_Mean</td><td>Cosine_Flat_Mean</td></tr><tr><td rowspan="10">DeiT-B/16</td><td rowspan="5">noise</td><td>0</td><td>100</td><td>1.0</td><td>0.086667</td><td>14.69491</td><td>0.31905</td><td>0.892694</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.073333</td><td>12.81076</td><td>0.298929</td><td>0.856513</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.113333</td><td>10.95512</td><td>0.262094</td><td>0.799997</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.16</td><td>8.781365</td><td>0.190377</td><td>0.698234</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.186667</td><td>7.265331</td><td>0.106383</td><td>0.594237</td></tr><tr><td rowspan="5">replace</td><td>0</td><td>100</td><td>1.0</td><td>0.066667</td><td>14.83456</td><td>0.322423</td><td>0.902163</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.066667</td><td>14.20433</td><td>0.316984</td><td>0.896518</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.106667</td><td>13.24701</td><td>0.291286</td><td>0.878652</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.133333</td><td>11.60145</td><td>0.238551</td><td>0.830264</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.166667</td><td>10.22888</td><td>0.186854</td><td>0.770565</td></tr></table>
+
+Table 4. Cont.
+
+<table><tr><td>Model</td><td>Solution</td><td>α</td><td>β</td><td>Acc_Clean</td><td>Acc_Protected</td><td>Psnr_Mean</td><td>Ssim_Mean</td><td>Cosine_Flat_Mean</td></tr><tr><td rowspan="10">Swin-b</td><td rowspan="5">noise</td><td>0</td><td>100</td><td>1.0</td><td>0.22</td><td>14.69491</td><td>0.31905</td><td>0.892694</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.166667</td><td>12.81076</td><td>0.298929</td><td>0.856513</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.133333</td><td>10.95512</td><td>0.262094</td><td>0.799997</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.18</td><td>8.781365</td><td>0.190377</td><td>0.698234</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.493333</td><td>7.265331</td><td>0.106383</td><td>0.594237</td></tr><tr><td rowspan="5">replace</td><td>0</td><td>100</td><td>1.0</td><td>0.22</td><td>14.83456</td><td>0.322423</td><td>0.902163</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.146667</td><td>14.20433</td><td>0.316984</td><td>0.896518</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.206667</td><td>13.24701</td><td>0.291286</td><td>0.878652</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.253333</td><td>11.60145</td><td>0.238551</td><td>0.830264</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.52</td><td>10.22888</td><td>0.186854</td><td>0.770565</td></tr><tr><td rowspan="10">ViT-B/16</td><td rowspan="5">noise</td><td>0</td><td>100</td><td>1.0</td><td>0.08</td><td>14.69491</td><td>0.31905</td><td>0.892694</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.106667</td><td>12.81076</td><td>0.298929</td><td>0.856513</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.1</td><td>10.95512</td><td>0.262094</td><td>0.799997</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.153333</td><td>8.781365</td><td>0.190377</td><td>0.698234</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.233333</td><td>7.265331</td><td>0.106383</td><td>0.594237</td></tr><tr><td rowspan="5">replace</td><td>0</td><td>100</td><td>1.0</td><td>0.113333</td><td>14.83456</td><td>0.322423</td><td>0.902163</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.093333</td><td>14.20433</td><td>0.316984</td><td>0.896518</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.12</td><td>13.24701</td><td>0.291286</td><td>0.878652</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.153333</td><td>11.60145</td><td>0.238551</td><td>0.830264</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.16</td><td>10.22888</td><td>0.186854</td><td>0.770565</td></tr><tr><td rowspan="10">resnet50</td><td rowspan="5">noise</td><td>0</td><td>100</td><td>0.86</td><td>0.08</td><td>14.69491</td><td>0.31905</td><td>0.892694</td></tr><tr><td>10</td><td>90</td><td>0.86</td><td>0.106667</td><td>12.81076</td><td>0.298929</td><td>0.856513</td></tr><tr><td>25</td><td>75</td><td>0.86</td><td>0.1</td><td>10.95512</td><td>0.262094</td><td>0.799997</td></tr><tr><td>50</td><td>50</td><td>0.86</td><td>0.1</td><td>8.781365</td><td>0.190377</td><td>0.698234</td></tr><tr><td>75</td><td>25</td><td>0.86</td><td>0.1</td><td>7.265331</td><td>0.106383</td><td>0.594237</td></tr><tr><td rowspan="5">replace</td><td>0</td><td>100</td><td>0.86</td><td>0.073333</td><td>14.83456</td><td>0.322423</td><td>0.902163</td></tr><tr><td>10</td><td>90</td><td>0.86</td><td>0.153333</td><td>14.20433</td><td>0.316984</td><td>0.896518</td></tr><tr><td>25</td><td>75</td><td>0.86</td><td>0.186667</td><td>13.24701</td><td>0.291286</td><td>0.878652</td></tr><tr><td>50</td><td>50</td><td>0.86</td><td>0.126667</td><td>11.60145</td><td>0.238551</td><td>0.830264</td></tr><tr><td>75</td><td>25</td><td>0.86</td><td>0.1</td><td>10.22888</td><td>0.186854</td><td>0.770565</td></tr><tr><td rowspan="10">EfficientNet</td><td rowspan="5">noise</td><td>0</td><td>100</td><td>0.993333</td><td>0.093333</td><td>14.69491</td><td>0.31905</td><td>0.892694</td></tr><tr><td>10</td><td>90</td><td>0.993333</td><td>0.113333</td><td>12.81076</td><td>0.298929</td><td>0.856513</td></tr><tr><td>25</td><td>75</td><td>0.993333</td><td>0.12</td><td>10.95512</td><td>0.262094</td><td>0.799997</td></tr><tr><td>50</td><td>50</td><td>0.993333</td><td>0.16</td><td>8.781365</td><td>0.190377</td><td>0.698234</td></tr><tr><td>75</td><td>25</td><td>0.993333</td><td>0.186667</td><td>7.265331</td><td>0.106383</td><td>0.594237</td></tr><tr><td rowspan="5">replace</td><td>0</td><td>100</td><td>0.993333</td><td>0.093333</td><td>14.83456</td><td>0.322423</td><td>0.902163</td></tr><tr><td>10</td><td>90</td><td>0.993333</td><td>0.146667</td><td>14.20433</td><td>0.316984</td><td>0.896518</td></tr><tr><td>25</td><td>75</td><td>0.993333</td><td>0.126667</td><td>13.24701</td><td>0.291286</td><td>0.878652</td></tr><tr><td>50</td><td>50</td><td>0.993333</td><td>0.16</td><td>11.60145</td><td>0.238551</td><td>0.830264</td></tr><tr><td>75</td><td>25</td><td>0.993333</td><td>0.14</td><td>10.22888</td><td>0.186854</td><td>0.770565</td></tr></table>
+
+Table 4. Cont.
+
+<table><tr><td>Model</td><td>Solution</td><td>α</td><td>β</td><td>Acc_Clean</td><td>Acc_Protected</td><td>Psnr_Mean</td><td>Ssim_Mean</td><td>Cosine_Flat_Mean</td></tr><tr><td rowspan="10">MobileNet</td><td rowspan="5">noise</td><td>0</td><td>100</td><td>1.0</td><td>0.12</td><td>14.69491</td><td>0.31905</td><td>0.892694</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.126667</td><td>12.81076</td><td>0.298929</td><td>0.856513</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.1</td><td>10.95512</td><td>0.262094</td><td>0.799997</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.1</td><td>8.781365</td><td>0.190377</td><td>0.698234</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.1</td><td>7.265331</td><td>0.106383</td><td>0.594237</td></tr><tr><td rowspan="5">replace</td><td>0</td><td>100</td><td>1.0</td><td>0.12</td><td>14.83456</td><td>0.322423</td><td>0.902163</td></tr><tr><td>10</td><td>90</td><td>1.0</td><td>0.153333</td><td>14.20433</td><td>0.316984</td><td>0.896518</td></tr><tr><td>25</td><td>75</td><td>1.0</td><td>0.166667</td><td>13.24701</td><td>0.291286</td><td>0.878652</td></tr><tr><td>50</td><td>50</td><td>1.0</td><td>0.126667</td><td>11.60145</td><td>0.238551</td><td>0.830264</td></tr><tr><td>75</td><td>25</td><td>1.0</td><td>0.12</td><td>10.22888</td><td>0.186854</td><td>0.770565</td></tr></table>
+
+## 5.7. Evaluation of Protected Images
+
+Table 2 summarizes the quantitative experimental results obtained by applying three PIS protection variants (noise, replace, and texture) to the ImageNet-100, CIFAR-10, and CIFAR-100 (Subset) datasets. The reported metrics include classification accuracy, prediction confidence, entropy, and image similarity measures (SSIM and PSNR), enabling a joint analysis of learning disruption and perceptual preservation. For ImageNet-100, all protection variants reduce the classification accuracy to approximately 9.1%, indicating a substantial degradation of learning and generalization performance. Compared to noise-based protection, the replace and texture variants exhibit lower mean confidence and higher entropy, suggesting increased predictive uncertainty. Despite this disruption, SSIM and PSNR values remain relatively stable, confirming that the global structure and perceptual quality of the images are largely preserved after protection.
+
+In the case of CIFAR-10, classification accuracy collapses to zero for all protection variants. This behavior does not indicate random guessing, but rather reflects a failure of the model to learn discriminative features from the protected images. This interpretation is further supported by the consistently high entropy values observed across all variants. SSIM and PSNR metrics are not reported for CIFAR-10. This is because, in the CIFAR-10 experiments, protected images were generated and consumed on-the-fly within the training pipeline, without being stored as paired image samples aligned with their clean counterparts at identical resolutions. As a result, pixel-wise correspondence required for SSIM and PSNR computation could not be established.
+
+For the CIFAR-100 (Subset) experiments, which represent an extreme low-data regime, all protection variants again lead to complete accuracy collapse. Compared to ImageNet-100, the average confidence is significantly reduced, while entropy remains at a moderate level, indicating strong learning disruption under limited data conditions. At the same time, SSIM and PSNR values remain relatively high, demonstrating that perceptual similarity is preserved even when the dataset size is severely constrained. Overall, these results quantitatively demonstrate that PIS consistently induces learning collapse across datasets of varying resolutions and scales, while maintaining perceptual integrity from a human perspective.
+
+## 6. Discussion
+
+An important observation from the experimental results is that the classification accuracy on protected images (acc\_protected) decreases substantially even when the cosine similarity between feature representations of clean and protected images remains relatively high. This result suggests that the proposed protection mechanism does not induce arbitrary or global distortions in the feature space. Instead, it selectively interferes with localized feature components that are crucial for the final classification decision [21,24].
+
+In general, deep learning-based image classifiers rely on a limited subset of highly discriminative features embedded in high-dimensional representation spaces. Through the use of Layer-wise Relevance Propagation (LRP), the proposed Predictable-Image Solution (PIS) explicitly identifies these critical features and applies targeted modifications to the corresponding image regions. As a result, the overall orientation of the feature vectors is largely preserved, leading to high cosine similarity, while the discriminative information required to cross decision boundaries is effectively disrupted. This explains why similarity based metrics alone are insufficient to capture the degradation in classification performance.
+
+Compared with conventional protection approaches based on global noise injection or uniform distortion, PIS achieves a favorable trade-off between perceptual fidelity and learning disruption. The protected images remain visually similar to the original ones from a human perspective, while the inference performance of pre-trained models is significantly degraded. This characteristic underscores the suitability of PIS as a practical copyright protection mechanism in real-world scenarios, where preserving visual quality is often as important as preventing unauthorized model exploitation.
+
+## 7. Limitations of the Study
+
+Despite the overall effectiveness of the proposed approach, several limitations should be acknowledged. First, under certain protection configurations, an unexpected increase in the average classification accuracy on protected images was observed. This indicates that stronger protection does not necessarily lead to a monotonic degradation of classification performance. Instead, the interaction between structured feature replacement and model architecture may exhibit nonlinear behavior. In particular, when highly discriminative local regions are modified, some models may compensate by relying on alternative global or statistical cues.
+
+This phenomenon is especially relevant for Transformer-based architectures, where global self-attention mechanisms enable holistic information aggregation. Under specific configurations, the redistribution of attention triggered by the protection process may unintentionally enhance inter-class separability rather than suppress it. These results suggest that representation-level adaptation can partially offset localized disruption, emphasizing the need for architecture-aware protection strategies.
+
+Second, this study employed fixed protection ratios, and configurations involving full replacement of positively relevant regions were excluded. A protection ratio of 100% would result in the complete loss of visual semantics due to full image substitution, making it impractical for real-world applications. However, using fixed ratios may not fully explore the optimal trade-off between protection strength and semantic preservation. Consequently, some configurations may not fully exploit maximum protection potential, while others may allow partial recovery of classification performance. Overall, these findings indicate that effective copyright protection in deep learning systems requires deeper consideration of representation dynamics and model-dependent adaptation behaviors.
+
+## 8. Conclusions
+
+In this study, we proposed the Predictable-Image Solution (PIS), a copyright protection framework that selectively modifies visually critical regions identified through Layer-wise Relevance Propagation (LRP). Unlike conventional protection methods based on indiscriminate noise injection or global distortion, PIS introduces structured and decision-aware transformations that directly target discriminative features learned during model training.
+
+Experimental results demonstrate that the proposed approach significantly degrades the classification accuracy of pre-trained models while maintaining relatively high cosine similarity between the feature representations of original and protected images. This indicates that PIS disrupts model decision processes without relying on excessive perceptual degradation.
+
+Furthermore, the observed discrepancy between feature-space similarity and classification performance highlights the importance of targeting decision-relevant regions rather than merely altering visual appearance. The architecture-dependent behaviors identified in certain models further suggest that protection effectiveness is closely tied to underlying representation mechanisms. Overall, PIS provides a practical and model-agnostic strategy for protecting copyrighted images in modern machine learning pipelines and establishes a foundation for explainability-driven data protection.
+
+## 9. Future Works
+
+Future research will concentrate on advancing adaptive protection strategies that dynamically adjust protection strength according to model architecture and dataset characteristics. Analyzing relevance redistribution patterns may enable the design of architectureaware masking mechanisms that achieve more consistent degradation across diverse model families.
+
+Another important direction involves the development of automated parameter optimization techniques that balance protection effectiveness with perceptual quality constraints. Integrating perceptual similarity metrics into the optimization framework could allow dynamic determination of replacement intensity while preserving semantic coherence.
+
+In addition, the proposed framework will be extended beyond image classification to broader learning paradigms, including generative models, self-supervised learning, and multimodal systems. Investigating the behavior of relevance-guided protection within large-scale generative AI models will be crucial for evaluating its practical applicability in real-world scenarios.
+
+This study primarily evaluates the effectiveness of the PIS protection framework in image classification models. However, copyright issues are also increasingly relevant for generative models such as diffusion models and GANs, which are trained on large-scale image datasets. In such scenarios, selectively perturbing discriminative visual regions may limit the ability of generative models to directly reproduce specific visual characteristics of protected images. Investigating the applicability and effectiveness of PIS in generative model training therefore remains an important direction for future work.
+
+**Author Contributions:** Conceptualization, Y.P.; methodology, S.K.; software, S.K.; validation, S.K. and Y.P.; formal analysis, S.K.; investigation, Y.P.; data curation, Y.P.; writing—original draft preparation, S.K.; writing—review and editing, Y.P. and I.J.; visualization, S.K.; supervision, I.J.; project administration, I.J. All authors have read and agreed to the published version of the manuscript.
+
+**Funding:** This research received no external funding.
+
+**Institutional Review Board Statement:** Not applicable.
+
+**Informed Consent Statement:** Not applicable.
+
+**Data Availability Statement:** The datasets used in this study are publicly available. ImageNet-100 was constructed from the ImageNet dataset, and CIFAR-10 and CIFAR-100 are publicly available from their official repositories.
+
+**Conflicts of Interest:** The authors declare no conflicts of interest.
+
+## References
+
+1. Tramèr, F.; Zhang, F.; Juels, A.; Reiter, M.K.; Ristenpart, T. Stealing machine learning models via prediction {APIs}. In 25th USENIX Security Symposium (USENIX Security 16); USENIX Association: Berkeley, CA, USA, 2016; pp. 601–618.
+
+2. Bach, S.; Binder, A.; Montavon, G.; Klauschen, F.; Müller, K.R.; Samek, W. On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. PLoS ONE 2015, 10, e0130140. [[CrossRef](http://dx.doi.org/10.1371/journal.pone.0130140)] [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/26161953)]
+3. Montavon, G.; Samek, W.; Müller, K.R. Methods for interpreting and understanding deep neural networks. Digit. Signal Process. 2018, 73, 1–15. [[CrossRef](http://dx.doi.org/10.1016/j.dsp.2017.10.011)]
+4. Zhang, J.; Gu, Z.; Jang, J.; Wu, H.; Stoecklin, M.P.; Huang, H.; Molloy, I. Protecting intellectual property of deep neural networks with watermarking. In Proceedings of the 2018 on Asia Conference on Computer and Communications Security; Association for Computing Machinery: New York, NY, USA, 2018; pp. 159–172.
+5. Editing, B.S. Photoshop Tutorial-How to Remove Watermark. 2024. Available online: [https://youtu.be/cJIQyzwOZeY?si=0GATDqwjHXAR2cfM](https://youtu.be/cJIQyzwOZeY?si=0GATDqwjHXAR2cfM) (accessed on 7 October 2025 ).
+6. Criminisi, A.; Pérez, P.; Toyama, K. Region filling and object removal by exemplar-based image inpainting. IEEE Trans. Image Process. 2004, 13, 1200–1212. [[CrossRef](http://dx.doi.org/10.1109/TIP.2004.833105)] [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/15449582)]
+7. Shan, S.; Wenger, E.; Zhang, J.; Li, H.; Zheng, H.; Zhao, B.Y. Fawkes: Protecting privacy against unauthorized deep learning models. In 29th USENIX Security Symposium (USENIX Security 20); USENIX Association: Berkeley, CA, USA, 2020; pp. 1589–1604.
+8. Shan, S.; Cryan, J.; Wenger, E.; Zheng, H.; Hanocka, R.; Zhao, B.Y. Glaze: Protecting artists from style mimicry by {Text-to-Image} models. In 32nd USENIX Security Symposium (USENIX Security 23); USENIX Association: Berkeley, CA, USA, 2023; pp. 2187–2204.
+9. Liu, Y.; Fan, C.; Dai, Y.; Chen, X.; Zhou, P.; Sun, L. Metacloak: Preventing unauthorized subject-driven text-to-image diffusionbased synthesis via meta-learning. In 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR); IEEE: Piscataway, NJ, USA, 2024; pp. 24219–24228.
+10. Selvaraju, R.R.; Cogswell, M.; Das, A.; Vedantam, R.; Parikh, D.; Batra, D. Grad-cam: Visual explanations from deep networks via gradient-based localization. In 2017 IEEE International Conference on Computer Vision (ICCV); IEEE: Piscataway, NJ, USA, 2017; pp. 618–626.
+11. Ribeiro, M.T.; Singh, S.; Guestrin, C. “Why should i trust you?” Explaining the predictions of any classifier. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining; Association for Computing Machinery: New York, NY, USA, 2016; pp. 1135–1144.
+12. Lundberg, S.M.; Lee, S.I. A unified approach to interpreting model predictions. In Advances in Neural Information Processing Systems 30; NeurIPS: San Diego, CA, USA, 2017; Volume 30.
+13. Sundararajan, M.; Taly, A.; Yan, Q. Axiomatic attribution for deep networks. In Proceedings of the 34th International Conference on Machine Learning; PMLR: Cambridge, MA, USA, 2017; pp. 3319–3328.
+14. Montavon, G.; Binder, A.; Lapuschkin, S.; Samek, W.; Müller, K.R. Layer-wise relevance propagation: An overview. In Explainable AI: Interpreting, Explaining and Visualizing Deep Learning; Springer: Cham, Switzerland, 2019; pp. 193–209.
+15. Montavon, G.; Lapuschkin, S.; Binder, A.; Samek, W.; Müller, K.R. Explaining nonlinear classification decisions with deep taylor decomposition. Pattern Recognit. 2017, 65, 211–222. [[CrossRef](http://dx.doi.org/10.1016/j.patcog.2016.11.008)]
+16. Greenshed. Ceiling Boss over the Centre of the Nave in Carlisle Cathedral. 2009. Available online: [https://commons.wikimedia.org/wiki/File:Ceiling\_boss\_over\_the\_centre\_of\_the\_nave\_in\_Carlisle\_Cathedral.jpg](https://commons.wikimedia.org/wiki/File:Ceiling_boss_over_the_centre_of_the_nave_in_Carlisle_Cathedral.jpg) (accessed on 7 October 2025).
+17. Dosovitskiy, A. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv 2020, arXiv:2010.11929.
+18. Russakovsky, O.; Deng, J.; Su, H.; Krause, J.; Satheesh, S.; Ma, S.; Huang, Z.; Karpathy, A.; Khosla, A.; Bernstein, M.; et al. ImageNet Large Scale Visual Recognition Challenge. Int. J. Comput. Vis. (IJCV) 2015, 115, 211–252. [[CrossRef](http://dx.doi.org/10.1007/s11263-015-0816-y)]
+19. Tian, Y.; Krishnan, D.; Isola, P. Contrastive multiview coding. In Proceedings of the Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28. 2020, Proceedings, Part XI 16; Springer: Cham, Switzerland, 2020; pp. 776–794.
+20. Krizhevsky, A.; Hinton, G. Learning Multiple Layers of Features from Tiny Images. 2009. Available online: [http://www.cs.utoronto.ca/\~kriz/learning-features-2009-TR.pdf](http://www.cs.utoronto.ca/~kriz/learning-features-2009-TR.pdf) (accessed on 7 October 2025).
+21. Liu, Z.; Lin, Y.; Cao, Y.; Hu, H.; Wei, Y.; Zhang, Z.; Lin, S.; Guo, B. Swin transformer: Hierarchical vision transformer using shifted windows. In 2021 IEEE/CVF International Conference on Computer Vision (ICCV); IEEE: Piscataway, NJ, USA, 2021; pp. 10012–10022.
+22. Fawzi, A.; Fawzi, O.; Frossard, P. Analysis of classifiers’ robustness to adversarial perturbations. Mach. Learn. 2018, 107, 481–508. [[CrossRef](http://dx.doi.org/10.1007/s10994-017-5663-3)]
+23. Ilyas, A.; Santurkar, S.; Tsipras, D.; Engstrom, L.; Tran, B.; Madry, A. Adversarial examples are not bugs, they are features. In Advances in Neural Information Processing Systems 32; NeurIPS: San Diego, CA, USA, 2019; Volume 32.
+24. Touvron, H.; Cord, M.; Douze, M.; Massa, F.; Sablayrolles, A.; Jégou, H. Training data-efficient image transformers & distillation through attention. In Proceedings of the 38th International Conference on Machine Learning; PMLR: Cambridge, MA, USA, 2021; pp. 10347–10357.
+25. Cordonnier, J.B.; Loukas, A.; Jaggi, M. On the relationship between self-attention and convolutional layers. arXiv 2019, arXiv:1911.03584.
+
+**Disclaimer/Publisher’s Note:** The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+
+<details>
+<summary>Páginas originales para cotejo</summary>
+
+### Página 1
+
+![Página 1](original-pages/page-01.png)
+
+### Página 2
+
+![Página 2](original-pages/page-02.png)
+
+### Página 3
+
+![Página 3](original-pages/page-03.png)
+
+### Página 4
+
+![Página 4](original-pages/page-04.png)
+
+### Página 5
+
+![Página 5](original-pages/page-05.png)
+
+### Página 6
+
+![Página 6](original-pages/page-06.png)
+
+### Página 7
+
+![Página 7](original-pages/page-07.png)
+
+### Página 8
+
+![Página 8](original-pages/page-08.png)
+
+### Página 9
+
+![Página 9](original-pages/page-09.png)
+
+### Página 10
+
+![Página 10](original-pages/page-10.png)
+
+### Página 11
+
+![Página 11](original-pages/page-11.png)
+
+### Página 12
+
+![Página 12](original-pages/page-12.png)
+
+### Página 13
+
+![Página 13](original-pages/page-13.png)
+
+### Página 14
+
+![Página 14](original-pages/page-14.png)
+
+### Página 15
+
+![Página 15](original-pages/page-15.png)
+
+### Página 16
+
+![Página 16](original-pages/page-16.png)
+
+### Página 17
+
+![Página 17](original-pages/page-17.png)
+
+### Página 18
+
+![Página 18](original-pages/page-18.png)
+
+</details>
